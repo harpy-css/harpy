@@ -1,0 +1,110 @@
+/*----------------------------------------------------------------
+		GRID — md
+-------------------------------------------------------------- */
+
+.container {
+	max-width: $containerWidth;
+	margin: 0 auto;
+	padding: 0 $basePadding;
+	position: relative;
+
+	@media #{$tablet} {
+		max-width: $containerWidthTablet;
+	}
+
+	@media #{$phone} {
+		max-width: $containerWidthPhone;
+	}
+
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+.row {
+	margin-left: -$basePadding;
+	margin-right: -$basePadding;
+	float: left;
+	width: 100%;
+
+	@media #{$phone} {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+.col {
+    
+
+    @media #{$phone} {
+		padding: $basePadding 0;
+	}
+}
+
+@for $i from 1 through 12 {
+    .col-md-#{$i} {
+        width: ($i / 12) * 100%;
+        float: left;
+	    padding: $basePadding;
+	    display: inline-block;
+	    min-height: 1px;
+	    position: relative;
+    }
+}
+
+/*----------------------------------------------------------------
+		TABLET — sm
+-------------------------------------------------------------- */
+
+@media #{$tablet} {
+	@for $i from 1 through 12 {
+	    .col-sm-#{$i} {
+	        width: ($i / 12) * 100%;
+	        float: left;
+		    padding: $basePadding;
+		    display: inline-block;
+		    min-height: 1px;
+		    position: relative;
+	    }
+	}
+}
+
+/*----------------------------------------------------------------
+		PHONE – xs
+-------------------------------------------------------------- */
+
+@media #{$phone} {
+
+	.col {
+	  width: 100%;
+	  margin-left: 0;
+	  display: block;
+	}
+
+	@for $i from 1 through 12 {
+	    .col-xs-#{$i} {
+	        width: ($i / 12) * 100%;
+	        float: left;
+		    padding: $basePadding;
+		    display: inline-block;
+		    min-height: 1px;
+		    position: relative;
+	    }
+	}
+}
+
+/*----------------------------------------------------------------
+		PUSH — offset
+-------------------------------------------------------------- */
+
+@for $i from 1 through 12 {
+    .col-offset-#{$i} {
+        margin-left: ($i / 12) * 100%;
+
+        @media #{$phone} {
+        	margin-left: 0;
+        }
+    }
+}

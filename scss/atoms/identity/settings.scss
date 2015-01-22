@@ -1,0 +1,48 @@
+/*----------------------------------------------------------------
+		BREAKPOINTS
+-------------------------------------------------------------- */
+
+$containerWidth: 960px;
+$containerWidthTablet: 800px;
+$containerWidthPhone: 100%;
+
+$tablet: "screen and (min-width: 540px) and (max-width: 960px)";
+$phone: "only screen and (max-width: 540px)";
+
+/*----------------------------------------------------------------
+		BASE VARIABLES
+-------------------------------------------------------------- */
+
+$baseMargin: 20px;
+$basePadding: 20px; 
+
+$baseBorderColor: $black;
+$baseBorderRadius: 4px;
+$baseBorderWidth: 1px;
+
+$btnPaddning: 8px 14px;
+$btnPaddningMd: 10px 12px;
+$btnPaddingLg: 12px 18px;
+
+$inputPaddning: 12px 18px;
+
+/*----------------------------------------------------------------
+		TYPOGRAPHY
+-------------------------------------------------------------- */
+
+$primaryFont: Avenir;
+$secondaryFont: sans-serif;
+
+$baseFontSize: 18px;
+$baseLineHeight: 130%;
+
+$fontH1: 32px;
+$fontH2: 26px;
+$fontH3: 24px;
+$fontH4: 20px;
+
+$fontThin: 200;
+$fontNormal: 400;
+$fontBold: 700;
+$fontBolder: 900;
+

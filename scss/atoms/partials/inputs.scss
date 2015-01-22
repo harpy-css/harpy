@@ -1,0 +1,25 @@
+/*----------------------------------------------------------------
+    INPUTS
+-------------------------------------------------------------- */
+
+input[type="text"],
+input[type="password"],
+input[type="password"]
+textarea {
+    display: inline-block;
+    background: $white;
+    border-radius: $baseBorderRadius;
+    border: $baseBorderWidth solid $gray;
+    padding: $inputPaddning;
+    font-size: $baseFontSize;
+    line-height: 1.4;
+
+    @media #{$phone} {
+        white: 100%;
+    }
+
+    &:focus {
+      outline: 0;
+      border: $baseBorderWidth solid $black;
+    }
+}

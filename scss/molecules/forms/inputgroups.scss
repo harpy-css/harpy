@@ -1,0 +1,48 @@
+.inputgrp {
+	@media #{$phone} {
+    	width: 100%;
+	}
+
+	.btn,
+	.btn-lg,
+	.btn-md {
+		margin-top: -3px;
+
+		@media #{$phone} {
+			margin-top: $baseMargin/2;
+		}
+	}
+
+	.block {
+		margin-top: $baseMargin/2;
+	}
+
+	input {
+		@media #{$phone} {
+        	width: 100%;
+        	margin-top: $baseMargin/2;
+    	}
+	}
+
+	label {
+		display: inline-block;
+
+		@media #{$phone} {
+        	width: 100%;
+        	margin-top: $baseMargin/2;
+    	}
+
+		input {
+			margin-top: $basePadding/4;
+			display: block;
+		}
+	}
+}
+
+.tc {
+	.inputgrp {
+		label {
+			text-align: left;
+		}
+	}
+}

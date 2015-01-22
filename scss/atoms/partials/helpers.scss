@@ -1,0 +1,156 @@
+/* --------------------------------------------------------------
+		6. HELP CLASSES
+-------------------------------------------------------------- */
+
+.np {padding: 0 !important}
+.nm {margin: 0 !important}
+
+.fl {float: left}
+.fr {float: right}
+.fn {float: none}
+
+.block {display: block}
+.inline {display: inline}
+.inline-block {display: inline-block;}
+
+.tc {text-align: center}
+.tl {text-align: left}
+.tr {text-align: right}
+
+.hidden {display: none}
+.nothidden {display: block}
+
+.visible {visibility: visible}
+.notvisible {visibility: hidden}
+
+/* padding */
+.pt100 {padding-top:$basePadding * 5} /* 100px */
+.pt50 {padding-top:$basePadding * 2.5} /* 50px */
+.pt20 {padding-top:$basePadding} /* 20px */
+
+.pl100 {padding-left:$basePadding * 5}
+.pl50 {padding-left:$basePadding * 2.5}
+.pl20 {padding-left:$basePadding}
+
+.pr100 {padding-right:$basePadding * 5}
+.pr50 {padding-right:$basePadding * 2.5}
+.pr20 {padding-right:$basePadding}
+
+.pb100 {padding-bottom:$basePadding * 5}
+.pb50 {padding-bottom:$basePadding * 2.5}
+.pb20 {padding-bottom:$basePadding}
+
+/* margin */
+.mt100 {margin-top:$baseMargin * 5}
+.mt100-p {margin-top:$baseMargin * 5}
+.mt50 {margin-top:$baseMargin * 2.5;}
+.mt50-p {margin-top:$baseMargin * 2.5}
+.mt20 {margin-top:$baseMargin *1.5;}
+
+.ml100 {margin-left:$baseMargin * 5}
+.ml50 {margin-left:$baseMargin * 2.5}
+.ml20 {margin-left:$baseMargin}
+
+.mr100 {margin-right:$baseMargin * 5}
+.mr50 {margin-right:$baseMargin * 2.5}
+.mr20 {margin-right:$baseMargin}
+
+.mb100 {margin-bottom:$baseMargin * 5}
+.mb50 {margin-bottom:$baseMargin * 2.5}
+.mb20 {margin-bottom:$baseMargin}
+
+/* mix */
+.ptb20 {padding: $basePadding 0}
+.ptb50 {padding: 5rem 0}
+.ptb100 {padding: 10rem 0}
+
+.mtb20 {margin: $baseMargin 0}
+.mtb50 {margin: 5rem 0}
+.mtb100 {margin: 10rem 0}
+
+.prl20 {padding: 0 $basePadding}
+.prl50 {padding: 0 5rem}
+.prl100 {padding: 0 10rem}
+
+.mrl20 {margin: 0 $baseMargin}
+.mrl50 {margin: 0 5rem}
+.mrl100 {margin: 0 10rem}
+
+@media #{$phone} {
+
+	.p-fl {float: left}
+	.p-fr {float: right}
+	.p-fn {float: none}
+
+	.p-tc {text-align: center}
+	.p-tl {text-align: left}
+	.p-tr {text-align: right}
+
+	.p-hidden {display: none}
+	.p-nothidden {display: block}
+
+	.p-visible {visibility: visible}
+	.p-notvisible {visibility: hidden}
+
+	/* reset */
+	.p-pt0 {padding-top: 0}
+	.p-pb0 {padding-bottom: 0}
+	.p-pr0 {padding-right: 0}
+	.p-pb0 {padding-bottom: 0}
+
+	.p-mt0 {margin-top: 0}
+	.p-mb0 {margin-bottom: 0}
+	.p-mr0 {margin-right: 0}
+	.p-mb0 {margin-bottom: 0}
+
+	/* padding */
+	.p-pt100 {padding-top:$basePadding * 5} /* 100px */
+	.p-pt50 {padding-top:$basePadding * 2.5} /* 50px */
+	.p-pt20 {padding-top:$basePadding} /* 20px */
+
+	.p-pl100 {padding-left:$basePadding * 5}
+	.p-pl50 {padding-left:$basePadding * 2.5}
+	.p-pl20 {padding-left:$basePadding}
+
+	.p-pr100 {padding-right:$basePadding * 5}
+	.p-pr50 {padding-right:$basePadding * 2.5}
+	.p-pr20 {padding-right:$basePadding}
+
+	.p-pb100 {padding-bottom:$basePadding * 5}
+	.p-pb50 {padding-bottom:$basePadding * 2.5}
+	.p-pb20 {padding-bottom:$basePadding}
+
+	/* margin */
+	.p-mt100 {margin-top:$baseMargin * 5}
+	.p-mt50 {margin-top:$baseMargin * 2.5}
+	.p-mt20 {margin-top:$baseMargin}
+
+	.p-ml100 {margin-left:$baseMargin * 5}
+	.p-ml50 {margin-left:$baseMargin * 2.5}
+	.p-ml20 {margin-left:$baseMargin}
+
+	.p-mr100 {margin-right:$baseMargin * 5}
+	.p-mr50 {margin-right:$baseMargin * 2.5}
+	.p-mr20 {margin-right:$baseMargin}
+
+	.p-mb100 {margin-bottom:$baseMargin * 5}
+	.p-mb50 {margin-bottom:$baseMargin * 2.5}
+	.p-mb20 {margin-bottom:$baseMargin}
+
+	/* mix */
+	.p-ptb20 {padding: $basePadding 0}
+	.p-ptb50 {padding: 5rem 0}
+	.p-ptb100 {padding: 10rem 0}
+
+	.p-mtb20 {margin: $baseMargin 0}
+	.p-mtb50 {margin: 5rem 0}
+	.p-mtb100 {margin: 10rem 0}
+
+	.p-prl20 {padding: 0 $basePadding}
+	.p-prl50 {padding: 0 5rem}
+	.p-prl100 {padding: 0 10rem}
+
+	.p-mrl20 {margin: 0 $baseMargin}
+	.p-mrl50 {margin: 0 5rem}
+	.p-mrl100 {margin: 0 10rem}
+}

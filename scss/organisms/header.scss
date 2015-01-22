@@ -1,0 +1,49 @@
+.header {
+	border-bottom: $baseBorderWidth solid $silver;
+	padding: $basePadding/2 0;
+
+	a, a:visited {
+		color: $black;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	.brand {
+		width: 30%;
+		display: inline-block;
+		padding: $basePadding 0;
+		float: left;
+		
+		a {
+			&:hover {
+				color: $linkHoverColor;
+			}
+		}
+	}
+
+	nav {
+		width: 70%;
+		display: inline-block;
+		float: left;
+
+		ul {
+			float: right;
+
+			li {
+				margin: 0 0 0 $baseMargin;
+
+				a {
+					&:hover {
+						color: $linkHoverColor;
+					}
+				}
+
+				.btn {
+					width: 100px;
+				}
+			}
+		}
+	}
+}

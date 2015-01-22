@@ -1,0 +1,277 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"bo",
+				"border-radius"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"border-top-",
+				"border-top-color"
+			],
+			[
+				"font",
+				"font-family"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "harpy.scss",
+			"settings":
+			{
+				"buffer_size": 198,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"scs",
+				"Set Syntax: CSS"
+			],
+			[
+				"scss",
+				"Set Syntax: SCSS"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"htm",
+				"HTMLPrettify"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Hansson/Desktop/harpy/atoms/settings.scss",
+		"/Users/Hansson/Desktop/harpy/atoms/identity-helpers.scss",
+		"/Users/Hansson/Desktop/harpy/atoms/fonts.scss",
+		"/Users/Hansson/Desktop/harpy/atoms/type.scss",
+		"/Users/Hansson/Desktop/harpy/atoms/colors.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/kstadquiz/index.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/kstadquiz/main.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/skillnadunderytan.nu/scss/var.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/skillnadunderytan.nu/scss/helpers.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/skillnadunderytan.nu/scss/mixins.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/skillnadunderytan.nu/scss/type.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/skillnadunderytan.nu/scss/main.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/skillnadunderytan.nu/main.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/skillnadunderytan.nu/index.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/skillnadunderytan.nu/scss/site.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/skillnadunderytan.nu/css/main.min.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/skillnadunderytan.nu/css/type.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/skillnadunderytan.nu/config.codekit",
+		"/Applications/XAMPP/xamppfiles/htdocs/skillnadunderytan.nu/var.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/skillnadunderytan.nu/main.scss",
+		"/Users/Hansson/skanska-anbudsverktyg/main.scss"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"f36f31",
+			"h2",
+			"\">",
+			"h3",
+			"0px",
+			"0pz",
+			"rem",
+			"mt50",
+			"border",
+			"top",
+			"h2",
+			"@",
+			"20",
+			"3",
+			"20",
+			"h1",
+			"0",
+			"12",
+			"6",
+			"12",
+			"@media @phone {",
+			"@",
+			"@type"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"0px"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "harpy.scss",
+					"settings":
+					{
+						"buffer_size": 198,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								198,
+								198
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Theme - Cyanide/Cyanide/file_types/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"var",
+				"skillnadunderytan.nu/scss/var.scss"
+			],
+			[
+				"main",
+				"main.js"
+			],
+			[
+				"anbu",
+				"core/collections/Anbudssvar.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}
