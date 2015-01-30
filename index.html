@@ -29,6 +29,10 @@
 	<!--css-->
 	<link rel="stylesheet" href="css/harpy.min.css">
 
+	<!--[if lt IE 9]>
+	  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
 
 	<!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -64,8 +68,8 @@
 	 	</header>
 
 	    <div class="container">
-	    	<div class="row mt20">
-	    		<div class="col col-md-12">
+	    	<div class="row mt50">
+	    		<div class="col-md-12">
 	    			<h1>Rubrik h1</h1>
 	    			<span class="time">13 augusti 2015</span>
 			    	<p class="ingress">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -75,15 +79,9 @@
 			    	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			    	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
 	    	</div>
-	    	<div class="row">	
-	    		<div class="col col-md-12">
-	    			<img src="images/testbild.jpg">
-	    			<p class="caption">Image caption</p>
-	    		</div>
-	    	</div>
 
-		    <div class="row">	
-		    	<div class="col col-md-6 col-sm-12">
+		    <div class="row mt50 sm-mt0 md-mt0 xs-mt0">	
+		    	<div class="col-md-6 col-sm-12">
 			    	<h2>Rubrik h2</h2>
 			    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -92,7 +90,7 @@
 			    	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			    	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			    </div>
-			    <div class="col col-md-6 col-sm-12">
+			    <div class="col-md-6 col-sm-12">
 			    	<h2>Rubrik h2</h2>
 			    	<ul class="">
 						<li>An unordered list is a list in which the sequence of items is not important. Sometimes, an unordered list is a bulleted list. And this is a long list item in an unordered list that can wrap onto a new line. </li>
@@ -106,20 +104,25 @@
 			    </div>
 		    </div>
 
-		    <div class="row mb100">	
-		    	<div class="col col-md-4 col-sm-12">
-			    	<h2>Rubrik h2</h2>
+		    <div class="row mt50 sm-mt0 md-mt0 xs-mt0 mb100">	
+		    	<div class="col-md-3 col-sm-6">
+			    	<h3>Rubrik h3</h3>
 			    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 			    </div>
-			    <div class="col col-md-4 col-sm-12">
-			    	<h2>Rubrik h2</h2>
+			    <div class="col-md-3 col-sm-6">
+			    	<h3>Rubrik h3</h3>
 			    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 			    </div>
 
-			    <div class="col col-md-4 col-sm-12">
-			    	<h2>Rubrik h2</h2>
+			    <div class="col-md-3 col-sm-6">
+			    	<h3>Rubrik h3</h3>
+			    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+			    </div>
+			     <div class="col-md-3 col-sm-6">
+			    	<h3>Rubrik h3</h3>
 			    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 			    </div>
@@ -127,14 +130,14 @@
 
 
 		    <div class="row mb100">
-			    <div class="col col-md-12">
+			    <div class="col-md-12">
 			    	<div class="inputgrp">
 			    		<h3 class="mb50">Sign up for our newsletter</h3>
 			    		<label>E-mail
-				    		<input class="" type="text" placeholder="E-mail">
+				    		<input class="" type="text">
 				    	</label>
 				    	<label for="username">Username
-				    		<input id="username" class="" type="text" placeholder="Username">
+				    		<input id="username" class="" type="text">
 				    	</label>
 				    	<button class="btn-lg btn-primary">Get omboard</button>
 			    	</div>
@@ -142,7 +145,7 @@
 			</div>
 
 		    <div class="row">
-		    	<div class="col col-md-12">
+		    	<div class="col-md-12">
 			    	<a class="btn btn-primary">En knapp</a>
 			    	<a class="btn btn-success">En knapp</a>
 			    	<a class="btn-lg btn-danger">En knapp</a>
@@ -151,30 +154,15 @@
 			    	<button class="btn btn-warning">En knapp</button>
 			    </div>
 			</div>
-			<!-- <div class="row">
-			    <div class="col col-md-12">
-			    	<div class="inputgrp">
-			    		<label for="email">E-mail
-				    		<input id="email" class="" type="text" placeholder="E-mail">
-				    	</label>
-				    	<label for="username">Username
-				    		<input id="username" class="" type="text" placeholder="Username">
-				    	</label>
-				    	<input class="" type="text" placeholder="Input">
-				    	<button class="btn-lg btn-primary">En knapp</button>
-			    	</div>
-			    </div>
-		    </div> -->
 
 
-		    <div class="row"></div>
 
 		   
         </div>
 
         
 
-	    <footer role="contentinfo">
+	    <footer class="mt50" role="contentinfo">
          	<div class="container">	
          		<span class="brand">
             	<a href="/">Copyright</a>

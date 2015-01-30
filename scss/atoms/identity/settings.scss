@@ -1,15 +1,4 @@
 /*----------------------------------------------------------------
-		BREAKPOINTS
--------------------------------------------------------------- */
-
-$containerWidth: 960px;
-$containerWidthTablet: 800px;
-$containerWidthPhone: 100%;
-
-$tablet: "screen and (min-width: 540px) and (max-width: 960px)";
-$phone: "only screen and (max-width: 540px)";
-
-/*----------------------------------------------------------------
 		BASE VARIABLES
 -------------------------------------------------------------- */
 
@@ -27,6 +16,27 @@ $btnPaddingLg: 12px 18px;
 $inputPaddning: 12px 18px;
 
 /*----------------------------------------------------------------
+		BREAKPOINTS/GRID
+-------------------------------------------------------------- */
+
+$containerWidth: 1200px;
+$containerWidthTablet: 800px;
+$containerWidthPhone: 100%;
+
+$screen-xs:      480px !default;
+$screen-sm:      768px !default;
+$screen-md:      992px !default;
+$screen-lg:      1200px !default;
+
+$screen-xs-min:  480px !default;
+$screen-sm-min:  768px !default;
+$screen-md-min:  992px !default;
+$screen-lg-min:  1200px !default;
+
+$grid-columns: 12;
+$grid-gutter-width: $basePadding;
+
+/*----------------------------------------------------------------
 		TYPOGRAPHY
 -------------------------------------------------------------- */
 
@@ -37,12 +47,12 @@ $baseFontSize: 18px;
 $baseLineHeight: 130%;
 
 $fontH1: 32px;
-$fontH2: 26px;
-$fontH3: 24px;
+$fontH2: 24px;
+$fontH3: 20px;
 $fontH4: 20px;
 
 $fontThin: 200;
 $fontNormal: 400;
-$fontBold: 700;
-$fontBolder: 900;
+$fontBold: 600;
+$fontBolder: 700;
 

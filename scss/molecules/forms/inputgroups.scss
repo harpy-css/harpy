@@ -1,5 +1,5 @@
 .inputgrp {
-	@media #{$phone} {
+	@media (max-width: $screen-xs-min) {
     	width: 100%;
 	}
 
@@ -8,7 +8,7 @@
 	.btn-md {
 		margin-top: -3px;
 
-		@media #{$phone} {
+		@media (max-width: $screen-xs-min) {
 			margin-top: $baseMargin/2;
 		}
 	}
@@ -18,7 +18,7 @@
 	}
 
 	input {
-		@media #{$phone} {
+		@media (max-width: $screen-xs-min) {
         	width: 100%;
         	margin-top: $baseMargin/2;
     	}
@@ -27,7 +27,7 @@
 	label {
 		display: inline-block;
 
-		@media #{$phone} {
+		@media (max-width: $screen-xs-min) {
         	width: 100%;
         	margin-top: $baseMargin/2;
     	}

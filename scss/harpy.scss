@@ -49,11 +49,19 @@
 	@import 'atoms/identity/type.scss';
 
 /* --------------------------------------------------------------
+	4.  MOLECULES/MIXINS
+-------------------------------------------------------------- */
+
+	@import 'molecules/mixins/bootstrap-grid.scss';
+	@import 'molecules/mixins/various.scss';
+
+/* --------------------------------------------------------------
 	2.  ATOMS/BASE
 		Basstyling. Länkar, selection.
 -------------------------------------------------------------- */
 
 	@import 'atoms/base/base.scss';
+	@import 'atoms/base/normalize.scss';
 
 /* --------------------------------------------------------------
 	3.  ATOMS/PARTIALS
@@ -76,6 +84,7 @@
 	@import 'molecules/layout/grid.scss';
 	@import 'molecules/layout/nav.scss';
 	@import 'molecules/layout/sidebar.scss';
+	@import 'molecules/layout/wp-core.scss';
 
 /* --------------------------------------------------------------
 	5.  MOLECULES/FORMS
@@ -97,7 +106,12 @@
 	@import 'organisms/header.scss';
 	@import 'organisms/footer.scss';
 
+/* --------------------------------------------------------------
+	7.  SITE
+		Inkluderar alla filer som läggs under site.
+-------------------------------------------------------------- */
 
+	@import 'site/*';
 
 
 
