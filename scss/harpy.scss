@@ -64,6 +64,14 @@
 	@import 'atoms/base/normalize.scss';
 
 /* --------------------------------------------------------------
+	3.  UTILITIES
+-------------------------------------------------------------- */
+	
+	@import 'utilities/_padding.scss';
+	@import 'utilities/_margin.scss';
+	@import 'utilities/_borders.scss';
+
+/* --------------------------------------------------------------
 	3.  ATOMS/PARTIALS
 		Tables, btns, inputs, lists, etc.
 -------------------------------------------------------------- */
@@ -75,6 +83,7 @@
 	@import 'atoms/partials/labels.scss';
 	@import 'atoms/partials/helpers.scss';
 	@import 'atoms/partials/accordion.scss';
+	@import 'atoms/partials/utilities.scss';
 
 /* --------------------------------------------------------------
 	4.  MOLECULES/LAYOUT
@@ -111,7 +120,7 @@
 		Inkluderar alla filer som läggs under site.
 -------------------------------------------------------------- */
 
-	@import 'site/*';
+	//@import 'site/*';
 
 
 
