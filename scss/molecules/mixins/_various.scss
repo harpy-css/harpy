@@ -1,0 +1,75 @@
+@mixin reset() {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: $baseFontSize;
+}
+
+@mixin vertical-align() {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}
+
+@mixin border-radius ($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius:    $radius;
+  border-radius:         $radius;
+
+  -moz-background-clip:    padding;
+  -webkit-background-clip: padding-box;
+  background-clip:         padding-box;
+}
+
+@mixin box-sizing($type: border-box) {
+  -webkit-box-sizing: $type;
+  -moz-box-sizing:    $type;
+  box-sizing:         $type;
+}
+
+@mixin opacity ($opacity) {
+  -webkit-opacity:  $opacity;
+  -moz-opacity:     $opacity;
+  opacity:    $opacity;
+}
+
+@mixin transition ($transition) {
+  -webkit-transition: $transition;
+  -moz-transition:    $transition;
+  -ms-transition:     $transition;
+  -o-transition:      $transition;
+}
+
+@mixin rgbaBackground($color, $opacity) {
+  $rgba: rgba($color, $opacity);
+  background: $color;
+  background: transparent\9;
+  background: $rgba;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#{ie-hex-str($rgba)},endColorstr=#{ie-hex-str($rgba)});
+  zoom: 1;
+  &:nth-child(n) {
+      filter: none;
+  }
+}
+
+@mixin overflowScrolling() {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  html.no-overflowscrolling & {
+    overflow-y: auto;
+  }
+}
+
+@mixin opacity($value) {
+  opacity: $value;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$value * 100})";
+}
+
+@mixin backgroundSize($value) {
+  background-size: $value;
+  -ms-behavior: url(/polyfills/backgroundsize.min.htc);
+}

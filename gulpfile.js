@@ -2,7 +2,9 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     minifycss = require('gulp-minify-css'),
-    rename = require('gulp-rename');
+    rename = require('gulp-rename'),
+    uglify = require('gulp-uglify'),
+    notify = require("gulp-notify");
 
 gulp.task('express', function() {
 	var express = require('express');
@@ -28,6 +30,13 @@ function notifyLiveReload(event) {
   });
 }
 
+gulp.task('compress', function() {
+  gulp.src('js/*.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('js/min/'))
+    .pipe(notify("JS minified"));
+});
+
 gulp.task('styles', function() {
 	return gulp.src('scss/harpy.scss')
 	.pipe(sass({ style: 'expanded' }))
@@ -35,11 +44,13 @@ gulp.task('styles', function() {
 	.pipe(gulp.dest('css'))
 	.pipe(rename({suffix: '.min'}))
 	.pipe(minifycss())
-	.pipe(gulp.dest('css'));
+	.pipe(gulp.dest('css'))
+	.pipe(notify("SCSS minified"));
 });
 
 gulp.task('watch', function() {
 	gulp.watch('scss/**/*.scss', ['styles']);
+	gulp.watch('js/*.js', ['compress']);
 	gulp.watch('*.html', notifyLiveReload);
 	gulp.watch('css/*.css', notifyLiveReload);
 });

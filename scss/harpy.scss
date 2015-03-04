@@ -42,85 +42,86 @@
 		som projektet görs för.
 -------------------------------------------------------------- */
 
-	@import 'atoms/identity/colors.scss';
-	@import 'atoms/identity/settings.scss';
-	@import 'atoms/identity/fonts.scss';
-	@import 'atoms/identity/identity-helpers.scss';
-	@import 'atoms/identity/type.scss';
+	@import 'atoms/identity/colors';
+	@import 'atoms/identity/settings';
+	@import 'atoms/identity/fonts';
+	@import 'atoms/identity/identity-helpers';
+	@import 'atoms/identity/type';
 
 /* --------------------------------------------------------------
 	4.  MOLECULES/MIXINS
 -------------------------------------------------------------- */
 
-	@import 'molecules/mixins/bootstrap-grid.scss';
-	@import 'molecules/mixins/various.scss';
+	@import 'molecules/mixins/bootstrap-grid';
+	@import 'molecules/mixins/various';
 
 /* --------------------------------------------------------------
 	2.  ATOMS/BASE
 		Basstyling. Länkar, selection.
 -------------------------------------------------------------- */
 
-	@import 'atoms/base/base.scss';
-	@import 'atoms/base/normalize.scss';
+	@import 'atoms/base/base';
+	@import 'atoms/base/normalize';
 
 /* --------------------------------------------------------------
 	3.  UTILITIES
 -------------------------------------------------------------- */
 	
-	@import 'utilities/_padding.scss';
-	@import 'utilities/_margin.scss';
-	@import 'utilities/_borders.scss';
+	@import 'utilities/_padding';
+	@import 'utilities/_margin';
+	@import 'utilities/_borders';
 
 /* --------------------------------------------------------------
 	3.  ATOMS/PARTIALS
 		Tables, btns, inputs, lists, etc.
 -------------------------------------------------------------- */
 
-	@import 'atoms/partials/btns.scss';
-	@import 'atoms/partials/inputs.scss';
-	@import 'atoms/partials/tables.scss';
-	@import 'atoms/partials/lists.scss';
-	@import 'atoms/partials/labels.scss';
-	@import 'atoms/partials/helpers.scss';
-	@import 'atoms/partials/accordion.scss';
-	@import 'atoms/partials/utilities.scss';
+	@import 'atoms/partials/btns';
+	@import 'atoms/partials/inputs';
+	@import 'atoms/partials/tables';
+	@import 'atoms/partials/lists';
+	@import 'atoms/partials/labels';
+	@import 'atoms/partials/helpers';
+	@import 'atoms/partials/accordion';
+	@import 'atoms/partials/utilities';
 
 /* --------------------------------------------------------------
 	4.  MOLECULES/LAYOUT
 		Grid, nav, etc.
 -------------------------------------------------------------- */
 
-	@import 'molecules/layout/grid.scss';
-	@import 'molecules/layout/nav.scss';
-	@import 'molecules/layout/sidebar.scss';
-	@import 'molecules/layout/wp-core.scss';
+	@import 'molecules/layout/grid';
+	@import 'molecules/layout/nav';
+	@import 'molecules/layout/sidebar';
+	@import 'molecules/layout/wp-core';
 
 /* --------------------------------------------------------------
 	5.  MOLECULES/FORMS
 -------------------------------------------------------------- */
 
-	@import 'molecules/forms/inputgroups.scss';
+	@import 'molecules/forms/inputgroups';
 
 /* --------------------------------------------------------------
 	6.  MOLECULES/FORMS
 -------------------------------------------------------------- */
 
-	@import 'molecules/type/headinggroups.scss';
-	@import 'molecules/type/postelements.scss';
+	@import 'molecules/type/headinggroups';
+	@import 'molecules/type/postelements';
 
 /* --------------------------------------------------------------
 	7.  ORGANISMS
 -------------------------------------------------------------- */
 
-	@import 'organisms/header.scss';
-	@import 'organisms/footer.scss';
+	@import 'organisms/header';
+	@import 'organisms/footer';
 
 /* --------------------------------------------------------------
 	7.  SITE
 		Inkluderar alla filer som läggs under site.
 -------------------------------------------------------------- */
 
-	//@import 'site/*';
+	@import 'site/page';
+	@import 'site/print';
 
 
 

@@ -1,0 +1,21 @@
+/*----------------------------------------------------------------
+    FONTS
+	längre ner gör man mixin för fonten.
+	baseFont ex med tranfsform osv.
+-------------------------------------------------------------- */
+
+ @font-face {
+    font-family: 'Hoefler Text';
+    src: url(../fonts/hoeflertext.otf);
+}
+
+@mixin hoeflerText() {
+	font-family: 'Hoefler Text';
+}
+
+@mixin avenirHeadings() {
+	font-family: 'Avenir Next';
+	text-transform: uppercase;
+	font-weight: $fontNormal;
+	letter-spacing: .5px;
+}

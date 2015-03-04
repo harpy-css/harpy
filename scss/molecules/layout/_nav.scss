@@ -1,0 +1,30 @@
+.nav {
+  margin-bottom: 0;
+  list-style: none;
+
+  > ul { 
+    list-style: none;
+    padding-left: 0; 
+
+    > li {
+      position: relative;
+      display: inline-block;
+      margin-left: $baseMargin;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+      > a {
+        position: relative;
+        display: block;
+        padding: $basePadding 0;
+
+        &:hover,
+        &:focus {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

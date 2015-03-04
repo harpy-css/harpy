@@ -1,0 +1,36 @@
+footer {
+	border-top: $baseBorderWidth solid $silver;
+
+	a, a:visited {
+		color: $black;
+		font-size: $baseFontSize - 2;
+	}
+
+	.brand {
+		width: 30%;
+		display: inline-block;
+		padding: $basePadding 0;
+		float: left;
+	}
+
+	nav {
+		width: 70%;
+		display: inline-block;
+		float: left;
+
+		ul {
+			float: right;
+
+			li {
+				margin: 0 0 0 $baseMargin;
+				.btn {
+					width: 100px;
+				}
+			}
+		}
+	}
+}
+
+
+
+/* fixed footer */
