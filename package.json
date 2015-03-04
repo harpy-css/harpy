@@ -1,6 +1,6 @@
 {
-  "name": "gulp",
-  "version": "0.0.0",
+  "name": "Harpy",
+  "version": "0.1.0",
   "description": "",
   "main": "Gulpfile.js",
   "scripts": {
@@ -8,11 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nitrous-examples/gulp-sample-app.git"
+    "url": "https://github.com/bulldozerlovesyou/harpy.git"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gulp": "^3",
     "connect-livereload": "^0.4.0",
     "express": "^4.4.3",
     "gulp-autoprefixer": "0.0.7",
