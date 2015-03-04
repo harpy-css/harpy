@@ -4,6 +4,7 @@ var gulp = require('gulp'),
     minifycss = require('gulp-minify-css'),
     rename = require('gulp-rename'),
     uglify = require('gulp-uglify'),
+    plumber = require('gulp-plumber'),
     notify = require("gulp-notify");
 
 gulp.task('express', function() {
@@ -45,6 +46,7 @@ gulp.task('styles', function() {
 	.pipe(rename({suffix: '.min'}))
 	.pipe(minifycss())
 	.pipe(gulp.dest('css'))
+	
 	.pipe(notify("SCSS minified"));
 });
 
