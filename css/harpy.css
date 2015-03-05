@@ -42,141 +42,6 @@
 		Atomer som gäller för identitet för företaget
 		som projektet görs för.
 -------------------------------------------------------------- */
-/*----------------------------------------------------------------
-		COLORS
--------------------------------------------------------------- */
-/*----------------------------------------------------------------
-		COLORS — VARIABLES
--------------------------------------------------------------- */
-/*----------------------------------------------------------------
-		BASE VARIABLES
--------------------------------------------------------------- */
-/*----------------------------------------------------------------
-		BREAKPOINTS/GRID
--------------------------------------------------------------- */
-/*----------------------------------------------------------------
-		TYPOGRAPHY
--------------------------------------------------------------- */
-/*----------------------------------------------------------------
-    FONTS
-	längre ner gör man mixin för fonten.
-	baseFont ex med tranfsform osv.
--------------------------------------------------------------- */
-@font-face {
-  font-family: 'Hoefler Text';
-  src: url(../fonts/hoeflertext.otf); }
-
-/*----------------------------------------------------------------
-    TYPE
-    TODO: hur type ska bete sig på mindre skärmar
--------------------------------------------------------------- */
-body {
-  font-family: Avenir;
-  color: #16161d; }
-
-h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
-  margin: 14px 0;
-  line-height: 1; }
-
-h1, h2, h3, h4 {
-  font-weight: 600; }
-
-h1 > a, h2 > a, h3 > a, h4 > a {
-  text-decoration: none;
-  color: black; }
-
-h1, .h1 {
-  font-size: 32px; }
-
-h2, .h2 {
-  font-size: 24px; }
-
-h3, .h3 {
-  font-size: 20px;
-  font-family: 'Avenir Next';
-  text-transform: uppercase;
-  font-weight: 400;
-  letter-spacing: .5px; }
-
-h4, .h4 {
-  font-size: 20px; }
-
-p, .p {
-  font-size: 18px;
-  line-height: 130%;
-  display: block;
-  margin: 0 0 16px 0; }
-  p:last-child, .p:last-child {
-    margin: 0; }
-
-/* --------------------------------------------------------------
-	4.  MOLECULES/MIXINS
--------------------------------------------------------------- */
-/* --------------------------------------------------------------
-	2.  ATOMS/BASE
-		Basstyling. Länkar, selection.
--------------------------------------------------------------- */
-/* --------------------------------------------------------------
-		2. BASE
--------------------------------------------------------------- */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-  vertical-align: baseline;
-  font-family: inherit;
-  font-style: inherit;
-  font-size: 100%;
-  border: none;
-  padding: 0;
-  margin: 0; }
-
-html {
-  overflow-y: scroll;
-  min-height: 100%;
-  position: relative; }
-
-img {
-  max-width: 100%;
-  width: 100%;
-  height: auto; }
-
-/*
- * 1. Disable webkit tap highlight.
- */
-body {
-  -webkit-tap-highlight-color: transparent;
-  /* [1] */
-  min-height: 100%; }
-  body.sticky-footer {
-    margin-bottom: 60px; }
-
-::-moz-selection {
-  background: #7FDBFF;
-  color: #FFFFFF;
-  text-shadow: none; }
-
-::selection {
-  background: #7FDBFF;
-  color: #FFFFFF;
-  text-shadow: none; }
-
-::-moz-selection {
-  background: #7FDBFF;
-  color: #FFFFFF;
-  text-shadow: none; }
-
-a, a:visited {
-  text-decoration: none;
-  color: #0074D9; }
-  a:hover, a:focus, a:visited:hover, a:visited:focus {
-    color: #005299;
-    text-decoration: underline; }
-
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -501,6 +366,140 @@ table {
 
 td, th {
   padding: 0; }
+
+/*----------------------------------------------------------------
+		COLORS
+-------------------------------------------------------------- */
+/*----------------------------------------------------------------
+		COLORS — VARIABLES
+-------------------------------------------------------------- */
+/*----------------------------------------------------------------
+		BASE VARIABLES
+-------------------------------------------------------------- */
+/*----------------------------------------------------------------
+		BREAKPOINTS/GRID
+-------------------------------------------------------------- */
+/*----------------------------------------------------------------
+		TYPOGRAPHY
+-------------------------------------------------------------- */
+/*----------------------------------------------------------------
+    FONTS
+	längre ner gör man mixin för fonten.
+	baseFont ex med tranfsform osv.
+-------------------------------------------------------------- */
+@font-face {
+  font-family: 'Hoefler Text';
+  src: url(../fonts/hoeflertext.otf); }
+
+/*----------------------------------------------------------------
+    TYPE
+    TODO: hur type ska bete sig på mindre skärmar
+-------------------------------------------------------------- */
+body {
+  font-family: Avenir;
+  color: #16161d; }
+
+h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
+  margin: 20px 0 5px 0;
+  line-height: 1; }
+
+h1, h2, h3, h4 {
+  font-weight: 500; }
+
+h1 > a, h2 > a, h3 > a, h4 > a {
+  text-decoration: none;
+  color: black; }
+
+h1, .h1 {
+  font-size: 32px; }
+
+h2, .h2 {
+  font-size: 24px; }
+
+h3, .h3 {
+  font-size: 16px;
+  font-family: 'Avenir Next';
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
+h4, .h4 {
+  font-size: 15px; }
+
+p, .p {
+  font-size: 18px;
+  line-height: 130%;
+  display: block;
+  margin: 0 0 16px 0; }
+  p:last-child, .p:last-child {
+    margin: 0; }
+
+/* --------------------------------------------------------------
+	4.  MOLECULES/MIXINS
+-------------------------------------------------------------- */
+/* --------------------------------------------------------------
+	2.  ATOMS/BASE
+		Basstyling. Länkar, selection.
+-------------------------------------------------------------- */
+/* --------------------------------------------------------------
+		2. BASE
+-------------------------------------------------------------- */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  vertical-align: baseline;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  border: none;
+  padding: 0;
+  margin: 0; }
+
+html {
+  overflow-y: scroll;
+  min-height: 100%;
+  position: relative; }
+
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto; }
+
+/*
+ * 1. Disable webkit tap highlight.
+ */
+body {
+  -webkit-tap-highlight-color: transparent;
+  /* [1] */
+  min-height: 100%; }
+  body.sticky-footer {
+    margin-bottom: 60px; }
+
+::-moz-selection {
+  background: #7FDBFF;
+  color: #FFFFFF;
+  text-shadow: none; }
+
+::selection {
+  background: #7FDBFF;
+  color: #FFFFFF;
+  text-shadow: none; }
+
+::-moz-selection {
+  background: #7FDBFF;
+  color: #FFFFFF;
+  text-shadow: none; }
+
+a, a:visited {
+  text-decoration: none;
+  color: #0074D9; }
+  a:hover, a:focus, a:visited:hover, a:visited:focus {
+    color: #005299;
+    text-decoration: underline; }
 
 /* --------------------------------------------------------------
 	3.  UTILITIES
@@ -904,6 +903,83 @@ td, th {
   margin-top: 10px;
   margin-bottom: 10px; }
 
+/* NEGATIVE */
+/* all */
+.manl {
+  margin: -40px; }
+
+.manm {
+  margin: -20px; }
+
+.mans {
+  margin: -10px; }
+
+/* top */
+.mtnl {
+  margin-top: -40px; }
+
+.mtnm {
+  margin-top: -20px; }
+
+.mtns {
+  margin-top: -10px; }
+
+/* bottom */
+.mbnl {
+  margin-bottom: -40px; }
+
+.mbnm {
+  margin-bottom: -20px; }
+
+.mbns {
+  margin-bottom: -10px; }
+
+/* right */
+.mrnl {
+  margin-right: -40px; }
+
+.mrnm {
+  margin-right: -20px; }
+
+.mrns {
+  margin-right: -10px; }
+
+/* left */
+.mlnl {
+  margin-left: -40px; }
+
+.mlnm {
+  margin-left: -20px; }
+
+.mlns {
+  margin-left: -10px; }
+
+/* margin x */
+.mxnl {
+  margin-left: -40px;
+  margin-right: -40px; }
+
+.mxnm {
+  margin-left: -20px;
+  margin-right: -20px; }
+
+.mxns {
+  margin-left: -10px;
+  margin-right: -10px; }
+
+/* margin y */
+.mynl {
+  margin-top: -40px;
+  margin-bottom: -40px; }
+
+.mynm {
+  margin-top: -20px;
+  margin-bottom: -20px; }
+
+.myns {
+  margin-top: -10px;
+  margin-bottom: -10px; }
+
 /* all */
 .mal-xs {
   margin: 40px; }
@@ -980,6 +1056,83 @@ td, th {
   margin-top: 10px;
   margin-bottom: 10px; }
 
+/* NEGATIVE */
+/* all */
+.manl-xs {
+  margin: -40px; }
+
+.manm-xs {
+  margin: -20px; }
+
+.mans-xs {
+  margin: -10px; }
+
+/* top */
+.mtnl-xs {
+  margin-top: -40px; }
+
+.mtnm-xs {
+  margin-top: -20px; }
+
+.mtns-xs {
+  margin-top: -10px; }
+
+/* bottom */
+.mbnl-xs {
+  margin-bottom: -40px; }
+
+.mbnm-xs {
+  margin-bottom: -20px; }
+
+.mbns-xs {
+  margin-bottom: -10px; }
+
+/* right */
+.mrnl-xs {
+  margin-right: -40px; }
+
+.mrnm-xs {
+  margin-right: -20px; }
+
+.mrns-xs {
+  margin-right: -10px; }
+
+/* left */
+.mlnl-xs {
+  margin-left: -40px; }
+
+.mlnm-xs {
+  margin-left: -20px; }
+
+.mlns-xs {
+  margin-left: -10px; }
+
+/* margin x */
+.mxnl-xs {
+  margin-left: -40px;
+  margin-right: -40px; }
+
+.mxnm-xs {
+  margin-left: -20px;
+  margin-right: -20px; }
+
+.mxns-xs {
+  margin-left: -10px;
+  margin-right: -10px; }
+
+/* margin y */
+.mynl-xs {
+  margin-top: -40px;
+  margin-bottom: -40px; }
+
+.mynm-xs {
+  margin-top: -20px;
+  margin-bottom: -20px; }
+
+.myns-xs {
+  margin-top: -10px;
+  margin-bottom: -10px; }
+
 @media (min-width: 768px) {
   /* all */
   .mal-sm {
@@ -1035,7 +1188,63 @@ td, th {
     margin-bottom: 20px; }
   .mys-sm {
     margin-top: 10px;
-    margin-bottom: 10px; } }
+    margin-bottom: 10px; }
+  /* NEGATIVE */
+  /* all */
+  .manl-sm {
+    margin: -40px; }
+  .manm-sm {
+    margin: -20px; }
+  .mans-sm {
+    margin: -10px; }
+  /* top */
+  .mtnl-sm {
+    margin-top: -40px; }
+  .mtnm-sm {
+    margin-top: -20px; }
+  .mtns-sm {
+    margin-top: -10px; }
+  /* bottom */
+  .mbnl-sm {
+    margin-bottom: -40px; }
+  .mbnm-sm {
+    margin-bottom: -20px; }
+  .mbns-sm {
+    margin-bottom: -10px; }
+  /* right */
+  .mrnl-sm {
+    margin-right: -40px; }
+  .mrnm-sm {
+    margin-right: -20px; }
+  .mrns-sm {
+    margin-right: -10px; }
+  /* left */
+  .mlnl-sm {
+    margin-left: -40px; }
+  .mlnm-sm {
+    margin-left: -20px; }
+  .mlns-sm {
+    margin-left: -10px; }
+  /* margin x */
+  .mxnl-sm {
+    margin-left: -40px;
+    margin-right: -40px; }
+  .mxnm-sm {
+    margin-left: -20px;
+    margin-right: -20px; }
+  .mxns-sm {
+    margin-left: -10px;
+    margin-right: -10px; }
+  /* margin y */
+  .mynl-sm {
+    margin-top: -40px;
+    margin-bottom: -40px; }
+  .mynm-sm {
+    margin-top: -20px;
+    margin-bottom: -20px; }
+  .myns-sm {
+    margin-top: -10px;
+    margin-bottom: -10px; } }
 
 @media (min-width: 992px) {
   /* all */
@@ -1092,7 +1301,63 @@ td, th {
     margin-bottom: 20px; }
   .mys-md {
     margin-top: 10px;
-    margin-bottom: 10px; } }
+    margin-bottom: 10px; }
+  /* NEGATIVE */
+  /* all */
+  .manl-md {
+    margin: -40px; }
+  .manm-md {
+    margin: -20px; }
+  .mans-md {
+    margin: -10px; }
+  /* top */
+  .mtnl-md {
+    margin-top: -40px; }
+  .mtnm-md {
+    margin-top: -20px; }
+  .mtns-md {
+    margin-top: -10px; }
+  /* bottom */
+  .mbnl-md {
+    margin-bottom: -40px; }
+  .mbnm-md {
+    margin-bottom: -20px; }
+  .mbns-md {
+    margin-bottom: -10px; }
+  /* right */
+  .mrnl-md {
+    margin-right: -40px; }
+  .mrnm-md {
+    margin-right: -20px; }
+  .mrns-md {
+    margin-right: -10px; }
+  /* left */
+  .mlnl-md {
+    margin-left: -40px; }
+  .mlnm-md {
+    margin-left: -20px; }
+  .mlns-md {
+    margin-left: -10px; }
+  /* margin x */
+  .mxnl-md {
+    margin-left: -40px;
+    margin-right: -40px; }
+  .mxnm-md {
+    margin-left: -20px;
+    margin-right: -20px; }
+  .mxns-md {
+    margin-left: -10px;
+    margin-right: -10px; }
+  /* margin y */
+  .mynl-md {
+    margin-top: -40px;
+    margin-bottom: -40px; }
+  .mynm-md {
+    margin-top: -20px;
+    margin-bottom: -20px; }
+  .myns-md {
+    margin-top: -10px;
+    margin-bottom: -10px; } }
 
 @media (min-width: 1200px) {
   /* all */
@@ -1149,7 +1414,63 @@ td, th {
     margin-bottom: 20px; }
   .mys-lg {
     margin-top: 10px;
-    margin-bottom: 10px; } }
+    margin-bottom: 10px; }
+  /* NEGATIVE */
+  /* all */
+  .manl-lg {
+    margin: -40px; }
+  .manm-lg {
+    margin: -20px; }
+  .mans-lg {
+    margin: -10px; }
+  /* top */
+  .mtnl-lg {
+    margin-top: -40px; }
+  .mtnm-lg {
+    margin-top: -20px; }
+  .mtns-lg {
+    margin-top: -10px; }
+  /* bottom */
+  .mbnl-lg {
+    margin-bottom: -40px; }
+  .mbnm-lg {
+    margin-bottom: -20px; }
+  .mbns-lg {
+    margin-bottom: -10px; }
+  /* right */
+  .mrnl-lg {
+    margin-right: -40px; }
+  .mrnm-lg {
+    margin-right: -20px; }
+  .mrns-lg {
+    margin-right: -10px; }
+  /* left */
+  .mlnl-lg {
+    margin-left: -40px; }
+  .mlnm-lg {
+    margin-left: -20px; }
+  .mlns-lg {
+    margin-left: -10px; }
+  /* margin x */
+  .mxnl-lg {
+    margin-left: -40px;
+    margin-right: -40px; }
+  .mxnm-lg {
+    margin-left: -20px;
+    margin-right: -20px; }
+  .mxns-lg {
+    margin-left: -10px;
+    margin-right: -10px; }
+  /* margin y */
+  .mynl-lg {
+    margin-top: -40px;
+    margin-bottom: -40px; }
+  .mynm-lg {
+    margin-top: -20px;
+    margin-bottom: -20px; }
+  .myns-lg {
+    margin-top: -10px;
+    margin-bottom: -10px; } }
 
 .bn.bn {
   border-style: solid;
@@ -1343,6 +1664,399 @@ td, th {
   .bdl-lg {
     border-left-style: dotted;
     border-left-width: 1px; } }
+
+.bg-navy {
+  background: #001F3F; }
+
+.bg-blue {
+  background: #0074D9; }
+
+.bg-aqua {
+  background: #7FDBFF; }
+
+.bg-olive {
+  background: #3D9970; }
+
+.bg-green {
+  background: #2ECC40; }
+
+.bg-lime {
+  background: #01FF70; }
+
+.bg-yellow {
+  background: #f0ad4e; }
+
+.bg-orange {
+  background: #FF851B; }
+
+.bg-red {
+  background: #FF4136; }
+
+.bg-maroon {
+  background: #85144B; }
+
+.bg-purple {
+  background: #B10DC9; }
+
+.bg-white {
+  background: #FFFFFF; }
+
+.bg-silver {
+  background: #DDDDDD; }
+
+.bg-gray {
+  background: #AAAAAA; }
+
+.bg-black {
+  background: #16161d; }
+
+.bg-navy-xs {
+  background: #001F3F; }
+
+.bg-blue-xs {
+  background: #0074D9; }
+
+.bg-aqua-xs {
+  background: #7FDBFF; }
+
+.bg-olive-xs {
+  background: #3D9970; }
+
+.bg-green-xs {
+  background: #2ECC40; }
+
+.bg-lime-xs {
+  background: #01FF70; }
+
+.bg-yellow-xs {
+  background: #f0ad4e; }
+
+.bg-orange-xs {
+  background: #FF851B; }
+
+.bg-red-xs {
+  background: #FF4136; }
+
+.bg-maroon-xs {
+  background: #85144B; }
+
+.bg-purple-xs {
+  background: #B10DC9; }
+
+.bg-white-xs {
+  background: #FFFFFF; }
+
+.bg-silver-xs {
+  background: #DDDDDD; }
+
+.bg-gray-xs {
+  background: #AAAAAA; }
+
+.bg-black-xs {
+  background: #16161d; }
+
+@media (min-width: 768px) {
+  .bg-navy-sm {
+    background: #001F3F; }
+  .bg-blue-sm {
+    background: #0074D9; }
+  .bg-aqua-sm {
+    background: #7FDBFF; }
+  .bg-olive-sm {
+    background: #3D9970; }
+  .bg-green-sm {
+    background: #2ECC40; }
+  .bg-lime-sm {
+    background: #01FF70; }
+  .bg-yellow-sm {
+    background: #f0ad4e; }
+  .bg-orange-sm {
+    background: #FF851B; }
+  .bg-red-sm {
+    background: #FF4136; }
+  .bg-maroon-sm {
+    background: #85144B; }
+  .bg-purple-sm {
+    background: #B10DC9; }
+  .bg-white-sm {
+    background: #FFFFFF; }
+  .bg-silver-sm {
+    background: #DDDDDD; }
+  .bg-gray-sm {
+    background: #AAAAAA; }
+  .bg-black-sm {
+    background: #16161d; } }
+
+@media (min-width: 992px) {
+  .bg-navy-md {
+    background: #001F3F; }
+  .bg-blue-md {
+    background: #0074D9; }
+  .bg-aqua-md {
+    background: #7FDBFF; }
+  .bg-olive-md {
+    background: #3D9970; }
+  .bg-green-md {
+    background: #2ECC40; }
+  .bg-lime-md {
+    background: #01FF70; }
+  .bg-yellow-md {
+    background: #f0ad4e; }
+  .bg-orange-md {
+    background: #FF851B; }
+  .bg-red-md {
+    background: #FF4136; }
+  .bg-maroon-md {
+    background: #85144B; }
+  .bg-purple-md {
+    background: #B10DC9; }
+  .bg-white-md {
+    background: #FFFFFF; }
+  .bg-silver-md {
+    background: #DDDDDD; }
+  .bg-gray-md {
+    background: #AAAAAA; }
+  .bg-black-md {
+    background: #16161d; } }
+
+@media (min-width: 1200px) {
+  .bg-navy-lg {
+    background: #001F3F; }
+  .bg-blue-lg {
+    background: #0074D9; }
+  .bg-aqua-lg {
+    background: #7FDBFF; }
+  .bg-olive-lg {
+    background: #3D9970; }
+  .bg-green-lg {
+    background: #2ECC40; }
+  .bg-lime-lg {
+    background: #01FF70; }
+  .bg-yellow-lg {
+    background: #f0ad4e; }
+  .bg-orange-lg {
+    background: #FF851B; }
+  .bg-red-lg {
+    background: #FF4136; }
+  .bg-maroon-lg {
+    background: #85144B; }
+  .bg-purple-lg {
+    background: #B10DC9; }
+  .bg-white-lg {
+    background: #FFFFFF; }
+  .bg-silver-lg {
+    background: #DDDDDD; }
+  .bg-gray-lg {
+    background: #AAAAAA; }
+  .bg-black-lg {
+    background: #16161d; } }
+
+.navy {
+  color: #001F3F; }
+
+.blue {
+  color: #0074D9; }
+
+.aqua {
+  color: #7FDBFF; }
+
+.olive {
+  color: #3D9970; }
+
+.green {
+  color: #2ECC40; }
+
+.lime {
+  color: #01FF70; }
+
+.yellow {
+  color: #f0ad4e; }
+
+.orange {
+  color: #FF851B; }
+
+.red {
+  color: #FF4136; }
+
+.maroon {
+  color: #85144B; }
+
+.purple {
+  color: #B10DC9; }
+
+.white {
+  color: #FFFFFF; }
+
+.silver {
+  color: #DDDDDD; }
+
+.gray {
+  color: #AAAAAA; }
+
+.black {
+  color: #16161d; }
+
+.navy-xs {
+  color: #001F3F; }
+
+.blue-xs {
+  color: #0074D9; }
+
+.aqua-xs {
+  color: #7FDBFF; }
+
+.olive-xs {
+  color: #3D9970; }
+
+.green-xs {
+  color: #2ECC40; }
+
+.lime-xs {
+  color: #01FF70; }
+
+.yellow-xs {
+  color: #f0ad4e; }
+
+.orange-xs {
+  color: #FF851B; }
+
+.red-xs {
+  color: #FF4136; }
+
+.maroon-xs {
+  color: #85144B; }
+
+.purple-xs {
+  color: #B10DC9; }
+
+.white-xs {
+  color: #FFFFFF; }
+
+.silver-xs {
+  color: #DDDDDD; }
+
+.gray-xs {
+  color: #AAAAAA; }
+
+.black-xs {
+  color: #16161d; }
+
+@media (min-width: 768px) {
+  .navy-sm {
+    color: #001F3F; }
+  .blue-sm {
+    color: #0074D9; }
+  .aqua-sm {
+    color: #7FDBFF; }
+  .olive-sm {
+    color: #3D9970; }
+  .green-sm {
+    color: #2ECC40; }
+  .lime-sm {
+    color: #01FF70; }
+  .yellow-sm {
+    color: #f0ad4e; }
+  .orange-sm {
+    color: #FF851B; }
+  .red-sm {
+    color: #FF4136; }
+  .maroon-sm {
+    color: #85144B; }
+  .purple-sm {
+    color: #B10DC9; }
+  .white-sm {
+    color: #FFFFFF; }
+  .silver-sm {
+    color: #DDDDDD; }
+  .gray-sm {
+    color: #AAAAAA; }
+  .black-sm {
+    color: #16161d; } }
+
+@media (min-width: 992px) {
+  .navy-md {
+    color: #001F3F; }
+  .blue-md {
+    color: #0074D9; }
+  .aqua-md {
+    color: #7FDBFF; }
+  .olive-md {
+    color: #3D9970; }
+  .green-md {
+    color: #2ECC40; }
+  .lime-md {
+    color: #01FF70; }
+  .yellow-md {
+    color: #f0ad4e; }
+  .orange-md {
+    color: #FF851B; }
+  .red-md {
+    color: #FF4136; }
+  .maroon-md {
+    color: #85144B; }
+  .purple-md {
+    color: #B10DC9; }
+  .white-md {
+    color: #FFFFFF; }
+  .silver-md {
+    color: #DDDDDD; }
+  .gray-md {
+    color: #AAAAAA; }
+  .black-md {
+    color: #16161d; } }
+
+@media (min-width: 1200px) {
+  .navy-lg {
+    color: #001F3F; }
+  .blue-lg {
+    color: #0074D9; }
+  .aqua-lg {
+    color: #7FDBFF; }
+  .olive-lg {
+    color: #3D9970; }
+  .green-lg {
+    color: #2ECC40; }
+  .lime-lg {
+    color: #01FF70; }
+  .yellow-lg {
+    color: #f0ad4e; }
+  .orange-lg {
+    color: #FF851B; }
+  .red-lg {
+    color: #FF4136; }
+  .maroon-lg {
+    color: #85144B; }
+  .purple-lg {
+    color: #B10DC9; }
+  .white-lg {
+    color: #FFFFFF; }
+  .silver-lg {
+    color: #DDDDDD; }
+  .gray-lg {
+    color: #AAAAAA; }
+  .black-lg {
+    color: #16161d; } }
+
+.rounded {
+  border-radius: 3px; }
+
+.circle {
+  border-radius: 50%; }
+
+.rounded-top {
+  border-radius: 3px 3px 0 0; }
+
+.rounded-right {
+  border-radius: 0 3px 3px 0; }
+
+.rounded-bottom {
+  border-radius: 0 0 3px 3px; }
+
+.rounded-left {
+  border-radius: 3px 0 0 3px; }
+
+.not-rounded {
+  border-radius: 0; }
 
 /* --------------------------------------------------------------
 	3.  ATOMS/PARTIALS
@@ -1641,7 +2355,7 @@ ul, ol {
 label {
   display: inline-block;
   max-width: 100%;
-  font-weight: 600; }
+  font-weight: 500; }
 
 /* --------------------------------------------------------------
 		6. HELP CLASSES
@@ -2434,7 +3148,7 @@ a img.aligncenter {
   font-size: 90%; }
 
 .ingress {
-  font-weight: 700; }
+  font-weight: 600; }
 
 img + p.caption-special {
   font-size: 90%;

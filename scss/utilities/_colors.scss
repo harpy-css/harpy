@@ -1,0 +1,80 @@
+@mixin harpyHelpers($suffix: false) {
+	@if($suffix) {
+		$suffix: -#{$suffix};
+	} @else {
+		$suffix: unquote('');
+	}
+
+	.navy#{$suffix} {
+		color: $navy;
+	}
+
+	.blue#{$suffix} {
+		color: $blue;
+	}
+
+	.aqua#{$suffix} {
+		color: $aqua;
+	}
+
+	.olive#{$suffix} {
+		color: $olive;
+	}
+
+	.green#{$suffix} {
+		color: $green;
+	}
+
+	.lime#{$suffix} {
+		color: $lime;
+	}
+	
+	.yellow#{$suffix} {
+		color: $yellow;
+	}
+
+	.orange#{$suffix} {
+		color: $orange;
+	}
+	
+	.red#{$suffix} {
+		color: $red;
+	}
+
+	.maroon#{$suffix} {
+		color: $maroon;
+	}
+
+	.purple#{$suffix} {
+		color: $purple;
+	}
+
+	.white#{$suffix} {
+		color: $white;
+	}
+
+	.silver#{$suffix} {
+		color: $silver;
+	}
+
+	.gray#{$suffix} {
+		color: $gray;
+	}
+
+	.black#{$suffix} {
+		color: $black;
+	}
+}
+
+
+@include harpyHelpers();
+@include harpyHelpers('xs');
+@media (min-width: $screen-sm-min) {
+	@include harpyHelpers('sm');
+}
+@media (min-width: $screen-md-min) {
+	@include harpyHelpers('md');
+}
+@media (min-width: $screen-lg-min) {
+	@include harpyHelpers('lg');
+}

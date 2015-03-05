@@ -16,6 +16,5 @@
 @mixin avenirHeadings() {
 	font-family: 'Avenir Next';
 	text-transform: uppercase;
-	font-weight: $fontNormal;
-	letter-spacing: .5px;
+	letter-spacing: 2px;
 }

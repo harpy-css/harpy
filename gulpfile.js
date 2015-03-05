@@ -5,8 +5,12 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     uglify = require('gulp-uglify'),
     plumber = require('gulp-plumber'),
+    size = require('gulp-size'),
+    gzip = require('gulp-gzip'),
     notify = require("gulp-notify");
 
+
+// Server
 gulp.task('express', function() {
 	var express = require('express');
 	var app = express();
@@ -15,6 +19,7 @@ gulp.task('express', function() {
 	app.listen(4000);
 });
 
+// Livereload
 var tinylr;
 gulp.task('livereload', function() {
 	tinylr = require('tiny-lr')();
@@ -31,6 +36,7 @@ function notifyLiveReload(event) {
   });
 }
 
+// JS
 gulp.task('compress', function() {
   gulp.src('js/*.js')
     .pipe(uglify())
@@ -38,6 +44,7 @@ gulp.task('compress', function() {
     .pipe(notify("JS minified"));
 });
 
+// SCSS
 gulp.task('styles', function() {
 	return gulp.src('scss/harpy.scss')
 	.pipe(sass({ style: 'expanded' }))
@@ -46,10 +53,16 @@ gulp.task('styles', function() {
 	.pipe(rename({suffix: '.min'}))
 	.pipe(minifycss())
 	.pipe(gulp.dest('css'))
+	.pipe(size({gzip: false, showFiles: true}))
+	.pipe(size({gzip: true, showFiles: true}))
+
+	.pipe(gzip())
+	.pipe(gulp.dest('css'))
 	
 	.pipe(notify("SCSS minified"));
 });
 
+// Watch
 gulp.task('watch', function() {
 	gulp.watch('scss/**/*.scss', ['styles']);
 	gulp.watch('js/*.js', ['compress']);
@@ -57,4 +70,9 @@ gulp.task('watch', function() {
 	gulp.watch('css/*.css', notifyLiveReload);
 });
 
+gulp.task('production', function() {
+	console.log('Production')
+});
+
+// Defaults
 gulp.task('default', ['styles', 'express', 'livereload', 'watch'], function() {});

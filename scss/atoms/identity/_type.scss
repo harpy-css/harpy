@@ -16,7 +16,7 @@ h4,
 .h2,
 .h3,
 .h4 {
-  margin: 14px 0; 
+  margin: $baseMargin 0 $baseMargin/4 0; 
   line-height: 1;
 }
 
@@ -63,6 +63,7 @@ p,
   line-height: $baseLineHeight;
   display: block;
   margin: 0 0 16px 0;
+  
 
   &:last-child {
     margin: 0;

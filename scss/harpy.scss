@@ -42,6 +42,7 @@
 		som projektet görs för.
 -------------------------------------------------------------- */
 
+	@import 'atoms/base/normalize';
 	@import 'atoms/identity/colors';
 	@import 'atoms/identity/settings';
 	@import 'atoms/identity/fonts';
@@ -61,15 +62,17 @@
 -------------------------------------------------------------- */
 
 	@import 'atoms/base/base';
-	@import 'atoms/base/normalize';
-
+	
 /* --------------------------------------------------------------
 	3.  UTILITIES
 -------------------------------------------------------------- */
 	
-	@import 'utilities/_padding';
-	@import 'utilities/_margin';
-	@import 'utilities/_borders';
+	@import 'utilities/padding';
+	@import 'utilities/margin';
+	@import 'utilities/borders';
+	@import 'utilities/backgrounds';
+	@import 'utilities/colors';
+	@import 'utilities/border-radius';
 
 /* --------------------------------------------------------------
 	3.  ATOMS/PARTIALS

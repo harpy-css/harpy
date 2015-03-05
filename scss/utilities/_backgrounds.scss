@@ -1,0 +1,80 @@
+@mixin harpyHelpers($suffix: false) {
+	@if($suffix) {
+		$suffix: -#{$suffix};
+	} @else {
+		$suffix: unquote('');
+	}
+
+	.bg-navy#{$suffix} {
+		background: $navy;
+	}
+
+	.bg-blue#{$suffix} {
+		background: $blue;
+	}
+
+	.bg-aqua#{$suffix} {
+		background: $aqua;
+	}
+
+	.bg-olive#{$suffix} {
+		background: $olive;
+	}
+
+	.bg-green#{$suffix} {
+		background: $green;
+	}
+
+	.bg-lime#{$suffix} {
+		background: $lime;
+	}
+	
+	.bg-yellow#{$suffix} {
+		background: $yellow;
+	}
+
+	.bg-orange#{$suffix} {
+		background: $orange;
+	}
+	
+	.bg-red#{$suffix} {
+		background: $red;
+	}
+
+	.bg-maroon#{$suffix} {
+		background: $maroon;
+	}
+
+	.bg-purple#{$suffix} {
+		background: $purple;
+	}
+
+	.bg-white#{$suffix} {
+		background: $white;
+	}
+
+	.bg-silver#{$suffix} {
+		background: $silver;
+	}
+
+	.bg-gray#{$suffix} {
+		background: $gray;
+	}
+
+	.bg-black#{$suffix} {
+		background: $black;
+	}
+}
+
+
+@include harpyHelpers();
+@include harpyHelpers('xs');
+@media (min-width: $screen-sm-min) {
+	@include harpyHelpers('sm');
+}
+@media (min-width: $screen-md-min) {
+	@include harpyHelpers('md');
+}
+@media (min-width: $screen-lg-min) {
+	@include harpyHelpers('lg');
+}
