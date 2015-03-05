@@ -7,6 +7,12 @@
 .ingress {
 	font-weight: $fontBolder;
 	color: $ingressColor;
+	margin-bottom: 0;
+}
+
+.small-caps {
+	text-transform: uppercase;
+	font-size: $baseFontSize - 3px;
 }
 
 img + p.caption-special {

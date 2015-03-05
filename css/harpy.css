@@ -464,7 +464,7 @@ body {
 
 h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
   margin: 20px 0 5px 0;
-  line-height: 1;
+  line-height: 1.3;
   color: #16161d; }
 
 h1, h2, h3, h4 {
@@ -3067,8 +3067,13 @@ a img.aligncenter {
   font-size: 90%; }
 
 .ingress {
-  font-weight: 600;
-  color: #16161d; }
+  font-weight: 500;
+  color: #16161d;
+  margin-bottom: 0; }
+
+.small-caps {
+  text-transform: uppercase;
+  font-size: 15px; }
 
 img + p.caption-special {
   font-size: 90%;
