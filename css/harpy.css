@@ -3107,10 +3107,8 @@ p + p.indent {
     display: inline-block;
     padding: 20px 0;
     float: left; }
-    .site-header .brand a, .site-header-inverse .brand a, .site-header .brand a:visited, .site-header-inverse .brand a:visited {
-      color: #0074D9; }
-      .site-header .brand a:hover, .site-header-inverse .brand a:hover, .site-header .brand a:visited:hover, .site-header-inverse .brand a:visited:hover {
-        color: #005299; }
+    .site-header .brand a:hover, .site-header-inverse .brand a:hover, .site-header .brand a:visited:hover, .site-header-inverse .brand a:visited:hover {
+      color: #005299; }
   .site-header nav, .site-header-inverse nav {
     width: 70%;
     display: inline-block;
@@ -3119,10 +3117,8 @@ p + p.indent {
       float: right; }
       .site-header nav ul li, .site-header-inverse nav ul li {
         margin: 0 0 0 20px; }
-        .site-header nav ul li a, .site-header-inverse nav ul li a, .site-header nav ul li a:visited, .site-header-inverse nav ul li a:visited {
-          color: #0074D9; }
-          .site-header nav ul li a:hover, .site-header-inverse nav ul li a:hover, .site-header nav ul li a:visited:hover, .site-header-inverse nav ul li a:visited:hover {
-            color: #005299; }
+        .site-header nav ul li a:hover, .site-header-inverse nav ul li a:hover, .site-header nav ul li a:visited:hover, .site-header-inverse nav ul li a:visited:hover {
+          color: #005299; }
         .site-header nav ul li .btn, .site-header-inverse nav ul li .btn, .site-header nav ul li .btn-lg, .site-header-inverse nav ul li .btn-lg, .site-header nav ul li .btn-md, .site-header-inverse nav ul li .btn-md {
           width: 100px; }
 

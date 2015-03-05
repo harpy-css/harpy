@@ -20,7 +20,6 @@
 		float: left;
 		
 		a, a:visited {
-			color: $primaryColor;
 			&:hover {
 				color: $linkHoverColor;
 			}
@@ -39,7 +38,6 @@
 				margin: 0 0 0 $baseMargin;
 
 				a, a:visited {
-					color: $primaryColor;
 					&:hover {
 						color: $linkHoverColor;
 					}
