@@ -1,5 +1,5 @@
 /* --------------------------------------------------------------
-		6. HELP CLASSES
+		HELPERS
 -------------------------------------------------------------- */
 
 .np {padding: 0 !important}
@@ -9,8 +9,8 @@
 .fr {float: right}
 .fn {float: none}
 
-.pull-right {float: right !important;}
-.pull-left {float: left !important; }
+.pull-right {float: right;}
+.pull-left {float: left; }
 
 .block {display: block}
 .inline {display: inline}
@@ -26,62 +26,9 @@
 .visible {visibility: visible}
 .notvisible {visibility: hidden}
 
-.strong {font-weight: bold}
+.strong, .bold {font-weight: bold}
 .italic {font-style: italic}
 
 .uppercase {text-transform: uppercase}
 .lowercase {text-transform: lowecase}
 .capitalize {text-transform: capitalize}
-
-@media (max-width: $screen-md-min) {
-
-	.md-fl {float: left}
-	.md-fr {float: right}
-	.md-fn {float: none}
-
-	.md-tc {text-align: center}
-	.md-tl {text-align: left}
-	.md-tr {text-align: right}
-
-	.md-hidden {display: none}
-	.md-nothidden {display: block}
-
-	.md-visible {visibility: visible}
-	.md-notvisible {visibility: hidden}
-}
-
-@media (max-width: $screen-sm-min) {
-
-	.sm-fl {float: left}
-	.sm-fr {float: right}
-	.sm-fn {float: none}
-
-	.sm-tc {text-align: center}
-	.sm-tl {text-align: left}
-	.sm-tr {text-align: right}
-
-	.sm-hidden {display: none}
-	.sm-nothidden {display: block}
-
-	.sm-visible {visibility: visible}
-	.sm-notvisible {visibility: hidden}
-}
-
-@media (max-width: $screen-xs-min) {
-
-	.xs-fl {float: left}
-	.xs-fr {float: right}
-	.xs-fn {float: none}
-
-	.xs-tc {text-align: center}
-	.xs-tl {text-align: left}
-	.xs-tr {text-align: right}
-
-	.xs-hidden {display: none}
-	.xs-nothidden {display: block}
-
-	.xs-visible {visibility: visible}
-	.xs-notvisible {visibility: hidden}
-	.xs-mb0 {margin-bottom: 0}
-
-}

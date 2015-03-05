@@ -2345,7 +2345,7 @@ label {
   font-weight: 500; }
 
 /* --------------------------------------------------------------
-		6. HELP CLASSES
+		HELPERS
 -------------------------------------------------------------- */
 .np {
   padding: 0 !important; }
@@ -2363,10 +2363,10 @@ label {
   float: none; }
 
 .pull-right {
-  float: right !important; }
+  float: right; }
 
 .pull-left {
-  float: left !important; }
+  float: left; }
 
 .block {
   display: block; }
@@ -2398,7 +2398,7 @@ label {
 .notvisible {
   visibility: hidden; }
 
-.strong {
+.strong, .bold {
   font-weight: bold; }
 
 .italic {
@@ -2412,74 +2412,6 @@ label {
 
 .capitalize {
   text-transform: capitalize; }
-
-@media (max-width: 992px) {
-  .md-fl {
-    float: left; }
-  .md-fr {
-    float: right; }
-  .md-fn {
-    float: none; }
-  .md-tc {
-    text-align: center; }
-  .md-tl {
-    text-align: left; }
-  .md-tr {
-    text-align: right; }
-  .md-hidden {
-    display: none; }
-  .md-nothidden {
-    display: block; }
-  .md-visible {
-    visibility: visible; }
-  .md-notvisible {
-    visibility: hidden; } }
-
-@media (max-width: 768px) {
-  .sm-fl {
-    float: left; }
-  .sm-fr {
-    float: right; }
-  .sm-fn {
-    float: none; }
-  .sm-tc {
-    text-align: center; }
-  .sm-tl {
-    text-align: left; }
-  .sm-tr {
-    text-align: right; }
-  .sm-hidden {
-    display: none; }
-  .sm-nothidden {
-    display: block; }
-  .sm-visible {
-    visibility: visible; }
-  .sm-notvisible {
-    visibility: hidden; } }
-
-@media (max-width: 480px) {
-  .xs-fl {
-    float: left; }
-  .xs-fr {
-    float: right; }
-  .xs-fn {
-    float: none; }
-  .xs-tc {
-    text-align: center; }
-  .xs-tl {
-    text-align: left; }
-  .xs-tr {
-    text-align: right; }
-  .xs-hidden {
-    display: none; }
-  .xs-nothidden {
-    display: block; }
-  .xs-visible {
-    visibility: visible; }
-  .xs-notvisible {
-    visibility: hidden; }
-  .xs-mb0 {
-    margin-bottom: 0; } }
 
 /* --------------------------------------------------------------
 	4.  MOLECULES/LAYOUT
@@ -3225,6 +3157,9 @@ footer, .sticky-footer footer {
   bottom: 0;
   width: 100%;
   height: 60px; }
+
+.jumbotron {
+  padding-top: 80px; }
 
 /* --------------------------------------------------------------
 	7.  SITE
