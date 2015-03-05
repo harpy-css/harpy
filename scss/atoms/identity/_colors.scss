@@ -20,6 +20,7 @@ $purple: 		#B10DC9;
 $white: 		#FFFFFF;
 $silver: 		#DDDDDD;
 $gray: 			#AAAAAA;
+$textGray:      #616367;
 $black: 		#16161d;
 
 $facebookColor:		#3b5998;
@@ -29,7 +30,7 @@ $vimeoColor:		#1ab7ea;
 		COLORS — VARIABLES
 -------------------------------------------------------------- */
 
-$primaryColor:      $aqua;
+$primaryColor:      $blue;
 $secondaryColor:    $yellow;
 
 $linkColor:			$blue;
@@ -38,7 +39,9 @@ $linkHoverColor:	darken($blue, 12.5%);
 $selectionColor:		$white;
 $selectionBackground: 	$primaryColor;
 
-$textColor:			$black;
+$textColor:			$textGray;
+$headingColor:      $black;
+$ingressColor:      $black;
 
 $btnColor:			$gray;
 $btnColorSuccess:	$green;

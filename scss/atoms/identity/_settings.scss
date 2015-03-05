@@ -13,7 +13,7 @@ $btnPaddning: 8px 14px;
 $btnPaddningMd: 10px 12px;
 $btnPaddingLg: 12px 18px;
 
-$inputPaddning: 12px 18px;
+$inputPaddning: 8px 18px;
 
 /*----------------------------------------------------------------
 		BREAKPOINTS/GRID
@@ -40,19 +40,20 @@ $grid-gutter-width: $basePadding;
 		TYPOGRAPHY
 -------------------------------------------------------------- */
 
-$primaryFont: Avenir;
+$primaryFont: Fakt;
 $secondaryFont: sans-serif;
 
 $baseFontSize: 18px;
-$baseLineHeight: 130%;
+$baseBtnFontSize: 16px;
+$baseLineHeight: 140%;
 
 $fontH1: 32px;
 $fontH2: 24px;
-$fontH3: 16px;
-$fontH4: 15px;
+$fontH3: 14px;
+$fontH4: 16px;
 
 $fontThin: 200;
-$fontNormal: 400;
+$fontNormal: 300;
 $fontBold: 500;
 $fontBolder: 600;
 

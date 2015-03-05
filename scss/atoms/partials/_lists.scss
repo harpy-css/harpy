@@ -1,6 +1,7 @@
 ul, ol {
 	padding-left: 20px;
 	font-size: $baseFontSize;
+	font-weight: $fontNormal;
 
 	&.reset {
 		padding-left: 0;
@@ -26,7 +27,7 @@ ul, ol {
 	}
 
 	li ~ ul, li ~ ol, li > ul {
-		margin-bottom: $baseMargin/2;
+		margin-bottom: $baseMargin/3;
 	}
 
 }

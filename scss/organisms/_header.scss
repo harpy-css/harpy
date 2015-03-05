@@ -19,7 +19,8 @@
 		padding: $basePadding 0;
 		float: left;
 		
-		a {
+		a, a:visited {
+			color: $primaryColor;
 			&:hover {
 				color: $linkHoverColor;
 			}
@@ -37,7 +38,8 @@
 			li {
 				margin: 0 0 0 $baseMargin;
 
-				a {
+				a, a:visited {
+					color: $primaryColor;
 					&:hover {
 						color: $linkHoverColor;
 					}

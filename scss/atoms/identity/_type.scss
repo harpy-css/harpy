@@ -18,6 +18,7 @@ h4,
 .h4 {
   margin: $baseMargin 0 $baseMargin/4 0; 
   line-height: 1;
+  color: $headingColor;
 }
 
 h1,
@@ -61,6 +62,7 @@ p,
 .p {
   font-size: $baseFontSize;
   line-height: $baseLineHeight;
+  font-weight: $fontNormal;
   display: block;
   margin: 0 0 16px 0;
   

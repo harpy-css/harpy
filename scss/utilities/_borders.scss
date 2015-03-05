@@ -67,13 +67,15 @@
 
 
 @include harpyHelpers();
-@include harpyHelpers('xs');
-@media (min-width: $screen-sm-min) {
+@media (max-width: $screen-xs-min) {
+	@include harpyHelpers('xs');
+}
+@media (max-width: $screen-sm-min) {
 	@include harpyHelpers('sm');
 }
-@media (min-width: $screen-md-min) {
+@media (max-width: $screen-md-min) {
 	@include harpyHelpers('md');
 }
-@media (min-width: $screen-lg-min) {
+@media (max-width: $screen-lg-min) {
 	@include harpyHelpers('lg');
 }
