@@ -482,7 +482,7 @@ h2, .h2 {
 
 h3, .h3 {
   font-size: 14px;
-  font-family: 'Avenir Next';
+  font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 2px; }
 
@@ -2075,40 +2075,40 @@ a, a:visited {
 .btn-md {
   padding: 10px 12px; }
 
-.btn-primary, .btn-primary:hover {
+.btn-primary, .btn-primary:hover, .btn-primary:visited:hover, .btn-primary:visited {
   background: #0074D9;
   color: #FFFFFF;
   border: 1px solid #0074D9; }
-  .btn-primary:hover {
+  .btn-primary:hover, .btn-primary:hover:visited, .btn-primary:visited:hover {
     background: #0062b8; }
 
-.btn-success, .btn-success:hover {
+.btn-success, .btn-success:hover, .btn-success:visited:hover, .btn-success:visited {
   background: #2ECC40;
   color: #FFFFFF;
   border: 1px solid #2ECC40; }
-  .btn-success:hover {
+  .btn-success:hover, .btn-success:hover:visited, .btn-success:visited:hover {
     background: #28b138; }
 
-.btn-danger, .btn-danger:hover {
+.btn-danger, .btn-danger:hover, .btn-danger:visited:hover, .btn-danger:visited {
   background: #FF4136;
   color: #FFFFFF;
   border: 1px solid #FF4136; }
-  .btn-danger:hover {
+  .btn-danger:hover, .btn-danger:hover:visited, .btn-danger:visited:hover {
     background: #ff2215; }
 
-.btn-default {
+.btn-default, .btn-default:visited {
   background: transparent;
   color: #AAAAAA;
   border: 1px solid #AAAAAA; }
-  .btn-default:hover {
+  .btn-default:hover, .btn-default:visited:hover {
     color: #16161d;
     border-color: black; }
 
-.btn-warning, .btn-warning:hover {
+.btn-warning, .btn-warning:hover, .btn-warning:visited:hover, .btn-warning:visited {
   background: #f0ad4e;
   color: #FFFFFF;
   border: 1px solid #f0ad4e; }
-  .btn-warning:hover {
+  .btn-warning:hover, .btn-warning:hover:visited, .btn-warning:visited:hover {
     background: #ed9f2f; }
 
 /*----------------------------------------------------------------

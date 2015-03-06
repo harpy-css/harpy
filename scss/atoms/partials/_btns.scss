@@ -34,7 +34,7 @@
 	padding: $btnPaddningMd;
 }
 
-.btn-primary {
+.btn-primary, .btn-primary:visited {
 	background: $btnColorPrimary;
 	color: $white;
 	border: $baseBorderWidth solid $btnColorPrimary;
@@ -45,7 +45,7 @@
 	}
 }
 
-.btn-success {
+.btn-success, .btn-success:visited {
 	background: $btnColorSuccess;
 	color: $white;
 	border: $baseBorderWidth solid $btnColorSuccess;
@@ -56,7 +56,7 @@
 	}
 }
 
-.btn-danger {
+.btn-danger, .btn-danger:visited {
 	background: $btnColorDanger;
 	color: $white;
 	border: $baseBorderWidth solid $btnColorDanger;
@@ -67,7 +67,7 @@
 	}
 }
 
-.btn-default {
+.btn-default, .btn-default:visited {
 	background: transparent;
 	color: $btnColor;
 	border: $baseBorderWidth solid $btnColor;
@@ -78,7 +78,7 @@
 	}
 }
 
-.btn-warning {
+.btn-warning, .btn-warning:visited {
 	background: $btnColorWarning;
 	color: $white;
 	border: $baseBorderWidth solid $btnColorWarning;
@@ -88,11 +88,3 @@
 		@extend .btn-warning;
 	}
 }
-
-
-
-
-
-
-
-
