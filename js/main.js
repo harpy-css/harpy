@@ -2,6 +2,10 @@
 
 	'use strict';
 
-	console.log('hello world from harpy!!!');
+	var log = function(args) {
+		console.log(args);
+	}
+
+	log('hello world from harpy!!!');
 
 }();
