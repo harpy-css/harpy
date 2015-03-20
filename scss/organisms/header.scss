@@ -1,9 +1,10 @@
-.header {
+.site-header {
 	border-bottom: $baseBorderWidth solid $silver;
 	padding: $basePadding/2 0;
 
 	a, a:visited {
 		color: $black;
+		font-size: $baseFontSize - 2;
 
 		&:hover {
 			text-decoration: none;
@@ -44,6 +45,24 @@
 					width: 100px;
 				}
 			}
+		}
+	}
+}
+
+.site-header-inverse {
+	@extend .site-header;
+	background: $siteHeaderBackgroundColor;
+	color: $siteHeaderFontColor;
+	border: none;
+
+	a, 
+	a:visited {
+		text-decoration: none;
+
+		&:hover,
+  		&:focus {
+			text-decoration: none;
+			color: darken($white, 12.5%)!important;
 		}
 	}
 }

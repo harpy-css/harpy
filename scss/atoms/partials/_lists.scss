@@ -1,0 +1,33 @@
+ul, ol {
+	padding-left: 20px;
+	font-size: $baseFontSize;
+	font-weight: $fontNormal;
+
+	&.reset {
+		padding-left: 0;
+		list-style: none;
+	}
+
+	ul {
+		margin-top: $baseMargin/4;
+		list-style: disc;
+	}
+
+	li {
+		margin: 5px 0;
+	}
+
+	li > ul {
+		margin-top: $baseMargin/4;
+	}
+
+	ol {
+		margin-top: $baseMargin/4;
+
+	}
+
+	li ~ ul, li ~ ol, li > ul {
+		margin-bottom: $baseMargin/3;
+	}
+
+}

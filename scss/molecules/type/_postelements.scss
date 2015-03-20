@@ -1,0 +1,35 @@
+.time {
+	display: block;
+	margin-bottom: $baseMargin/2; 
+	font-size: 90%;
+}
+
+.ingress {
+	font-weight: $fontBolder;
+	color: $ingressColor;
+	margin-bottom: 0;
+}
+
+.small-caps {
+	text-transform: uppercase;
+	font-size: $baseFontSize - 3px;
+}
+
+img + p.caption-special {
+	font-size: 90%;
+	position: absolute;
+	padding: 10px 20px;
+	left: 40px;
+	bottom: 40px;
+	color: $white;
+	background: rgba(0, 0, 0, .7);
+}
+
+img + p.caption {
+	font-size: 90%;
+}
+
+p+p.indent {
+  text-indent: 20px;
+  margin: -16px 0 16px 0;
+}

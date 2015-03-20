@@ -3,6 +3,7 @@ footer {
 
 	a, a:visited {
 		color: $black;
+		font-size: $baseFontSize - 2;
 	}
 
 	.brand {
@@ -29,3 +30,7 @@ footer {
 		}
 	}
 }
+
+
+
+/* fixed footer */

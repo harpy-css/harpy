@@ -1,0 +1,59 @@
+/*----------------------------------------------------------------
+		BASE VARIABLES
+-------------------------------------------------------------- */
+
+$baseMargin: 20px;
+$basePadding: 20px; 
+
+$baseBorderColor: $black;
+$baseBorderRadius: 4px;
+$baseBorderWidth: 1px;
+
+$btnPaddning: 8px 14px;
+$btnPaddningMd: 10px 12px;
+$btnPaddingLg: 12px 18px;
+
+$inputPaddning: 8px 18px;
+
+/*----------------------------------------------------------------
+		BREAKPOINTS/GRID
+-------------------------------------------------------------- */
+
+$containerWidth: 1200px;
+$containerWidthTablet: 800px;
+$containerWidthPhone: 100%;
+
+$screen-xs:      480px !default;
+$screen-sm:      768px !default;
+$screen-md:      992px !default;
+$screen-lg:      1200px !default;
+
+$screen-xs-min:  480px !default;
+$screen-sm-min:  768px !default;
+$screen-md-min:  992px !default;
+$screen-lg-min:  1200px !default;
+
+$grid-columns: 12;
+$grid-gutter-width: $basePadding;
+
+/*----------------------------------------------------------------
+		TYPOGRAPHY
+-------------------------------------------------------------- */
+
+$primaryFont: Fakt;
+$secondaryFont: sans-serif;
+
+$baseFontSize: 18px;
+$baseBtnFontSize: 16px;
+$baseLineHeight: 140%;
+
+$fontH1: 32px;
+$fontH2: 24px;
+$fontH3: 14px;
+$fontH4: 16px;
+
+$fontThin: 200;
+$fontNormal: 300;
+$fontBold: 500;
+$fontBolder: 500;
+

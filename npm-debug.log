@@ -1,0 +1,338 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose readDependencies using package.json deps
+5 verbose install where, deps [ '/Users/bulldozer/Documents/Webbplatser/harpy',
+5 verbose install   [ 'connect-livereload',
+5 verbose install     'express',
+5 verbose install     'gulp',
+5 verbose install     'gulp-autoprefixer',
+5 verbose install     'gulp-minify-css',
+5 verbose install     'gulp-notify',
+5 verbose install     'gulp-plumber',
+5 verbose install     'gulp-rename',
+5 verbose install     'gulp-sass',
+5 verbose install     'gulp-uglify',
+5 verbose install     'tiny-lr',
+5 verbose install     'gulp-imagemin',
+5 verbose install     'gulp-size',
+5 verbose install     'gulp-gzip' ] ]
+6 info preinstall Harpy@0.1.0
+7 verbose readDependencies using package.json deps
+8 verbose already installed skipping gulp-notify@^2.2.0 /Users/bulldozer/Documents/Webbplatser/harpy
+9 verbose already installed skipping gulp-plumber@^0.6.6 /Users/bulldozer/Documents/Webbplatser/harpy
+10 verbose already installed skipping gulp-rename@^1.2.0 /Users/bulldozer/Documents/Webbplatser/harpy
+11 verbose already installed skipping gulp-sass@^1.3.3 /Users/bulldozer/Documents/Webbplatser/harpy
+12 verbose already installed skipping gulp-uglify@^1.1.0 /Users/bulldozer/Documents/Webbplatser/harpy
+13 verbose already installed skipping tiny-lr@0.0.7 /Users/bulldozer/Documents/Webbplatser/harpy
+14 verbose cache add [ 'gulp-imagemin@~2.2.1', null ]
+15 verbose cache add name=undefined spec="gulp-imagemin@~2.2.1" args=["gulp-imagemin@~2.2.1",null]
+16 verbose parsed url { protocol: null,
+16 verbose parsed url   slashes: null,
+16 verbose parsed url   auth: null,
+16 verbose parsed url   host: null,
+16 verbose parsed url   port: null,
+16 verbose parsed url   hostname: null,
+16 verbose parsed url   hash: null,
+16 verbose parsed url   search: null,
+16 verbose parsed url   query: null,
+16 verbose parsed url   pathname: 'gulp-imagemin@~2.2.1',
+16 verbose parsed url   path: 'gulp-imagemin@~2.2.1',
+16 verbose parsed url   href: 'gulp-imagemin@~2.2.1' }
+17 verbose cache add [ 'gulp-size@~1.2.1', null ]
+18 verbose cache add name=undefined spec="gulp-size@~1.2.1" args=["gulp-size@~1.2.1",null]
+19 verbose parsed url { protocol: null,
+19 verbose parsed url   slashes: null,
+19 verbose parsed url   auth: null,
+19 verbose parsed url   host: null,
+19 verbose parsed url   port: null,
+19 verbose parsed url   hostname: null,
+19 verbose parsed url   hash: null,
+19 verbose parsed url   search: null,
+19 verbose parsed url   query: null,
+19 verbose parsed url   pathname: 'gulp-size@~1.2.1',
+19 verbose parsed url   path: 'gulp-size@~1.2.1',
+19 verbose parsed url   href: 'gulp-size@~1.2.1' }
+20 verbose cache add name="gulp-imagemin" spec="~2.2.1" args=["gulp-imagemin","~2.2.1"]
+21 verbose parsed url { protocol: null,
+21 verbose parsed url   slashes: null,
+21 verbose parsed url   auth: null,
+21 verbose parsed url   host: null,
+21 verbose parsed url   port: null,
+21 verbose parsed url   hostname: null,
+21 verbose parsed url   hash: null,
+21 verbose parsed url   search: null,
+21 verbose parsed url   query: null,
+21 verbose parsed url   pathname: '~2.2.1',
+21 verbose parsed url   path: '~2.2.1',
+21 verbose parsed url   href: '~2.2.1' }
+22 verbose addNamed [ 'gulp-imagemin', '~2.2.1' ]
+23 verbose addNamed [ null, '>=2.2.1-0 <2.3.0-0' ]
+24 verbose cache add [ 'gulp-gzip@~1.0.0', null ]
+25 verbose cache add name=undefined spec="gulp-gzip@~1.0.0" args=["gulp-gzip@~1.0.0",null]
+26 verbose parsed url { protocol: null,
+26 verbose parsed url   slashes: null,
+26 verbose parsed url   auth: null,
+26 verbose parsed url   host: null,
+26 verbose parsed url   port: null,
+26 verbose parsed url   hostname: null,
+26 verbose parsed url   hash: null,
+26 verbose parsed url   search: null,
+26 verbose parsed url   query: null,
+26 verbose parsed url   pathname: 'gulp-gzip@~1.0.0',
+26 verbose parsed url   path: 'gulp-gzip@~1.0.0',
+26 verbose parsed url   href: 'gulp-gzip@~1.0.0' }
+27 verbose cache add name="gulp-size" spec="~1.2.1" args=["gulp-size","~1.2.1"]
+28 verbose parsed url { protocol: null,
+28 verbose parsed url   slashes: null,
+28 verbose parsed url   auth: null,
+28 verbose parsed url   host: null,
+28 verbose parsed url   port: null,
+28 verbose parsed url   hostname: null,
+28 verbose parsed url   hash: null,
+28 verbose parsed url   search: null,
+28 verbose parsed url   query: null,
+28 verbose parsed url   pathname: '~1.2.1',
+28 verbose parsed url   path: '~1.2.1',
+28 verbose parsed url   href: '~1.2.1' }
+29 verbose addNamed [ 'gulp-size', '~1.2.1' ]
+30 verbose addNamed [ null, '>=1.2.1-0 <1.3.0-0' ]
+31 silly lockFile d3d2bc33-gulp-imagemin-2-2-1 gulp-imagemin@~2.2.1
+32 verbose lock gulp-imagemin@~2.2.1 /Users/bulldozer/.npm/d3d2bc33-gulp-imagemin-2-2-1.lock
+33 silly lockFile 10905699-gulp-size-1-2-1 gulp-size@~1.2.1
+34 verbose lock gulp-size@~1.2.1 /Users/bulldozer/.npm/10905699-gulp-size-1-2-1.lock
+35 verbose cache add name="gulp-gzip" spec="~1.0.0" args=["gulp-gzip","~1.0.0"]
+36 verbose parsed url { protocol: null,
+36 verbose parsed url   slashes: null,
+36 verbose parsed url   auth: null,
+36 verbose parsed url   host: null,
+36 verbose parsed url   port: null,
+36 verbose parsed url   hostname: null,
+36 verbose parsed url   hash: null,
+36 verbose parsed url   search: null,
+36 verbose parsed url   query: null,
+36 verbose parsed url   pathname: '~1.0.0',
+36 verbose parsed url   path: '~1.0.0',
+36 verbose parsed url   href: '~1.0.0' }
+37 verbose addNamed [ 'gulp-gzip', '~1.0.0' ]
+38 verbose addNamed [ null, '>=1.0.0-0 <1.1.0-0' ]
+39 silly lockFile 744b107c-gulp-gzip-1-0-0 gulp-gzip@~1.0.0
+40 verbose lock gulp-gzip@~1.0.0 /Users/bulldozer/.npm/744b107c-gulp-gzip-1-0-0.lock
+41 silly addNameRange { name: 'gulp-imagemin',
+41 silly addNameRange   range: '>=2.2.1-0 <2.3.0-0',
+41 silly addNameRange   hasData: false }
+42 silly addNameRange { name: 'gulp-size',
+42 silly addNameRange   range: '>=1.2.1-0 <1.3.0-0',
+42 silly addNameRange   hasData: false }
+43 verbose request where is /gulp-imagemin
+44 verbose request registry https://registry.npmjs.org/
+45 verbose request id 4ebe72730bf905d0
+46 verbose url raw /gulp-imagemin
+47 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-imagemin' ]
+48 verbose url resolved https://registry.npmjs.org/gulp-imagemin
+49 verbose request where is https://registry.npmjs.org/gulp-imagemin
+50 info trying registry request attempt 1 at 09:21:43
+51 http GET https://registry.npmjs.org/gulp-imagemin
+52 verbose already installed skipping connect-livereload@^0.4.0 /Users/bulldozer/Documents/Webbplatser/harpy
+53 verbose already installed skipping express@^4.4.3 /Users/bulldozer/Documents/Webbplatser/harpy
+54 verbose already installed skipping gulp@^3 /Users/bulldozer/Documents/Webbplatser/harpy
+55 verbose already installed skipping gulp-autoprefixer@0.0.7 /Users/bulldozer/Documents/Webbplatser/harpy
+56 verbose already installed skipping gulp-minify-css@^0.3.4 /Users/bulldozer/Documents/Webbplatser/harpy
+57 silly addNameRange { name: 'gulp-gzip',
+57 silly addNameRange   range: '>=1.0.0-0 <1.1.0-0',
+57 silly addNameRange   hasData: false }
+58 verbose request where is /gulp-gzip
+59 verbose request registry https://registry.npmjs.org/
+60 verbose url raw /gulp-gzip
+61 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-gzip' ]
+62 verbose url resolved https://registry.npmjs.org/gulp-gzip
+63 verbose request where is https://registry.npmjs.org/gulp-gzip
+64 info trying registry request attempt 1 at 09:21:43
+65 http GET https://registry.npmjs.org/gulp-gzip
+66 verbose request where is /gulp-size
+67 verbose request registry https://registry.npmjs.org/
+68 verbose url raw /gulp-size
+69 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-size' ]
+70 verbose url resolved https://registry.npmjs.org/gulp-size
+71 verbose request where is https://registry.npmjs.org/gulp-size
+72 info trying registry request attempt 1 at 09:21:43
+73 verbose etag "B6VF6KOPE2QYG6U2JHVNQCLTP"
+74 http GET https://registry.npmjs.org/gulp-size
+75 http 304 https://registry.npmjs.org/gulp-size
+76 silly registry.get cb [ 304,
+76 silly registry.get   { date: 'Fri, 06 Mar 2015 08:21:43 GMT',
+76 silly registry.get     server: 'Apache',
+76 silly registry.get     via: '1.1 varnish',
+76 silly registry.get     'last-modified': 'Fri, 06 Mar 2015 08:21:43 GMT',
+76 silly registry.get     'cache-control': 'max-age=60',
+76 silly registry.get     etag: '"B6VF6KOPE2QYG6U2JHVNQCLTP"',
+76 silly registry.get     age: '39',
+76 silly registry.get     'x-served-by': 'cache-fra1225-FRA',
+76 silly registry.get     'x-cache': 'HIT',
+76 silly registry.get     'x-cache-hits': '1',
+76 silly registry.get     'x-timer': 'S1425630103.850964,VS0,VE0',
+76 silly registry.get     vary: 'Accept',
+76 silly registry.get     'content-length': '0',
+76 silly registry.get     'keep-alive': 'timeout=10, max=50',
+76 silly registry.get     connection: 'Keep-Alive' } ]
+77 verbose etag https://registry.npmjs.org/gulp-size from cache
+78 silly addNameRange number 2 { name: 'gulp-size', range: '>=1.2.1-0 <1.3.0-0', hasData: true }
+79 silly addNameRange versions [ 'gulp-size',
+79 silly addNameRange   [ '0.1.0',
+79 silly addNameRange     '0.1.1',
+79 silly addNameRange     '0.1.2',
+79 silly addNameRange     '0.1.3',
+79 silly addNameRange     '0.2.0',
+79 silly addNameRange     '0.3.0',
+79 silly addNameRange     '0.3.1',
+79 silly addNameRange     '0.4.0',
+79 silly addNameRange     '0.4.1',
+79 silly addNameRange     '1.0.0',
+79 silly addNameRange     '1.1.0',
+79 silly addNameRange     '1.2.0',
+79 silly addNameRange     '1.2.1' ] ]
+80 verbose addNamed [ 'gulp-size', '1.2.1' ]
+81 verbose addNamed [ '1.2.1', '1.2.1' ]
+82 silly lockFile 4f75ebc7-gulp-size-1-2-1 gulp-size@1.2.1
+83 verbose lock gulp-size@1.2.1 /Users/bulldozer/.npm/4f75ebc7-gulp-size-1-2-1.lock
+84 silly lockFile 73a6b02e-rg-gulp-size-gulp-size-1-2-1-tgz https://registry.npmjs.org/gulp-size/-/gulp-size-1.2.1.tgz
+85 verbose lock https://registry.npmjs.org/gulp-size/-/gulp-size-1.2.1.tgz /Users/bulldozer/.npm/73a6b02e-rg-gulp-size-gulp-size-1-2-1-tgz.lock
+86 verbose addRemoteTarball [ 'https://registry.npmjs.org/gulp-size/-/gulp-size-1.2.1.tgz',
+86 verbose addRemoteTarball   'b154821a4cab43a9067c7776b247d9bd8de5e77a' ]
+87 info retry fetch attempt 1 at 09:21:43
+88 verbose fetch to= /var/folders/p4/2plkbb2n62nd567k4gs96n440000gn/T/npm-10753-ltZAZh2v/registry.npmjs.org/gulp-size/-/gulp-size-1.2.1.tgz
+89 http GET https://registry.npmjs.org/gulp-size/-/gulp-size-1.2.1.tgz
+90 http 200 https://registry.npmjs.org/gulp-imagemin
+91 silly registry.get cb [ 200,
+91 silly registry.get   { date: 'Fri, 06 Mar 2015 08:21:43 GMT',
+91 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+91 silly registry.get     etag: '"D51S2FCV43VRZBFHHTG3TACQZ"',
+91 silly registry.get     'content-type': 'application/json',
+91 silly registry.get     'cache-control': 'max-age=60',
+91 silly registry.get     'content-length': '33420',
+91 silly registry.get     'accept-ranges': 'bytes',
+91 silly registry.get     via: '1.1 varnish',
+91 silly registry.get     age: '40',
+91 silly registry.get     'x-served-by': 'cache-fra1227-FRA',
+91 silly registry.get     'x-cache': 'HIT',
+91 silly registry.get     'x-cache-hits': '1',
+91 silly registry.get     'x-timer': 'S1425630103.856650,VS0,VE0',
+91 silly registry.get     vary: 'Accept',
+91 silly registry.get     'keep-alive': 'timeout=10, max=50',
+91 silly registry.get     connection: 'Keep-Alive' } ]
+92 silly addNameRange number 2 { name: 'gulp-imagemin',
+92 silly addNameRange   range: '>=2.2.1-0 <2.3.0-0',
+92 silly addNameRange   hasData: true }
+93 silly addNameRange versions [ 'gulp-imagemin',
+93 silly addNameRange   [ '0.1.0',
+93 silly addNameRange     '0.1.1',
+93 silly addNameRange     '0.1.2',
+93 silly addNameRange     '0.1.3',
+93 silly addNameRange     '0.1.4',
+93 silly addNameRange     '0.1.5',
+93 silly addNameRange     '0.2.0',
+93 silly addNameRange     '0.3.0',
+93 silly addNameRange     '0.4.0',
+93 silly addNameRange     '0.5.0',
+93 silly addNameRange     '0.5.1',
+93 silly addNameRange     '0.6.0',
+93 silly addNameRange     '0.6.1',
+93 silly addNameRange     '0.6.2',
+93 silly addNameRange     '1.0.0',
+93 silly addNameRange     '1.0.1',
+93 silly addNameRange     '1.1.0',
+93 silly addNameRange     '1.2.1',
+93 silly addNameRange     '2.0.0',
+93 silly addNameRange     '2.1.0',
+93 silly addNameRange     '2.2.0',
+93 silly addNameRange     '2.2.1' ] ]
+94 verbose addNamed [ 'gulp-imagemin', '2.2.1' ]
+95 verbose addNamed [ '2.2.1', '2.2.1' ]
+96 silly lockFile 8852530e-gulp-imagemin-2-2-1 gulp-imagemin@2.2.1
+97 verbose lock gulp-imagemin@2.2.1 /Users/bulldozer/.npm/8852530e-gulp-imagemin-2-2-1.lock
+98 silly lockFile 9f939c55-imagemin-gulp-imagemin-2-2-1-tgz https://registry.npmjs.org/gulp-imagemin/-/gulp-imagemin-2.2.1.tgz
+99 verbose lock https://registry.npmjs.org/gulp-imagemin/-/gulp-imagemin-2.2.1.tgz /Users/bulldozer/.npm/9f939c55-imagemin-gulp-imagemin-2-2-1-tgz.lock
+100 verbose addRemoteTarball [ 'https://registry.npmjs.org/gulp-imagemin/-/gulp-imagemin-2.2.1.tgz',
+100 verbose addRemoteTarball   '457b188afb8302c2a463a34b7720247645a9ede3' ]
+101 info retry fetch attempt 1 at 09:21:43
+102 verbose fetch to= /var/folders/p4/2plkbb2n62nd567k4gs96n440000gn/T/npm-10753-ltZAZh2v/registry.npmjs.org/gulp-imagemin/-/gulp-imagemin-2.2.1.tgz
+103 http GET https://registry.npmjs.org/gulp-imagemin/-/gulp-imagemin-2.2.1.tgz
+104 http 200 https://registry.npmjs.org/gulp-gzip
+105 silly registry.get cb [ 200,
+105 silly registry.get   { date: 'Fri, 06 Mar 2015 08:21:43 GMT',
+105 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+105 silly registry.get     etag: '"1LOS3R0ZU8SWO45E80S2LL54Y"',
+105 silly registry.get     'content-type': 'application/json',
+105 silly registry.get     'cache-control': 'max-age=60',
+105 silly registry.get     'content-length': '13409',
+105 silly registry.get     'accept-ranges': 'bytes',
+105 silly registry.get     via: '1.1 varnish',
+105 silly registry.get     age: '0',
+105 silly registry.get     'x-served-by': 'cache-fra1224-FRA',
+105 silly registry.get     'x-cache': 'MISS',
+105 silly registry.get     'x-cache-hits': '0',
+105 silly registry.get     'x-timer': 'S1425630103.857319,VS0,VE100',
+105 silly registry.get     vary: 'Accept',
+105 silly registry.get     'keep-alive': 'timeout=10, max=50',
+105 silly registry.get     connection: 'Keep-Alive' } ]
+106 silly addNameRange number 2 { name: 'gulp-gzip', range: '>=1.0.0-0 <1.1.0-0', hasData: true }
+107 silly addNameRange versions [ 'gulp-gzip',
+107 silly addNameRange   [ '0.0.1',
+107 silly addNameRange     '0.0.2',
+107 silly addNameRange     '0.0.3',
+107 silly addNameRange     '0.0.4',
+107 silly addNameRange     '0.0.5',
+107 silly addNameRange     '0.0.6',
+107 silly addNameRange     '0.0.7',
+107 silly addNameRange     '0.0.8',
+107 silly addNameRange     '1.0.0' ] ]
+108 verbose addNamed [ 'gulp-gzip', '1.0.0' ]
+109 verbose addNamed [ '1.0.0', '1.0.0' ]
+110 silly lockFile 15fbdbb8-gulp-gzip-1-0-0 gulp-gzip@1.0.0
+111 verbose lock gulp-gzip@1.0.0 /Users/bulldozer/.npm/15fbdbb8-gulp-gzip-1-0-0.lock
+112 silly lockFile 1829a56f-rg-gulp-gzip-gulp-gzip-1-0-0-tgz https://registry.npmjs.org/gulp-gzip/-/gulp-gzip-1.0.0.tgz
+113 verbose lock https://registry.npmjs.org/gulp-gzip/-/gulp-gzip-1.0.0.tgz /Users/bulldozer/.npm/1829a56f-rg-gulp-gzip-gulp-gzip-1-0-0-tgz.lock
+114 verbose addRemoteTarball [ 'https://registry.npmjs.org/gulp-gzip/-/gulp-gzip-1.0.0.tgz',
+114 verbose addRemoteTarball   'd677e242093612ebb3abca1ab7bd800314277aff' ]
+115 info retry fetch attempt 1 at 09:21:44
+116 verbose fetch to= /var/folders/p4/2plkbb2n62nd567k4gs96n440000gn/T/npm-10753-ltZAZh2v/registry.npmjs.org/gulp-gzip/-/gulp-gzip-1.0.0.tgz
+117 http GET https://registry.npmjs.org/gulp-gzip/-/gulp-gzip-1.0.0.tgz
+118 http 200 https://registry.npmjs.org/gulp-size/-/gulp-size-1.2.1.tgz
+119 silly lockFile 73a6b02e-rg-gulp-size-gulp-size-1-2-1-tgz https://registry.npmjs.org/gulp-size/-/gulp-size-1.2.1.tgz
+120 silly lockFile 73a6b02e-rg-gulp-size-gulp-size-1-2-1-tgz https://registry.npmjs.org/gulp-size/-/gulp-size-1.2.1.tgz
+121 silly lockFile 4f75ebc7-gulp-size-1-2-1 gulp-size@1.2.1
+122 silly lockFile 4f75ebc7-gulp-size-1-2-1 gulp-size@1.2.1
+123 silly lockFile 10905699-gulp-size-1-2-1 gulp-size@~1.2.1
+124 silly lockFile 10905699-gulp-size-1-2-1 gulp-size@~1.2.1
+125 http 200 https://registry.npmjs.org/gulp-imagemin/-/gulp-imagemin-2.2.1.tgz
+126 silly lockFile 9f939c55-imagemin-gulp-imagemin-2-2-1-tgz https://registry.npmjs.org/gulp-imagemin/-/gulp-imagemin-2.2.1.tgz
+127 silly lockFile 9f939c55-imagemin-gulp-imagemin-2-2-1-tgz https://registry.npmjs.org/gulp-imagemin/-/gulp-imagemin-2.2.1.tgz
+128 silly lockFile 8852530e-gulp-imagemin-2-2-1 gulp-imagemin@2.2.1
+129 silly lockFile 8852530e-gulp-imagemin-2-2-1 gulp-imagemin@2.2.1
+130 silly lockFile d3d2bc33-gulp-imagemin-2-2-1 gulp-imagemin@~2.2.1
+131 silly lockFile d3d2bc33-gulp-imagemin-2-2-1 gulp-imagemin@~2.2.1
+132 http 200 https://registry.npmjs.org/gulp-gzip/-/gulp-gzip-1.0.0.tgz
+133 silly lockFile 1829a56f-rg-gulp-gzip-gulp-gzip-1-0-0-tgz https://registry.npmjs.org/gulp-gzip/-/gulp-gzip-1.0.0.tgz
+134 silly lockFile 1829a56f-rg-gulp-gzip-gulp-gzip-1-0-0-tgz https://registry.npmjs.org/gulp-gzip/-/gulp-gzip-1.0.0.tgz
+135 silly lockFile 15fbdbb8-gulp-gzip-1-0-0 gulp-gzip@1.0.0
+136 silly lockFile 15fbdbb8-gulp-gzip-1-0-0 gulp-gzip@1.0.0
+137 silly lockFile 744b107c-gulp-gzip-1-0-0 gulp-gzip@~1.0.0
+138 silly lockFile 744b107c-gulp-gzip-1-0-0 gulp-gzip@~1.0.0
+139 error Error: EACCES, mkdir '/Users/bulldozer/.npm/gulp-size/1.2.1'
+139 error  { [Error: EACCES, mkdir '/Users/bulldozer/.npm/gulp-size/1.2.1']
+139 error   errno: 3,
+139 error   code: 'EACCES',
+139 error   path: '/Users/bulldozer/.npm/gulp-size/1.2.1',
+139 error   parent: 'Harpy' }
+140 error Please try running this command again as root/Administrator.
+141 error System Darwin 14.0.0
+142 error command "node" "/usr/local/bin/npm" "install"
+143 error cwd /Users/bulldozer/Documents/Webbplatser/harpy
+144 error node -v v0.10.33
+145 error npm -v 1.4.28
+146 error path /Users/bulldozer/.npm/gulp-size/1.2.1
+147 error code EACCES
+148 error errno 3
+149 error stack Error: EACCES, mkdir '/Users/bulldozer/.npm/gulp-size/1.2.1'
+150 verbose exit [ 3, true ]

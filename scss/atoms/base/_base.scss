@@ -1,0 +1,68 @@
+/* --------------------------------------------------------------
+		2. BASE
+-------------------------------------------------------------- */
+
+* {
+  @include box-sizing();
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  vertical-align: baseline;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  overflow-y: scroll;
+  min-height: 100%;
+  position: relative;
+}
+
+
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+/*
+ * 1. Disable webkit tap highlight.
+ */
+
+body {
+  -webkit-tap-highlight-color: rgba(0,0,0,0); /* [1] */
+  min-height: 100%;
+
+  &.sticky-footer {
+    margin-bottom: 60px;
+  }
+}
+
+::selection {
+  background: $selectionBackground;
+  color: $selectionColor;
+  text-shadow : none;
+}
+
+::-moz-selection {
+  background: $selectionBackground;
+  color: $selectionColor;
+  text-shadow : none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: $linkColor;
+
+  &:hover,
+  &:focus {
+    color: $linkHoverColor;
+    text-decoration: underline;
+  }
+}
