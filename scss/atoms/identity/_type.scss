@@ -8,6 +8,17 @@ body {
   color: $textColor;
 }
 
+.tc {text-align: center; }
+.tl {text-align: left; }
+.tr {text-align: right; }
+
+.strong, .bold {font-weight: bolder; }
+.italic {font-style: italic; }
+
+.uppercase {text-transform: uppercase; }
+.lowercase {text-transform: lowecase; }
+.capitalize {text-transform: capitalize; }
+
 h1,
 h2,
 h3,
@@ -34,6 +45,11 @@ h3>a,
 h4>a {
   text-decoration: none;
   color: black;
+}
+
+.h1l {
+  font-size: $fontH1l;
+  line-height: 110%;
 }
 
 h1,

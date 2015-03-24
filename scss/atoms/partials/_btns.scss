@@ -24,6 +24,11 @@
 	}
 }
 
+footer ul li .btn, header ul li .btn {
+	padding: $btnPaddning !important;
+	text-align: center;
+}
+
 .btn-lg {
 	@extend .btn;
 	padding: $btnPaddingLg;
@@ -36,7 +41,7 @@
 
 .btn-primary, .btn-primary:visited {
 	background: $btnColorPrimary;
-	color: $white;
+	color: $white !important;
 	border: $baseBorderWidth solid $btnColorPrimary;
 
 	&:hover {

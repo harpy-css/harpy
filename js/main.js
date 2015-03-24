@@ -6,6 +6,9 @@
 		console.log(args);
 	}
 
-	log('hello world from harpy!!!');
+	for(;;) {
+		log('hello world from harpy!!!');
+		break;
+	}
 
 }();

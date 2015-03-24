@@ -1,3 +1,9 @@
 .jumbotron {
 	padding-top: 80px;
+
+	@media (max-width: $screen-xs) {
+			.h1l {
+			font-size: 24px;
+		}
+	}
 }

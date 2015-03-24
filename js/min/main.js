@@ -1,1 +1,1 @@
-!function(){"use strict";var o=function(o){console.log(o)};o("hello world from harpy!!!")}();
+!function(){"use strict";for(var o=function(o){console.log(o)};;){o("hello world from harpy!!!");break}}();
