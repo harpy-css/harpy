@@ -195,7 +195,6 @@ figure {
  */
 hr {
   -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   height: 0; }
 
@@ -288,8 +287,6 @@ input {
  * 2. Remove excess padding in IE 8/9/10.
  */
 input[type="checkbox"], input[type="radio"] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -604,11 +601,6 @@ body {
   min-height: 100%; }
   body.sticky-footer {
     margin-bottom: 60px; }
-
-::-moz-selection {
-  background: #0074D9;
-  color: #FFFFFF;
-  text-shadow: none; }
 
 ::selection {
   background: #0074D9;
@@ -2149,7 +2141,6 @@ a, a:visited {
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
-  -ms-touch-action: manipulation;
   touch-action: manipulation;
   cursor: pointer;
   -webkit-user-select: none;
@@ -3250,7 +3241,6 @@ footer, .sticky-footer footer {
   * {
     background: transparent !important;
     color: #000 !important;
-    -webkit-box-shadow: none !important;
     box-shadow: none !important;
     text-shadow: none !important; }
   a, a:visited {
