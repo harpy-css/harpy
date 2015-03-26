@@ -1,0 +1,28 @@
+@mixin harpyHelpers($suffix: false) {
+	@if($suffix) {
+		$suffix: -#{$suffix};
+	} @else {
+		$suffix: unquote('');
+	}
+
+	.visible#{$suffix} {
+		display: block !important;
+	}
+
+	.notvisible#{$suffix} {
+		display: none !important;
+	}
+}
+
+
+@include harpyHelpers();
+@include harpyHelpers('xs');
+@media (min-width: $screen-sm-min) {
+	@include harpyHelpers('sm');
+}
+@media (min-width: $screen-md-min) {
+	@include harpyHelpers('md');
+}
+@media (min-width: $screen-lg-min) {
+	@include harpyHelpers('lg');
+}

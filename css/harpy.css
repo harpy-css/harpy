@@ -195,7 +195,6 @@ figure {
  */
 hr {
   -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   height: 0; }
 
@@ -288,8 +287,6 @@ input {
  * 2. Remove excess padding in IE 8/9/10.
  */
 input[type="checkbox"], input[type="radio"] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -454,6 +451,39 @@ td, th {
   font-weight: 600;
   font-style: normal; }
 
+@font-face {
+  font-family: "untitled-font-3";
+  src: url("../fonts/untitled-font-3.eot");
+  src: url("../fonts/untitled-font-3.eot?#iefix") format("embedded-opentype"), url("../fonts/untitled-font-3.woff") format("woff"), url("../fonts/untitled-font-3.ttf") format("truetype"), url("../fonts/untitled-font-3.svg#untitled-font-3") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[data-icon]:before {
+  font-family: "untitled-font-3" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "untitled-font-3" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-namnlost-1:before {
+  content: "a"; }
+
 /*----------------------------------------------------------------
     TYPE
     TODO: hur type ska bete sig på mindre skärmar
@@ -461,6 +491,30 @@ td, th {
 body {
   font-family: Fakt;
   color: #616367; }
+
+.tc {
+  text-align: center; }
+
+.tl {
+  text-align: left; }
+
+.tr {
+  text-align: right; }
+
+.strong, .bold {
+  font-weight: bolder; }
+
+.italic {
+  font-style: italic; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.lowercase {
+  text-transform: lowecase; }
+
+.capitalize {
+  text-transform: capitalize; }
 
 h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
   margin: 20px 0 5px 0;
@@ -473,6 +527,10 @@ h1, h2, h3, h4 {
 h1 > a, h2 > a, h3 > a, h4 > a {
   text-decoration: none;
   color: black; }
+
+.h1l {
+  font-size: 48px;
+  line-height: 110%; }
 
 h1, .h1 {
   font-size: 32px; }
@@ -543,11 +601,6 @@ body {
   min-height: 100%; }
   body.sticky-footer {
     margin-bottom: 60px; }
-
-::-moz-selection {
-  background: #0074D9;
-  color: #FFFFFF;
-  text-shadow: none; }
 
 ::selection {
   background: #0074D9;
@@ -2159,6 +2212,36 @@ a, a:visited {
 .not-rounded {
   border-radius: 0; }
 
+.visible {
+  display: block !important; }
+
+.notvisible {
+  display: none !important; }
+
+.visible-xs {
+  display: block !important; }
+
+.notvisible-xs {
+  display: none !important; }
+
+@media (min-width: 768px) {
+  .visible-sm {
+    display: block !important; }
+  .notvisible-sm {
+    display: none !important; } }
+
+@media (min-width: 992px) {
+  .visible-md {
+    display: block !important; }
+  .notvisible-md {
+    display: none !important; } }
+
+@media (min-width: 1200px) {
+  .visible-lg {
+    display: block !important; }
+  .notvisible-lg {
+    display: none !important; } }
+
 /* --------------------------------------------------------------
 	3.  ATOMS/PARTIALS
 		Tables, btns, inputs, lists, etc.
@@ -2175,7 +2258,6 @@ a, a:visited {
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
-  -ms-touch-action: manipulation;
   touch-action: manipulation;
   cursor: pointer;
   -webkit-user-select: none;
@@ -2186,6 +2268,10 @@ a, a:visited {
   .btn:hover, .btn-lg:hover, .btn-md:hover {
     text-decoration: none; }
 
+footer ul li .btn, footer ul li .btn-lg, footer ul li .btn-md, header ul li .btn, header ul li .btn-lg, header ul li .btn-md {
+  padding: 8px 14px !important;
+  text-align: center; }
+
 .btn-lg {
   padding: 12px 18px; }
 
@@ -2194,7 +2280,7 @@ a, a:visited {
 
 .btn-primary, .btn-primary:hover, .btn-primary:visited:hover, .btn-primary:visited {
   background: #0074D9;
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   border: 1px solid #0074D9; }
   .btn-primary:hover, .btn-primary:hover:visited, .btn-primary:visited:hover {
     background: #0062b8; }
@@ -2494,15 +2580,6 @@ label {
 .inline-block {
   display: inline-block; }
 
-.tc {
-  text-align: center; }
-
-.tl {
-  text-align: left; }
-
-.tr {
-  text-align: right; }
-
 .hidden {
   display: none; }
 
@@ -2514,21 +2591,6 @@ label {
 
 .notvisible {
   visibility: hidden; }
-
-.strong, .bold {
-  font-weight: bold; }
-
-.italic {
-  font-style: italic; }
-
-.uppercase {
-  text-transform: uppercase; }
-
-.lowercase {
-  text-transform: lowecase; }
-
-.capitalize {
-  text-transform: capitalize; }
 
 /* --------------------------------------------------------------
 	4.  MOLECULES/LAYOUT
@@ -3156,6 +3218,8 @@ a img.aligncenter {
   @media (max-width: 480px) {
     .inputgrp .btn, .inputgrp .btn-lg, .inputgrp .btn-md, .inputgrp .btn-lg, .inputgrp .btn-md {
       margin-top: 10px; } }
+.inputgrp span {
+  padding: 10px 15px; }
 .inputgrp .block {
   margin-top: 10px; }
 @media (max-width: 480px) {
@@ -3236,8 +3300,6 @@ p + p.indent {
         margin: 0 0 0 20px; }
         .site-header nav ul li a:hover, .site-header-inverse nav ul li a:hover, .site-header nav ul li a:visited:hover, .site-header-inverse nav ul li a:visited:hover {
           color: #005299; }
-        .site-header nav ul li .btn, .site-header-inverse nav ul li .btn, .site-header nav ul li .btn-lg, .site-header-inverse nav ul li .btn-lg, .site-header nav ul li .btn-md, .site-header-inverse nav ul li .btn-md {
-          width: 100px; }
 
 .site-header-inverse {
   background: #16161d;
@@ -3278,6 +3340,9 @@ footer, .sticky-footer footer {
 
 .jumbotron {
   padding-top: 80px; }
+  @media (max-width: 480px) {
+    .jumbotron .h1l {
+      font-size: 24px; } }
 
 /* --------------------------------------------------------------
 	7.  SITE
@@ -3293,7 +3358,6 @@ footer, .sticky-footer footer {
   * {
     background: transparent !important;
     color: #000 !important;
-    -webkit-box-shadow: none !important;
     box-shadow: none !important;
     text-shadow: none !important; }
   a, a:visited {

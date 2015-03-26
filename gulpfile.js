@@ -10,6 +10,8 @@ var gulp = require('gulp'),
     notify = require("gulp-notify");
 
 
+var wp = false;
+
 // Server
 gulp.task('express', function() {
 	var express = require('express');
@@ -38,25 +40,15 @@ function notifyLiveReload(event) {
 
 // JS
 gulp.task('compress', function() {
-  gulp.src('js/*.js')
+	return gulp.src('js/*.js')
     .pipe(uglify())
     .pipe(gulp.dest('js/min/'))
-    .pipe(notify("JS minified"));
 });
 
 // SCSS
 gulp.task('styles', function() {
 	return gulp.src('scss/harpy.scss')
 	.pipe(sass({ style: 'expanded' }))
-	.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
-	.pipe(gulp.dest('css'))
-	.pipe(rename({suffix: '.min'}))
-	.pipe(minifycss())
-	.pipe(gulp.dest('css'))
-	.pipe(size({gzip: false, showFiles: true}))
-	.pipe(size({gzip: true, showFiles: true}))
-
-	.pipe(gzip())
 	.pipe(gulp.dest('css'))
 	
 	.pipe(notify("SCSS minified"));
@@ -70,9 +62,32 @@ gulp.task('watch', function() {
 	gulp.watch('css/*.css', notifyLiveReload);
 });
 
-gulp.task('production', function() {
-	console.log('Production')
+// Watch
+gulp.task('watch-wp', function() {
+	gulp.watch('scss/**/*.scss', ['styles']);
+	gulp.watch('js/*.js', ['compress']);
 });
+
+gulp.task('production', function() {
+	console.log('Production');
+	return gulp.src('scss/harpy.scss')
+	.pipe(sass({ style: 'expanded' }))
+	.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
+	.pipe(gulp.dest('css'))
+	.pipe(rename({suffix: '.min'}))
+	.pipe(minifycss())
+	.pipe(gulp.dest('css'))
+	.pipe(size({gzip: false, showFiles: true}))
+	.pipe(size({gzip: true, showFiles: true}))
+
+	.pipe(gzip())
+	.pipe(gulp.dest('css'))
+
+	.pipe(notify("CSS is production ready"));
+});
+
+// Defaults
+gulp.task('wordpress', ['styles', 'watch-wp'], function() {});
 
 // Defaults
 gulp.task('default', ['styles', 'express', 'livereload', 'watch'], function() {});
