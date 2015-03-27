@@ -540,7 +540,7 @@ h2, .h2 {
 
 h3, .h3 {
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 2px; }
 
@@ -550,7 +550,7 @@ h4, .h4 {
 p, .p {
   font-size: 18px;
   line-height: 140%;
-  font-weight: 300;
+  font-weight: 400;
   display: block;
   margin: 0 0 16px 0; }
   p:last-child, .p:last-child {
@@ -2263,14 +2263,16 @@ a, a:visited {
   -webkit-user-select: none;
   background-image: none;
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 6px;
   font-size: 16px; }
   .btn:hover, .btn-lg:hover, .btn-md:hover {
     text-decoration: none; }
 
 footer ul li .btn, footer ul li .btn-lg, footer ul li .btn-md, header ul li .btn, header ul li .btn-lg, header ul li .btn-md {
   padding: 8px 14px !important;
-  text-align: center; }
+  text-align: center;
+  color: #0074D9;
+  border-color: #0074D9; }
 
 .btn-lg {
   padding: 12px 18px; }
@@ -2320,7 +2322,7 @@ footer ul li .btn, footer ul li .btn-lg, footer ul li .btn-md, header ul li .btn
 input[type="text"], input[type="password"], input[type="password"] textarea {
   display: inline-block;
   background: #FFFFFF;
-  border-radius: 4px;
+  border-radius: 6px;
   border: 1px solid #AAAAAA;
   padding: 8px 18px;
   font-size: 18px;
@@ -2526,7 +2528,7 @@ table {
 ul, ol {
   padding-left: 20px;
   font-size: 18px;
-  font-weight: 300; }
+  font-weight: 400; }
   ul.reset, ol.reset {
     padding-left: 0;
     list-style: none; }
