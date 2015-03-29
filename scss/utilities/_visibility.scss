@@ -6,7 +6,7 @@
 	}
 
 	.visible#{$suffix} {
-		display: block !important;
+		display: inline-block !important;
 	}
 
 	.notvisible#{$suffix} {
