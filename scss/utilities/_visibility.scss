@@ -16,15 +16,13 @@
 
 
 @include harpyHelpers();
-@media (max-width: $screen-lg-min) {
-	@include harpyHelpers('lg');
-}
-@media (max-width: $screen-md-min) {
-	@include harpyHelpers('md');
-}
-@media (max-width: $screen-sm-min) {
+@include harpyHelpers('xs');
+@media (min-width: $screen-sm-min) {
 	@include harpyHelpers('sm');
 }
-@media (max-width: $screen-xs-min) {
-	@include harpyHelpers('xs');
+@media (min-width: $screen-md-min) {
+	@include harpyHelpers('md');
+}
+@media (min-width: $screen-lg-min) {
+	@include harpyHelpers('lg');
 }

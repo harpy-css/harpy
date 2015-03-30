@@ -5,6 +5,10 @@
 		$suffix: unquote('');
 	}
 
+	.bg-none#{$suffix} {
+		background: none;
+	}
+
 	.bg-navy#{$suffix} {
 		background: $navy;
 	}
