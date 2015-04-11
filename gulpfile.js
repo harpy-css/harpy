@@ -67,7 +67,7 @@ gulp.task('watch', function() {
 });
 
 // Watch
-gulp.task('watch-wp', function() {
+gulp.task('no-server', function() {
 	gulp.watch('scss/**/*.scss', ['styles']);
 	gulp.watch('js/*.js', ['compress']);
 });
