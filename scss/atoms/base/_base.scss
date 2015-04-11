@@ -2,8 +2,8 @@
 		2. BASE
 -------------------------------------------------------------- */
 
-* {
-  @include box-sizing();
+*, *:before, *:after {
+  box-sizing: inherit;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
@@ -18,6 +18,7 @@
 }
 
 html {
+  @include box-sizing();
   overflow-y: scroll;
   min-height: 100%;
   position: relative;
