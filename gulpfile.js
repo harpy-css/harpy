@@ -4,13 +4,12 @@ var gulp = require('gulp'),
     minifycss = require('gulp-minify-css'),
     rename = require('gulp-rename'),
     uglify = require('gulp-uglify'),
+    gutil = require('gulp-util'),
     plumber = require('gulp-plumber'),
     size = require('gulp-size'),
     gzip = require('gulp-gzip'),
     notify = require("gulp-notify");
 
-
-var wp = false;
 
 // Server
 gulp.task('express', function() {
@@ -48,6 +47,8 @@ gulp.task('compress', function() {
 // SCSS
 gulp.task('styles', function() {
 	return gulp.src('scss/harpy.scss')
+	// error handling
+	.pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
 	.pipe(sass({ style: 'expanded' }))
 	.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
 	.pipe(gulp.dest('css'))
