@@ -92,7 +92,7 @@ gulp.task('production', function() {
 });
 
 // Defaults
-gulp.task('wordpress', ['styles', 'watch-wp'], function() {});
+gulp.task('no-server', ['styles', 'watch-wp'], function() {});
 
 // Defaults
 gulp.task('default', ['styles', 'express', 'livereload', 'watch'], function() {});
