@@ -19,9 +19,11 @@
 
 html {
   @include box-sizing();
-  overflow-y: scroll;
+  overflow: hidden;
   min-height: 100%;
   position: relative;
+
+  background: black;
 }
 
 
@@ -38,6 +40,10 @@ img {
 body {
   -webkit-tap-highlight-color: rgba(0,0,0,0); /* [1] */
   min-height: 100%;
+  overflow: hidden;
+  background: url(../images/bakgrund.jpg);
+  background-repeat: no-repeat;
+  min-height: 660px;
 
   &.sticky-footer {
     margin-bottom: 60px;

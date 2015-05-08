@@ -8,7 +8,8 @@ var gulp = require('gulp'),
     plumber = require('gulp-plumber'),
     size = require('gulp-size'),
     gzip = require('gulp-gzip'),
-    notify = require("gulp-notify");
+    notify = require("gulp-notify"),
+    uncss = require('gulp-uncss');
 
 
 // Server
@@ -79,6 +80,9 @@ gulp.task('production', function() {
 	.pipe(sass({ style: 'expanded' }))
 	.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
 	.pipe(gulp.dest('css'))
+	.pipe(uncss({
+        html: ['index.html']
+    }))
 	.pipe(rename({suffix: '.min'}))
 	.pipe(minifycss())
 	.pipe(gulp.dest('css'))
