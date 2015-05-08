@@ -383,6 +383,111 @@ td, th {
 		TYPOGRAPHY
 -------------------------------------------------------------- */
 /*----------------------------------------------------------------
+    ../FONTS
+	längre ner gör man mixin för fonten.
+	baseFont ex med tranfsform osv.
+-------------------------------------------------------------- */
+@font-face {
+  font-family: 'Hoefler Text';
+  src: url(../fonts/hoeflertext.otf); }
+
+@font-face {
+  font-family: 'Fakt';
+  src: url('../fonts/FaktPro-Air.eot');
+  src: url('../fonts/FaktPro-Air.eot?#iefix') format('embedded-opentype'), url('../fonts/FaktPro-Air.woff') format('woff'), url('../fonts/FaktPro-Air.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Fakt';
+  src: url('../fonts/FaktPro-Hair.eot');
+  src: url('../fonts/FaktPro-Hair.eot?#iefix') format('embedded-opentype'), url('../fonts/FaktPro-Hair.woff') format('woff'), url('../fonts/FaktPro-Hair.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Fakt';
+  src: url('../fonts/FaktPro-Thin.eot');
+  src: url('../fonts/FaktPro-Thin.eot?#iefix') format('embedded-opentype'), url('../fonts/FaktPro-Thin.woff') format('woff'), url('../fonts/FaktPro-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Fakt';
+  src: url('../fonts/FaktPro-ThinItalic.eot');
+  src: url('../fonts/FaktPro-ThinItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/FaktPro-ThinItalic.woff') format('woff'), url('../fonts/FaktPro-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Fakt';
+  src: url('../fonts/FaktPro-Light.eot');
+  src: url('../fonts/FaktPro-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/FaktPro-Light.woff') format('woff'), url('../fonts/FaktPro-Light.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Fakt';
+  src: url('../fonts/FaktPro-Blond.eot');
+  src: url('../fonts/FaktPro-Blond.eot?#iefix') format('embedded-opentype'), url('../fonts/FaktPro-Blond.woff') format('woff'), url('../fonts/FaktPro-Blond.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Fakt';
+  src: url('../fonts/FaktPro-Normal.eot');
+  src: url('../fonts/FaktPro-Normal.eot?#iefix') format('embedded-opentype'), url('../fonts/FaktPro-Normal.woff') format('woff'), url('../fonts/FaktPro-Normal.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Fakt';
+  src: url('../fonts/FaktPro-Medium.eot');
+  src: url('../fonts/FaktPro-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/FaktPro-Medium.woff') format('woff'), url('../fonts/FaktPro-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Fakt';
+  src: url('../fonts/FaktPro-SemiBold.eot');
+  src: url('../fonts/FaktPro-SemiBold.eot?#iefix') format('embedded-opentype'), url('../fonts/FaktPro-SemiBold.woff') format('woff'), url('../fonts/FaktPro-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: "untitled-font-3";
+  src: url("../fonts/untitled-font-3.eot");
+  src: url("../fonts/untitled-font-3.eot?#iefix") format("embedded-opentype"), url("../fonts/untitled-font-3.woff") format("woff"), url("../fonts/untitled-font-3.ttf") format("truetype"), url("../fonts/untitled-font-3.svg#untitled-font-3") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[data-icon]:before {
+  font-family: "untitled-font-3" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "untitled-font-3" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-namnlost-1:before {
+  content: "a"; }
+
+/*----------------------------------------------------------------
     TYPE
     TODO: hur type ska bete sig på mindre skärmar
 -------------------------------------------------------------- */
@@ -437,7 +542,10 @@ h2, .h2 {
   font-size: 24px; }
 
 h3, .h3 {
-  font-size: 14px; }
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
 
 h4, .h4 {
   font-size: 16px; }
@@ -481,10 +589,9 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow-y: scroll;
   min-height: 100%;
-  position: relative;
-  background: black; }
+  position: relative; }
 
 img {
   max-width: 100%;
@@ -497,11 +604,7 @@ img {
 body {
   -webkit-tap-highlight-color: transparent;
   /* [1] */
-  min-height: 100%;
-  overflow: hidden;
-  background: url(../images/bakgrund.jpg);
-  background-repeat: no-repeat;
-  min-height: 660px; }
+  min-height: 100%; }
   body.sticky-footer {
     margin-bottom: 60px; }
 
@@ -3265,35 +3368,6 @@ footer, .sticky-footer footer {
 @media (min-width: 768px) {
   .body {
     width: 100px; } }
-
-a {
-  display: block;
-  height: 660px;
-  width: 1200px; }
-
-.vaga-bli {
-  position: absolute;
-  width: 250px;
-  top: 100px;
-  left: 150px; }
-
-.passionerad-text {
-  position: absolute;
-  left: 115px;
-  top: 390px;
-  width: 320px; }
-
-.knapp {
-  width: 200px;
-  position: absolute;
-  left: 174px;
-  top: 490px; }
-
-.hjartan {
-  position: absolute;
-  top: 120px;
-  left: 665px;
-  width: 70px; }
 
 /* --------------------------------------------------------------
 		PRINT
