@@ -80,7 +80,7 @@ gulp.task('production', function() {
 	.pipe(sass({ style: 'expanded' }))
 	.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
 	.pipe(gulp.dest('css'))
-	.pipe(uncss({
+	 .pipe(uncss({
         html: ['index.html']
     }))
 	.pipe(rename({suffix: '.min'}))
