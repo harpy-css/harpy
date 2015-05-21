@@ -30,11 +30,11 @@ $vimeoColor:		#1ab7ea;
 		COLORS — VARIABLES
 -------------------------------------------------------------- */
 
-$primaryColor:      $blue;
+$primaryColor:      #9DC6D8;
 $secondaryColor:    $yellow;
 
-$linkColor:			$blue;
-$linkHoverColor:	darken($blue, 12.5%);
+$linkColor:			$primaryColor;
+$linkHoverColor:	darken($primaryColor, 12.5%);
 
 $selectionColor:		$white;
 $selectionBackground: 	$primaryColor;

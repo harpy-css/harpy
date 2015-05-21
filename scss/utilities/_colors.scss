@@ -64,6 +64,10 @@
 	.black#{$suffix} {
 		color: $black;
 	}
+
+	.primary-color#{$suffix} {
+		color: $primaryColor;
+	}
 }
 
 
