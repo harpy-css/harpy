@@ -65,8 +65,16 @@
 		color: $black;
 	}
 
-	.primaryColor#{$suffix} {
+	.primary#{$suffix} {
 		color: $primaryColor;
+	}
+
+	.primary-dark#{$suffix} {
+		color: darken($primaryColor, 12.5%);
+	}
+
+	.primary-light#{$suffix} {
+		color: lighten($primaryColor, 12.5%);
 	}
 }
 
