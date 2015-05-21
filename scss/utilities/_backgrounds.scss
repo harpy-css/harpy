@@ -68,6 +68,10 @@
 	.bg-black#{$suffix} {
 		background: $black;
 	}
+
+	.bg-primary#{$suffix} {
+		background: $primaryColor;
+	}
 }
 
 

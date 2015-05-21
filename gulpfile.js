@@ -69,7 +69,7 @@ gulp.task('watch', function() {
 });
 
 // Watch
-gulp.task('no-server', function() {
+gulp.task('noserver', function() {
 	gulp.watch('scss/**/*.scss', ['styles']);
 	gulp.watch('js/*.js', ['compress']);
 });
@@ -83,8 +83,6 @@ gulp.task('production', function() {
 	.pipe(uncss({
         html: ['index.html']
     }))
-	.pipe(rename({suffix: '.min'}))
-	.pipe(minifycss())
 	.pipe(gulp.dest('css'))
 	.pipe(size({gzip: false, showFiles: true}))
 	.pipe(size({gzip: true, showFiles: true}))
@@ -96,7 +94,7 @@ gulp.task('production', function() {
 });
 
 // Defaults
-gulp.task('no-server', ['styles', 'watch-wp'], function() {});
+gulp.task('no-server', ['noserver'], function() {});
 
 // Defaults
 gulp.task('default', ['styles', 'express', 'livereload', 'watch'], function() {});

@@ -90,6 +90,11 @@
 		margin-right: $baseMargin/2;
 	}
 
+	.mxn#{$suffix} {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
 	/* margin y */
 	.myl#{$suffix} {
 		margin-top: $baseMargin*2;
@@ -104,6 +109,11 @@
 	.mys#{$suffix} {
 		margin-top: $baseMargin/2;
 		margin-bottom: $baseMargin/2;
+	}
+
+	.myn#{$suffix} {
+		margin-top: 0;
+		margin-bottom: 0;
 	}
 
 	/* NEGATIVE */
