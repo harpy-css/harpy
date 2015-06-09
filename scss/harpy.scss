@@ -70,6 +70,7 @@
 	@import 'utilities/padding';
 	@import 'utilities/margin';
 	@import 'utilities/borders';
+	@import 'utilities/border-colors';
 	@import 'utilities/backgrounds';
 	@import 'utilities/colors';
 	@import 'utilities/border-radius';
@@ -107,11 +108,9 @@
 	@import 'molecules/forms/inputgroups';
 
 /* --------------------------------------------------------------
-	6.  MOLECULES/FORMS
+	6. 
 -------------------------------------------------------------- */
 
-	@import 'molecules/type/headinggroups';
-	@import 'molecules/type/postelements';
 
 /* --------------------------------------------------------------
 	7.  ORGANISMS

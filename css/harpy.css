@@ -1852,6 +1852,228 @@ a, a:visited {
     border-left-style: dotted;
     border-left-width: 1px; } }
 
+.bc-navy {
+  border-color: #1D4E89; }
+
+.bc-blue {
+  border-color: #1D4E89; }
+
+.bc-aqua {
+  border-color: #9DC6D8; }
+
+.bc-olive {
+  border-color: #3D9970; }
+
+.bc-green {
+  border-color: #2ECC40; }
+
+.bc-lime {
+  border-color: #01FF70; }
+
+.bc-yellow {
+  border-color: #f0ad4e; }
+
+.bc-orange {
+  border-color: #FF851B; }
+
+.bc-red {
+  border-color: #FF4136; }
+
+.bc-maroon {
+  border-color: #85144B; }
+
+.bc-purple {
+  border-color: #B10DC9; }
+
+.bc-white {
+  border-color: #FFFFFF; }
+
+.bc-silver {
+  border-color: #DDDDDD; }
+
+.bc-gray {
+  border-color: #AAAAAA; }
+
+.bc-black {
+  border-color: #16161d; }
+
+.bc-primary {
+  border-color: #7DA1BF; }
+
+.bc-primary-dark {
+  border-color: #5382a9; }
+
+.bc-primary-light {
+  border-color: #a8c0d4; }
+
+.bc-navy-xs {
+  border-color: #1D4E89; }
+
+.bc-blue-xs {
+  border-color: #1D4E89; }
+
+.bc-aqua-xs {
+  border-color: #9DC6D8; }
+
+.bc-olive-xs {
+  border-color: #3D9970; }
+
+.bc-green-xs {
+  border-color: #2ECC40; }
+
+.bc-lime-xs {
+  border-color: #01FF70; }
+
+.bc-yellow-xs {
+  border-color: #f0ad4e; }
+
+.bc-orange-xs {
+  border-color: #FF851B; }
+
+.bc-red-xs {
+  border-color: #FF4136; }
+
+.bc-maroon-xs {
+  border-color: #85144B; }
+
+.bc-purple-xs {
+  border-color: #B10DC9; }
+
+.bc-white-xs {
+  border-color: #FFFFFF; }
+
+.bc-silver-xs {
+  border-color: #DDDDDD; }
+
+.bc-gray-xs {
+  border-color: #AAAAAA; }
+
+.bc-black-xs {
+  border-color: #16161d; }
+
+.bc-primary-xs {
+  border-color: #7DA1BF; }
+
+.bc-primary-dark-xs {
+  border-color: #5382a9; }
+
+.bc-primary-light-xs {
+  border-color: #a8c0d4; }
+
+@media (min-width: 768px) {
+  .bc-navy-sm {
+    border-color: #1D4E89; }
+  .bc-blue-sm {
+    border-color: #1D4E89; }
+  .bc-aqua-sm {
+    border-color: #9DC6D8; }
+  .bc-olive-sm {
+    border-color: #3D9970; }
+  .bc-green-sm {
+    border-color: #2ECC40; }
+  .bc-lime-sm {
+    border-color: #01FF70; }
+  .bc-yellow-sm {
+    border-color: #f0ad4e; }
+  .bc-orange-sm {
+    border-color: #FF851B; }
+  .bc-red-sm {
+    border-color: #FF4136; }
+  .bc-maroon-sm {
+    border-color: #85144B; }
+  .bc-purple-sm {
+    border-color: #B10DC9; }
+  .bc-white-sm {
+    border-color: #FFFFFF; }
+  .bc-silver-sm {
+    border-color: #DDDDDD; }
+  .bc-gray-sm {
+    border-color: #AAAAAA; }
+  .bc-black-sm {
+    border-color: #16161d; }
+  .bc-primary-sm {
+    border-color: #7DA1BF; }
+  .bc-primary-dark-sm {
+    border-color: #5382a9; }
+  .bc-primary-light-sm {
+    border-color: #a8c0d4; } }
+
+@media (min-width: 992px) {
+  .bc-navy-md {
+    border-color: #1D4E89; }
+  .bc-blue-md {
+    border-color: #1D4E89; }
+  .bc-aqua-md {
+    border-color: #9DC6D8; }
+  .bc-olive-md {
+    border-color: #3D9970; }
+  .bc-green-md {
+    border-color: #2ECC40; }
+  .bc-lime-md {
+    border-color: #01FF70; }
+  .bc-yellow-md {
+    border-color: #f0ad4e; }
+  .bc-orange-md {
+    border-color: #FF851B; }
+  .bc-red-md {
+    border-color: #FF4136; }
+  .bc-maroon-md {
+    border-color: #85144B; }
+  .bc-purple-md {
+    border-color: #B10DC9; }
+  .bc-white-md {
+    border-color: #FFFFFF; }
+  .bc-silver-md {
+    border-color: #DDDDDD; }
+  .bc-gray-md {
+    border-color: #AAAAAA; }
+  .bc-black-md {
+    border-color: #16161d; }
+  .bc-primary-md {
+    border-color: #7DA1BF; }
+  .bc-primary-dark-md {
+    border-color: #5382a9; }
+  .bc-primary-light-md {
+    border-color: #a8c0d4; } }
+
+@media (min-width: 1200px) {
+  .bc-navy-lg {
+    border-color: #1D4E89; }
+  .bc-blue-lg {
+    border-color: #1D4E89; }
+  .bc-aqua-lg {
+    border-color: #9DC6D8; }
+  .bc-olive-lg {
+    border-color: #3D9970; }
+  .bc-green-lg {
+    border-color: #2ECC40; }
+  .bc-lime-lg {
+    border-color: #01FF70; }
+  .bc-yellow-lg {
+    border-color: #f0ad4e; }
+  .bc-orange-lg {
+    border-color: #FF851B; }
+  .bc-red-lg {
+    border-color: #FF4136; }
+  .bc-maroon-lg {
+    border-color: #85144B; }
+  .bc-purple-lg {
+    border-color: #B10DC9; }
+  .bc-white-lg {
+    border-color: #FFFFFF; }
+  .bc-silver-lg {
+    border-color: #DDDDDD; }
+  .bc-gray-lg {
+    border-color: #AAAAAA; }
+  .bc-black-lg {
+    border-color: #16161d; }
+  .bc-primary-lg {
+    border-color: #7DA1BF; }
+  .bc-primary-dark-lg {
+    border-color: #5382a9; }
+  .bc-primary-light-lg {
+    border-color: #a8c0d4; } }
+
 .bg-none {
   background: none; }
 
@@ -3354,38 +3576,8 @@ a img.aligncenter {
   text-align: left; }
 
 /* --------------------------------------------------------------
-	6.  MOLECULES/FORMS
+	6. 
 -------------------------------------------------------------- */
-.time {
-  display: block;
-  margin-bottom: 10px;
-  font-size: 90%; }
-
-.ingress {
-  font-weight: 500;
-  color: #16161d;
-  margin-bottom: 0; }
-
-.small-caps {
-  text-transform: uppercase;
-  font-size: 15px; }
-
-img + p.caption-special {
-  font-size: 90%;
-  position: absolute;
-  padding: 10px 20px;
-  left: 40px;
-  bottom: 40px;
-  color: #FFFFFF;
-  background: rgba(0, 0, 0, 0.7); }
-
-img + p.caption {
-  font-size: 90%; }
-
-p + p.indent {
-  text-indent: 20px;
-  margin: -16px 0 16px 0; }
-
 /* --------------------------------------------------------------
 	7.  ORGANISMS
 -------------------------------------------------------------- */

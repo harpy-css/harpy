@@ -1,0 +1,92 @@
+@mixin harpyHelpers($suffix: false) {
+	@if($suffix) {
+		$suffix: -#{$suffix};
+	} @else {
+		$suffix: unquote('');
+	}
+
+	.bc-navy#{$suffix} {
+		border-color: $navy;
+	}
+
+	.bc-blue#{$suffix} {
+		border-color: $blue;
+	}
+
+	.bc-aqua#{$suffix} {
+		border-color: $aqua;
+	}
+
+	.bc-olive#{$suffix} {
+		border-color: $olive;
+	}
+
+	.bc-green#{$suffix} {
+		border-color: $green;
+	}
+
+	.bc-lime#{$suffix} {
+		border-color: $lime;
+	}
+	
+	.bc-yellow#{$suffix} {
+		border-color: $yellow;
+	}
+
+	.bc-orange#{$suffix} {
+		border-color: $orange;
+	}
+	
+	.bc-red#{$suffix} {
+		border-color: $red;
+	}
+
+	.bc-maroon#{$suffix} {
+		border-color: $maroon;
+	}
+
+	.bc-purple#{$suffix} {
+		border-color: $purple;
+	}
+
+	.bc-white#{$suffix} {
+		border-color: $white;
+	}
+
+	.bc-silver#{$suffix} {
+		border-color: $silver;
+	}
+
+	.bc-gray#{$suffix} {
+		border-color: $gray;
+	}
+
+	.bc-black#{$suffix} {
+		border-color: $black;
+	}
+
+	.bc-primary#{$suffix} {
+		border-color: $primaryColor;
+	}
+
+	.bc-primary-dark#{$suffix} {
+		border-color: darken($primaryColor, 12.5%);
+	}
+
+	.bc-primary-light#{$suffix} {
+		border-color: lighten($primaryColor, 12.5%);
+	}
+}
+
+
+@include harpyHelpers();
+@include harpyHelpers('xs');
+@media (min-width: $screen-sm-min) {
+	@include harpyHelpers('sm');
+}
+@media (min-width: $screen-md-min) {
+	@include harpyHelpers('md');
+}
+@media (min-width: $screen-lg-min) {
+	@include harpyHelpers('lg');
+}
