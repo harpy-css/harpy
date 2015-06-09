@@ -2,7 +2,6 @@
 //= include log.js
 
 !function() {
-	
 	'use strict';
 
 	// Browser checking
@@ -13,5 +12,4 @@
 		log('hello world from harpy!!!');
 		break;
 	}
-
 }();
