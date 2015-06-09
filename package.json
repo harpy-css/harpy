@@ -28,7 +28,8 @@
     "gulp-size": "~1.2.1",
     "gulp-gzip": "~1.0.0",
     "gulp-util": "~3.0.4",
-    "gulp-uncss": "~1.0.1"
+    "gulp-uncss": "~1.0.1",
+    "gulp-concat": "~2.5.2"
   },
   "dependencies": {}
 }
