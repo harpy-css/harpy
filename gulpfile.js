@@ -9,7 +9,9 @@ var gulp = require('gulp'),
     size = require('gulp-size'),
     gzip = require('gulp-gzip'),
     notify = require("gulp-notify"),
-    uncss = require('gulp-uncss');
+    uncss = require('gulp-uncss'),
+    sourcemaps = require('gulp-sourcemaps'),
+    include = require('gulp-include');
 
 
 // Server
@@ -40,8 +42,14 @@ function notifyLiveReload(event) {
 
 // JS
 gulp.task('compress', function() {
-	return gulp.src('js/*.js')
-    .pipe(uglify())
+	return gulp.src('js/main.js')
+    .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
+    .pipe(sourcemaps.init())
+    .pipe(include())
+    .pipe(uglify({
+        preserveComments: 'some'
+    }))
+    .pipe(sourcemaps.write('../maps'))
     .pipe(gulp.dest('js/min/'))
 });
 

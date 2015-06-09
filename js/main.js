@@ -1,6 +1,5 @@
-var log = function(args) {
-	console.log(args);
-}
+
+//= include log.js
 
 !function() {
 	
