@@ -27,7 +27,7 @@ h4,
 .h2,
 .h3,
 .h4 {
-  margin: $baseMargin 0 $baseMargin/4 0; 
+  margin: $baseMargin 0 $baseMargin/4 0;
   line-height: 1.3;
   color: $headingColor;
 }
@@ -36,7 +36,7 @@ h1,
 h2,
 h3,
 h4 {
-    font-weight: $fontBold; 
+    font-weight: $fontBold;
 }
 
 h1>a,
@@ -65,13 +65,12 @@ h2,
 h3,
 .h3 {
   font-size: $fontH3;
-  @include avenirHeadings();
 }
 
 h4,
 .h4 {
   font-size: $fontH4;
-  
+
 }
 
 p,
@@ -81,7 +80,7 @@ p,
   font-weight: $fontNormal;
   display: block;
   margin: 0 0 16px 0;
-  
+
 
   &:last-child {
     margin: 0;
