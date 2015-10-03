@@ -4,7 +4,7 @@
   "description": "Harpy is a lightweight collection of base element styles, utilities, layout modules, and color styles designed for speed, performance, and scalability.gulp",
   "main": "Gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "harpy": "npm install && bower install && gulp"
   },
   "repository": {
     "type": "git",
