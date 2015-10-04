@@ -2,6 +2,10 @@
 	border-bottom: $baseBorderWidth solid $silver;
 	padding: $basePadding/2 0;
 
+	.mobile-menu__icon {
+		display: none;
+	}
+
 	a, a:visited {
 		color: $black;
 		font-size: $baseFontSize - 2;
@@ -11,14 +15,12 @@
 		}
 	}
 
-	
-
 	.brand {
 		width: 30%;
 		display: inline-block;
 		padding: $basePadding 0;
 		float: left;
-		
+
 		a, a:visited {
 			&:hover {
 				color: $linkHoverColor;
@@ -45,6 +47,54 @@
 			}
 		}
 	}
+
+	&.mobile-menu {
+		@media (max-width: $screen-xs) {
+		padding: 0;
+
+		.container { padding: 0; }
+		.brand {padding: $basePadding; border-bottom: 1px solid $silver; width: 100%; }
+
+		.mobile-menu__icon {
+			float: right;
+			display: block;
+		  position: relative;
+		  padding-left: 20px;
+			cursor: pointer;
+			height: 17px;
+
+			&:before {
+				cursor: pointer;
+				content: "";
+			  position: absolute;
+			  left: 0;
+			  top: 6px;
+			  width: 17px;
+			  height: 2px;
+			  background: $textColor;
+			  box-shadow:
+			    0 4px 0 0 $textColor,
+			    0 8px 0 0 $textColor;
+			}
+		}
+
+		nav {
+			display: none;
+			padding: 0 $basePadding;
+			width: 100%;
+				ul {
+					float: none;
+					padding: 0;
+
+					li {
+						margin: $baseMargin/2 0;
+						display: block;
+						border-bottom: 1px solid $silver;
+					}
+				}
+			}
+		}
+	}
 }
 
 .site-header-inverse {
@@ -53,9 +103,10 @@
 	color: $siteHeaderFontColor;
 	border: none;
 
-	a, 
+	a,
 	a:visited {
 		text-decoration: none;
+		color: $white;
 
 		&:hover,
   		&:focus {
