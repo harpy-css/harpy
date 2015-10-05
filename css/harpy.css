@@ -3446,7 +3446,7 @@ a img.aligncenter {
   .inputgrp {
     width: 100%; } }
 .inputgrp .btn, .inputgrp .btn-lg, .inputgrp .btn-md, .inputgrp .btn-lg, .inputgrp .btn-md {
-  margin-top: 0; }
+  margin-top: -3px; }
   @media (max-width: 480px) {
     .inputgrp .btn, .inputgrp .btn-lg, .inputgrp .btn-md, .inputgrp .btn-lg, .inputgrp .btn-md {
       margin-top: 10px; } }
