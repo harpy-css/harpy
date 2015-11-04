@@ -5,20 +5,20 @@
 		$suffix: unquote('');
 	}
 
-	.lhs#{$suffix} {
-		line-height: 1;
+  .ttc#{$suffix} {
+		text-transform: capitalize;
 	}
 
-	.lhm#{$suffix} {
-		line-height: 1.3;
+	.ttu#{$suffix} {
+		text-transform: uppercase;
 	}
 
-	.lhl#{$suffix} {
-		line-height: 1.6;
+	.ttc#{$suffix} {
+		text-transform: capitalize;
 	}
 
-	.lh-copy#{$suffix} {
-		line-height: 150%;
+	.ttn#{$suffix} {
+		text-transform: none;
 	}
 }
 

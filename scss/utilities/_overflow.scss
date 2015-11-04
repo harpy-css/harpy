@@ -1,0 +1,36 @@
+@mixin harpyHelpers($suffix: false) {
+	@if($suffix) {
+		$suffix: -#{$suffix};
+	} @else {
+		$suffix: unquote('');
+	}
+
+  .of-vis#{$suffix} { overflow: visible; }
+  .of-hid,.oh#{$suffix} { overflow: hidden; }
+  .of-scr#{$suffix} { overflow: scroll; }
+  .of-aut#{$suffix} { overflow: auto; }
+
+  .ofx-vis#{$suffix} { overflow-x: visible; }
+  .ofx-hid#{$suffix} { overflow-x: hidden; }
+  .ofx-scr#{$suffix} { overflow-x: scroll; }
+  .ofx-aut#{$suffix} { overflow-x: auto; }
+
+  .ofy-vis#{$suffix} { overflow-y: visible; }
+  .ofy-hid#{$suffix} { overflow-y: hidden; }
+  .ofy-scr#{$suffix} { overflow-y: scroll; }
+  .ofy-aut#{$suffix} { overflow-y: auto; }
+
+}
+
+
+@include harpyHelpers();
+@include harpyHelpers('xs');
+@media (min-width: $screen-sm-min) {
+	@include harpyHelpers('sm');
+}
+@media (min-width: $screen-md-min) {
+	@include harpyHelpers('md');
+}
+@media (min-width: $screen-lg-min) {
+	@include harpyHelpers('lg');
+}

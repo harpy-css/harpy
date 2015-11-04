@@ -3074,6 +3074,252 @@ a, a:visited {
   .lsl-lg {
     letter-spacing: 5px; } }
 
+.lhs {
+  line-height: 1; }
+
+.lhm {
+  line-height: 1.3; }
+
+.lhl {
+  line-height: 1.6; }
+
+.lh-copy {
+  line-height: 150%; }
+
+.lhs-xs {
+  line-height: 1; }
+
+.lhm-xs {
+  line-height: 1.3; }
+
+.lhl-xs {
+  line-height: 1.6; }
+
+.lh-copy-xs {
+  line-height: 150%; }
+
+@media (min-width: 768px) {
+  .lhs-sm {
+    line-height: 1; }
+  .lhm-sm {
+    line-height: 1.3; }
+  .lhl-sm {
+    line-height: 1.6; }
+  .lh-copy-sm {
+    line-height: 150%; } }
+
+@media (min-width: 992px) {
+  .lhs-md {
+    line-height: 1; }
+  .lhm-md {
+    line-height: 1.3; }
+  .lhl-md {
+    line-height: 1.6; }
+  .lh-copy-md {
+    line-height: 150%; } }
+
+@media (min-width: 1200px) {
+  .lhs-lg {
+    line-height: 1; }
+  .lhm-lg {
+    line-height: 1.3; }
+  .lhl-lg {
+    line-height: 1.6; }
+  .lh-copy-lg {
+    line-height: 150%; } }
+
+.mws {
+  max-width: 25%; }
+
+.mwm {
+  max-width: 50%; }
+
+.mwl {
+  max-width: 100%; }
+
+.mws-xs {
+  max-width: 25%; }
+
+.mwm-xs {
+  max-width: 50%; }
+
+.mwl-xs {
+  max-width: 100%; }
+
+@media (min-width: 768px) {
+  .mws-sm {
+    max-width: 25%; }
+  .mwm-sm {
+    max-width: 50%; }
+  .mwl-sm {
+    max-width: 100%; } }
+
+@media (min-width: 992px) {
+  .mws-md {
+    max-width: 25%; }
+  .mwm-md {
+    max-width: 50%; }
+  .mwl-md {
+    max-width: 100%; } }
+
+@media (min-width: 1200px) {
+  .mws-lg {
+    max-width: 25%; }
+  .mwm-lg {
+    max-width: 50%; }
+  .mwl-lg {
+    max-width: 100%; } }
+
+.of-vis {
+  overflow: visible; }
+
+.of-hid, .oh {
+  overflow: hidden; }
+
+.of-scr {
+  overflow: scroll; }
+
+.of-aut {
+  overflow: auto; }
+
+.ofx-vis {
+  overflow-x: visible; }
+
+.ofx-hid {
+  overflow-x: hidden; }
+
+.ofx-scr {
+  overflow-x: scroll; }
+
+.ofx-aut {
+  overflow-x: auto; }
+
+.ofy-vis {
+  overflow-y: visible; }
+
+.ofy-hid {
+  overflow-y: hidden; }
+
+.ofy-scr {
+  overflow-y: scroll; }
+
+.ofy-aut {
+  overflow-y: auto; }
+
+.of-vis-xs {
+  overflow: visible; }
+
+.of-hid, .oh-xs {
+  overflow: hidden; }
+
+.of-scr-xs {
+  overflow: scroll; }
+
+.of-aut-xs {
+  overflow: auto; }
+
+.ofx-vis-xs {
+  overflow-x: visible; }
+
+.ofx-hid-xs {
+  overflow-x: hidden; }
+
+.ofx-scr-xs {
+  overflow-x: scroll; }
+
+.ofx-aut-xs {
+  overflow-x: auto; }
+
+.ofy-vis-xs {
+  overflow-y: visible; }
+
+.ofy-hid-xs {
+  overflow-y: hidden; }
+
+.ofy-scr-xs {
+  overflow-y: scroll; }
+
+.ofy-aut-xs {
+  overflow-y: auto; }
+
+@media (min-width: 768px) {
+  .of-vis-sm {
+    overflow: visible; }
+  .of-hid, .oh-sm {
+    overflow: hidden; }
+  .of-scr-sm {
+    overflow: scroll; }
+  .of-aut-sm {
+    overflow: auto; }
+  .ofx-vis-sm {
+    overflow-x: visible; }
+  .ofx-hid-sm {
+    overflow-x: hidden; }
+  .ofx-scr-sm {
+    overflow-x: scroll; }
+  .ofx-aut-sm {
+    overflow-x: auto; }
+  .ofy-vis-sm {
+    overflow-y: visible; }
+  .ofy-hid-sm {
+    overflow-y: hidden; }
+  .ofy-scr-sm {
+    overflow-y: scroll; }
+  .ofy-aut-sm {
+    overflow-y: auto; } }
+
+@media (min-width: 992px) {
+  .of-vis-md {
+    overflow: visible; }
+  .of-hid, .oh-md {
+    overflow: hidden; }
+  .of-scr-md {
+    overflow: scroll; }
+  .of-aut-md {
+    overflow: auto; }
+  .ofx-vis-md {
+    overflow-x: visible; }
+  .ofx-hid-md {
+    overflow-x: hidden; }
+  .ofx-scr-md {
+    overflow-x: scroll; }
+  .ofx-aut-md {
+    overflow-x: auto; }
+  .ofy-vis-md {
+    overflow-y: visible; }
+  .ofy-hid-md {
+    overflow-y: hidden; }
+  .ofy-scr-md {
+    overflow-y: scroll; }
+  .ofy-aut-md {
+    overflow-y: auto; } }
+
+@media (min-width: 1200px) {
+  .of-vis-lg {
+    overflow: visible; }
+  .of-hid, .oh-lg {
+    overflow: hidden; }
+  .of-scr-lg {
+    overflow: scroll; }
+  .of-aut-lg {
+    overflow: auto; }
+  .ofx-vis-lg {
+    overflow-x: visible; }
+  .ofx-hid-lg {
+    overflow-x: hidden; }
+  .ofx-scr-lg {
+    overflow-x: scroll; }
+  .ofx-aut-lg {
+    overflow-x: auto; }
+  .ofy-vis-lg {
+    overflow-y: visible; }
+  .ofy-hid-lg {
+    overflow-y: hidden; }
+  .ofy-scr-lg {
+    overflow-y: scroll; }
+  .ofy-aut-lg {
+    overflow-y: auto; } }
+
 /* --------------------------------------------------------------
 	3.  ATOMS/PARTIALS
 		Tables, btns, inputs, lists, etc.
