@@ -5,71 +5,71 @@
 		$suffix: unquote('');
 	}
 
-	.navy#{$suffix} {
+	.c-navy#{$suffix} {
 		color: $navy;
 	}
 
-	.blue#{$suffix} {
+	.c-blue#{$suffix} {
 		color: $blue;
 	}
 
-	.aqua#{$suffix} {
+	.c-aqua#{$suffix} {
 		color: $aqua;
 	}
 
-	.olive#{$suffix} {
+	.c-olive#{$suffix} {
 		color: $olive;
 	}
 
-	.green#{$suffix} {
+	.c-green#{$suffix} {
 		color: $green;
 	}
 
-	.lime#{$suffix} {
+	.c-lime#{$suffix} {
 		color: $lime;
 	}
-	
-	.yellow#{$suffix} {
+
+	.c-yellow#{$suffix} {
 		color: $yellow;
 	}
 
-	.orange#{$suffix} {
+	.c-orange#{$suffix} {
 		color: $orange;
 	}
-	
-	.red#{$suffix} {
+
+	.c-red#{$suffix} {
 		color: $red;
 	}
 
-	.maroon#{$suffix} {
+	.c-maroon#{$suffix} {
 		color: $maroon;
 	}
 
-	.purple#{$suffix} {
+	.c-purple#{$suffix} {
 		color: $purple;
 	}
 
-	.white#{$suffix} {
+	.c-white#{$suffix} {
 		color: $white;
 	}
 
-	.silver#{$suffix} {
+	.c-silver#{$suffix} {
 		color: $silver;
 	}
 
-	.gray#{$suffix} {
+	.c-gray#{$suffix} {
 		color: $gray;
 	}
 
-	.black#{$suffix} {
+	.c-black#{$suffix} {
 		color: $black;
 	}
 
-	.primary#{$suffix} {
+	.c-primary#{$suffix} {
 		color: $primaryColor;
 	}
 
-	.primary-dark#{$suffix} {
+	.c-primary-dark#{$suffix} {
 		color: darken($primaryColor, 12.5%);
 	}
 

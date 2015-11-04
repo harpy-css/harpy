@@ -5,25 +5,14 @@
 		$suffix: unquote('');
 	}
 
-	.brs#{$suffix} {
-		border-radius: 2px;
-	}
-
-  .brm#{$suffix} {
-		border-radius: 4px;
-	}
-
-  .brl#{$suffix} {
-    border-radius: 6px;
-  }
-
-  .brn#{$suffix} {
-    border-radius: 0;
-  }
-
-  .br-circ#{$suffix} {
-    border-radius: 9999px;
-  }
+	.normal#{$suffix} { font-weight: normal; }
+	.b#{$suffix}  { font-weight: bold; }
+	.thin#{$suffix}  { font-weight: 100; }
+	.book#{$suffix}  { font-weight: 400; }
+	.semibold#{$suffix}  { font-weight: 500; }
+	.bold#{$suffix}  { font-weight: 600; }
+	.heavy#{$suffix}  { font-weight: 700; }
+	.ultrabold#{$suffix}  { font-weight: 900; }
 }
 
 

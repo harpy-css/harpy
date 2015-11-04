@@ -5,25 +5,21 @@
 		$suffix: unquote('');
 	}
 
-	.brs#{$suffix} {
-		border-radius: 2px;
+	.dib#{$suffix} {
+		display: inline-block;
 	}
 
-  .brm#{$suffix} {
-		border-radius: 4px;
+	.dn#{$suffix} {
+		display: none;
 	}
 
-  .brl#{$suffix} {
-    border-radius: 6px;
-  }
+	.db#{$suffix} {
+		display: block;
+	}
 
-  .brn#{$suffix} {
-    border-radius: 0;
-  }
-
-  .br-circ#{$suffix} {
-    border-radius: 9999px;
-  }
+	.di#{$suffix} {
+		display: inline;
+	}
 }
 
 

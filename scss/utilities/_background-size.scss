@@ -5,13 +5,14 @@
 		$suffix: unquote('');
 	}
 
-	.visible#{$suffix} {
-		display: inline-block !important;
+	.bg-cv#{$suffix} {
+		background-size: cover;
 	}
 
-	.notvisible#{$suffix} {
-		display: none !important;
+  .bg-cn#{$suffix} {
+		background-size: contain;
 	}
+
 }
 
 

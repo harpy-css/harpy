@@ -62,11 +62,11 @@
 -------------------------------------------------------------- */
 
 	@import 'atoms/base/base';
-	
+
 /* --------------------------------------------------------------
 	3.  UTILITIES
 -------------------------------------------------------------- */
-	
+
 	@import 'utilities/padding';
 	@import 'utilities/margin';
 	@import 'utilities/borders';
@@ -74,8 +74,14 @@
 	@import 'utilities/backgrounds';
 	@import 'utilities/colors';
 	@import 'utilities/border-radius';
-	@import 'utilities/visibility';
+	@import 'utilities/display';
 	@import 'utilities/queries';
+	@import 'utilities/background-size';
+	@import 'utilities/border-style';
+	@import 'utilities/positioning';
+	@import 'utilities/floats';
+	@import 'utilities/font-weight';
+	@import 'utilities/letter-spacing';
 
 /* --------------------------------------------------------------
 	3.  ATOMS/PARTIALS
@@ -108,7 +114,7 @@
 	@import 'molecules/forms/inputgroups';
 
 /* --------------------------------------------------------------
-	6. 
+	6.
 -------------------------------------------------------------- */
 
 
@@ -127,6 +133,3 @@
 
 	@import 'site/page';
 	@import 'site/print';
-
-
-

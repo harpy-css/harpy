@@ -5,25 +5,17 @@
 		$suffix: unquote('');
 	}
 
-	.brs#{$suffix} {
-		border-radius: 2px;
+	.fl#{$suffix} {
+		float: left;
 	}
 
-  .brm#{$suffix} {
-		border-radius: 4px;
+	.fr#{$suffix} {
+		float: right;
 	}
 
-  .brl#{$suffix} {
-    border-radius: 6px;
-  }
-
-  .brn#{$suffix} {
-    border-radius: 0;
-  }
-
-  .br-circ#{$suffix} {
-    border-radius: 9999px;
-  }
+	.fn#{$suffix} {
+		float: none;
+	}
 }
 
 
