@@ -9,10 +9,12 @@
 	if (document.all && !document.querySelector) document.body.className+= ' ie7';
 	if (document.all && document.querySelector && !document.addEventListener) document.body.className+= ' ie8';
 
+	if (typeof jQuery == 'undefined') {
+    throw new Error("Can't find jQuery. Type 'bower install' in terminal to install.");
+	}
+
 	var Harpy = {
 			init: function() {
-				console.log('hello world from harpy!!!');
-
 				$('.mobile-menu__icon').click(function() {
 					Harpy.menu();
 				});

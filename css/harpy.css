@@ -1563,7 +1563,7 @@ a, a:visited {
   border-style: solid;
   border-width: 1px; }
 
-.bt {
+.bt, footer, .sticky-footer footer {
   border-top-style: solid;
   border-top-width: 1px; }
 
@@ -1784,7 +1784,7 @@ a, a:visited {
 .bc-white {
   border-color: #FFFFFF; }
 
-.bc-silver {
+.bc-silver, footer, .sticky-footer footer {
   border-color: #DDDDDD; }
 
 .bc-gray {
@@ -2222,7 +2222,7 @@ a, a:visited {
 .c-gray {
   color: #AAAAAA; }
 
-.c-black {
+.c-black, footer a, .sticky-footer footer a, footer a:visited {
   color: #16161d; }
 
 .c-primary {
@@ -2468,7 +2468,7 @@ a, a:visited {
   .br-circ-lg {
     border-radius: 9999px; } }
 
-.dib {
+.dib, footer .brand, footer nav, .sticky-footer footer nav {
   display: inline-block; }
 
 .dn {
@@ -2594,7 +2594,7 @@ a, a:visited {
   .bs-solid-lg {
     border-style: solid; } }
 
-.p-ab {
+.p-ab, .sticky-footer footer {
   position: absolute; }
 
 .p-re {
@@ -2615,7 +2615,7 @@ a, a:visited {
 .right-0 {
   right: 0; }
 
-.bottom-0 {
+.bottom-0, .sticky-footer footer {
   bottom: 0; }
 
 .top-10 {
@@ -2888,10 +2888,10 @@ a, a:visited {
   .bottom-40-lg {
     bottom: 40px; } }
 
-.fl {
+.fl, footer .brand, footer nav, .sticky-footer footer nav {
   float: left; }
 
-.fr {
+.fr, footer nav ul, .sticky-footer footer nav ul {
   float: right; }
 
 .fn {
@@ -3320,6 +3320,60 @@ a, a:visited {
   .ofy-aut-lg {
     overflow-y: auto; } }
 
+.ttc {
+  text-transform: capitalize; }
+
+.ttu {
+  text-transform: uppercase; }
+
+.ttc {
+  text-transform: capitalize; }
+
+.ttn {
+  text-transform: none; }
+
+.ttc-xs {
+  text-transform: capitalize; }
+
+.ttu-xs {
+  text-transform: uppercase; }
+
+.ttc-xs {
+  text-transform: capitalize; }
+
+.ttn-xs {
+  text-transform: none; }
+
+@media (min-width: 768px) {
+  .ttc-sm {
+    text-transform: capitalize; }
+  .ttu-sm {
+    text-transform: uppercase; }
+  .ttc-sm {
+    text-transform: capitalize; }
+  .ttn-sm {
+    text-transform: none; } }
+
+@media (min-width: 992px) {
+  .ttc-md {
+    text-transform: capitalize; }
+  .ttu-md {
+    text-transform: uppercase; }
+  .ttc-md {
+    text-transform: capitalize; }
+  .ttn-md {
+    text-transform: none; } }
+
+@media (min-width: 1200px) {
+  .ttc-lg {
+    text-transform: capitalize; }
+  .ttu-lg {
+    text-transform: uppercase; }
+  .ttc-lg {
+    text-transform: capitalize; }
+  .ttn-lg {
+    text-transform: none; } }
+
 /* --------------------------------------------------------------
 	3.  ATOMS/PARTIALS
 		Tables, btns, inputs, lists, etc.
@@ -3637,10 +3691,10 @@ label {
 .nm {
   margin: 0 !important; }
 
-.fl {
+.fl, footer .brand, footer nav, .sticky-footer footer nav {
   float: left; }
 
-.fr {
+.fr, footer nav ul, .sticky-footer footer nav ul {
   float: right; }
 
 .fn {
@@ -4421,30 +4475,19 @@ a img.aligncenter {
       text-decoration: none;
       color: #dfdfdf !important; }
 
-footer, .sticky-footer footer {
-  border-top: 1px solid #DDDDDD; }
-  footer a, .sticky-footer footer a, footer a:visited {
-    color: #16161d;
-    font-size: 16px; }
-  footer .brand {
-    width: 30%;
-    display: inline-block;
-    padding: 20px 0;
-    float: left; }
-  footer nav, .sticky-footer footer nav {
-    width: 70%;
-    display: inline-block;
-    float: left; }
-    footer nav ul, .sticky-footer footer nav ul {
-      float: right; }
-      footer nav ul li, .sticky-footer footer nav ul li {
-        margin: 0 0 0 20px; }
-        footer nav ul li .btn, footer nav ul li .btn-lg, footer nav ul li .btn-md {
-          width: 100px; }
+footer a, .sticky-footer footer a, footer a:visited {
+  font-size: 16px; }
+footer .brand {
+  width: 30%;
+  padding: 20px 0; }
+footer nav, .sticky-footer footer nav {
+  width: 70%; }
+  footer nav ul li, .sticky-footer footer nav ul li {
+    margin: 0 0 0 20px; }
+    footer nav ul li .btn, footer nav ul li .btn-lg, footer nav ul li .btn-md {
+      width: 100px; }
 
 .sticky-footer footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
   height: 60px; }
 
