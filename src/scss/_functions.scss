@@ -1,0 +1,32 @@
+@function power($x, $n) {
+	$ret: 1;
+	@if $n > 0 {
+		@for $i from 1 through $n {
+			$ret: $ret * $x;
+		}
+	} @else {
+		@for $i from $n to 0 {
+			$ret: $ret / $x;
+		}
+	}
+	@return $ret;
+}
+
+@function sqrt($r) {
+	$x0: 1;
+	$x1: $x0;
+
+	@for $i from 1 through 10 {
+		$x1: $x0 - ($x0 * $x0 - abs($r)) / (2 * $x0);
+		$x0: $x1;
+	}
+
+	@return $x1;
+}
+
+@function lighten2($color, $amount) {
+	@return mix(scale-color($color, $lightness: $amount), adjust-color($color, $lightness: $amount), 50%);
+}
+@function darken2($color, $amount) {
+	@return mix(scale-color($color, $lightness: -$amount), adjust-color($color, $lightness: -$amount), 50%);
+}

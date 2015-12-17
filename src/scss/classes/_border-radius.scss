@@ -1,0 +1,15 @@
+$border-radius-exponent: 2 !default;
+$border-radius-base: .5rem !default;
+$border-radii: (
+	'n': 0,
+	's': $border-radius-base * power($border-radius-exponent, -1),
+	'm': $border-radius-base * power($border-radius-exponent, 0),
+	'l': $border-radius-base * power($border-radius-exponent, 1),
+	'-100': 100%,
+) !default;
+
+@each $name, $value in $border-radii {
+	.rad#{$name} {
+		border-radius: $value;
+	}
+}

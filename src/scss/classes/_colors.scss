@@ -1,0 +1,102 @@
+$colors: (
+	'inherit': inherit,
+	'transparent': transparent,
+	'white': white,
+	'black': black,
+	'black-5': rgba(black, .05),
+	'black-10': rgba(black, .10),
+	'black-15': rgba(black, .15),
+	'black-20': rgba(black, .20),
+	'black-30': rgba(black, .30),
+	'black-50': rgba(black, .50),
+	'black-70': rgba(black, .70),
+	'black-80': rgba(black, .80),
+	'black-85': rgba(black, .85),
+	'black-90': rgba(black, .90),
+	'black-95': rgba(black, .95),
+) !default;
+
+$additional-colors: () !default;
+$colors: map-merge($colors, $additional-colors);
+
+$lightened-colors: () !default;
+$darkened-colors: () !default;
+
+$color-lighten-amount: 10%;
+$color-darken-amount: 10%;
+
+@each $color in $lightened-colors {
+	$colors: map-merge($colors, (
+		'#{$color}-light': lighten2(map-get($colors, $color), $color-lighten-amount),
+		'#{$color}-lighter': lighten2(map-get($colors, $color), $color-lighten-amount * 2),
+		'#{$color}-lightest': lighten2(map-get($colors, $color), $color-lighten-amount * 3),
+	));
+}
+
+@each $color in $darkened-colors {
+	$colors: map-merge($colors, (
+		'#{$color}-dark': darken2(map-get($colors, $color), $color-darken-amount),
+		'#{$color}-darker': darken2(map-get($colors, $color), $color-darken-amount * 2),
+		'#{$color}-darkest': darken2(map-get($colors, $color), $color-darken-amount * 3),
+	));
+}
+
+@function color($name) {
+	@return map-get($colors, $name);
+}
+
+$color-alias: '' !default;
+$text-shadow-alias: 'ts-' !default;
+
+@each $name, $value in $colors {
+	.#{$color-alias}#{$name} {
+		/*hrpy:{"section": "text-color", "color": "#{$name}"}*/
+		color: $value;
+	}
+	.bg-#{$name} {
+		/*hrpy:{"section": "background-color", "color": "#{$name}"}*/
+		background-color: $value;
+	}
+	.fo-#{$name} {
+		/*hrpy:{"section": "focus-outline", "color": "#{$name}"}*/
+		box-shadow: 0 0 0 2px $value;
+	}
+	.#{$text-shadow-alias}#{$name} {
+		/*hrpy:{"section": "text-shadow", "color": "#{$name}"}*/
+		text-shadow: 0 1px 1px $value;
+	}
+	.bc-#{$name} {
+		/*hrpy:{"section": "border-color", "color": "#{$name}"}*/
+		border-color: $value;
+	}
+}
+
+@each $state in $states {
+	@each $name, $value in $colors {
+		.#{$state}-#{$color-alias}#{$name}:#{$state},
+		.#{$state}-#{$color-alias}#{$name}.#{$state} {
+			/*hrpy:{"class": "#{$state}-#{$color-alias}#{$name}", "section": "text-color", "color": "#{$name}", "state": "#{$state}"}*/
+			color: $value;
+		}
+		.#{$state}-bg-#{$name}:#{$state},
+		.#{$state}-bg-#{$name}.#{$state} {
+			/*hrpy:{"class": "#{$state}-bg-#{$name}", "section": "background-color", "color": "#{$name}", "state": "#{$state}"}*/
+			background-color: $value;
+		}
+		.#{$state}-fo-#{$name}:#{$state},
+		.#{$state}-fo-#{$name}.#{$state} {
+			/*hrpy:{"class": "#{$state}-fo-#{$name}", "section": "focus-outline", "color": "#{$name}", "state": "#{$state}"}*/
+			box-shadow: 0 0 0 2px $value;
+		}
+		.#{$state}-#{$text-shadow-alias}#{$name}:#{$state},
+		.#{$state}-#{$text-shadow-alias}#{$name}.#{$state} {
+			/*hrpy:{"class": "#{$state}-#{$text-shadow-alias}#{$name}", "section": "text-shadow", "color": "#{$name}", "state": "#{$state}"}*/
+			text-shadow: 0 1px 1px $value;
+		}
+		.#{$state}-bc-#{$name}:#{$state},
+		.#{$state}-bc-#{$name}.#{$state} {
+			/*hrpy:{"class": "#{$state}-bc-#{$name}", "section": "border-color", "color": "#{$name}", "state": "#{$state}"}*/
+			border-color: $value;
+		}
+	}
+}

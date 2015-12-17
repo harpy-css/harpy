@@ -1,0 +1,14 @@
+$line-heights: (
+	'-solid': 1,
+	'-heading': 1.25,
+	'-copy': 1.5,
+) !default;
+
+@each $name, $value in $line-heights {
+	.lh#{$name} {
+		line-height: $value;
+	}
+	.lh#{$name}-abs {
+		line-height: $value * $font-size-base;
+	}
+}

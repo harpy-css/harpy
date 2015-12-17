@@ -1,0 +1,41 @@
+$positions: (
+	'-abs': absolute,
+	'-rel': relative,
+	'-stat': static,
+) !default;
+
+$trbl-values: (
+	'': 0,
+	'-100': 100%,
+	'-50': 50%,
+	'-100-neg': -100%,
+	'-50-neg': -50%,
+) !default;
+
+@each $name, $value in $positions {
+	.pos#{$name} {
+		position: $value;
+	}
+}
+
+.trbl {
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+@each $name, $value in $trbl-values {
+	.top#{$name} {
+		top: $value;
+	}
+	.right#{$name} {
+		right: $value;
+	}
+	.bottom#{$name} {
+		bottom: $value;
+	}
+	.left#{$name} {
+		left: $value;
+	}
+}

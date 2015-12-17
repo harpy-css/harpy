@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic&subset=latin,latin-ext);
+
+$font-families: (
+	'sans-serif': ('Lato', sans-serif),
+	'serif': (serif),
+	'monospace': (monospace),
+	'lato': ('Lato', sans-serif),
+);
+
+$font-size-base: 1rem;
+$font-size-exponent: 1.3;
+
+$additional-font-sizes: (
+	'-desktop': 18px,
+	'-mobile': 16px,
+);
+
+$box-size: 12rem;
+
+$additional-widths: (
+	'-container': 1000px,
+	'-box-l': $box-size * 2,
+	'-box-sl': $box-size * 1.5,
+	'-box-m': $box-size * 1,
+	'-box-ss': $box-size * .75,
+	'-box-s': $box-size * .5,
+	'-box-sxs': $box-size * .375,
+	'-box-xs': $box-size * .25,
+	'-box-sxxs': $box-size * .1875,
+	'-box-xxs': $box-size * .125,
+);
+
+$additional-heights: (
+	'-box-l': $box-size * 2,
+	'-box-sl': $box-size * 1.5,
+	'-box-m': $box-size * 1,
+	'-box-ss': $box-size * .75,
+	'-box-s': $box-size * .5,
+	'-box-sxs': $box-size * .375,
+	'-box-xs': $box-size * .25,
+	'-box-sxxs': $box-size * .1875,
+	'-box-xxs': $box-size * .125,
+);
+
+$additional-margins: (
+	'-box-l': $box-size * 2,
+	'-box-sl': $box-size * 1.5,
+	'-box-m': $box-size * 1,
+	'-box-ss': $box-size * .75,
+	'-box-s': $box-size * .5,
+	'-box-sxs': $box-size * .375,
+	'-box-xs': $box-size * .25,
+	'-box-sxxs': $box-size * .1875,
+	'-box-xxs': $box-size * .125,
+);
+
+$breakpoints: (
+	's': '(max-width: 480px)',
+	'ns': '(min-width: 481px)',
+	'm': '(min-width: 481px) and (max-width: 800px)',
+	'l': '(min-width: 801px)',
+	'nl': '(max-width: 800px)',
+);
+
+$additional-colors: (
+	'silver': #ddd,
+	'brown': #7a5218,
+);
+
+$lightened-colors: map-keys($additional-colors);
+
+$darkened-colors: map-keys($additional-colors);

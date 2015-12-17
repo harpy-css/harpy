@@ -1,0 +1,35 @@
+/*
+ * Space (padding and margin)
+ */
+$space-horizontal-alias: 'h';
+$space-vertical-alias: 'v';
+
+$space-size-exponent: 2 !default;
+$space-size-base: $font-size-base * 1.5 !default;
+$space-sizes: (
+	'n': 0,
+	'1': 1px,
+	'xxs': $space-size-base * power($space-size-exponent, -3),
+	'xs': $space-size-base * power($space-size-exponent, -2),
+	's': $space-size-base * power($space-size-exponent, -1),
+	'm': $space-size-base * power($space-size-exponent, 0),
+	'l': $space-size-base * power($space-size-exponent, 1),
+	'xl': $space-size-base * power($space-size-exponent, 2),
+	'xxl': $space-size-base * power($space-size-exponent, 3),
+) !default;
+
+$enable-semi-spaces: true !default;
+@if($enable-semi-spaces) {
+	$space-size-exponent-sqrt: sqrt($space-size-exponent);
+	$space-sizes: map-merge($space-sizes, (
+		'sxxs': $space-size-base * power($space-size-exponent-sqrt, -5),
+		'sxs': $space-size-base * power($space-size-exponent-sqrt, -3),
+		'ss': $space-size-base * power($space-size-exponent-sqrt, -1),
+		'sl': $space-size-base * power($space-size-exponent-sqrt, 1),
+		'sxl': $space-size-base * power($space-size-exponent-sqrt, 3),
+		'sxxl': $space-size-base * power($space-size-exponent-sqrt, 5),
+	));
+}
+
+$additional-space-sizes: () !default;
+$space-sizes: map-merge($space-sizes, $additional-space-sizes);

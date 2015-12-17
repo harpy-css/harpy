@@ -1,0 +1,19 @@
+/*
+ * Media breakpoints
+ */
+$breakpoints: (
+	's': '(max-width: 480px)',
+	'ns': '(min-width: 481px)',
+	'm': '(min-width: 481px) and (max-width: 800px)',
+	'l': '(min-width: 801px)',
+	'nl': '(max-width: 800px)',
+) !default;
+
+/*
+ * States
+ */
+$states: (
+	'focus',
+	'hover',
+	'active',
+) !default;

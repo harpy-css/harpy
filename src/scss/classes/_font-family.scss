@@ -1,0 +1,18 @@
+$font-sans-serif: sans-serif !default;
+$font-serif: serif !default;
+$font-monospace: monospace !default;
+
+$font-families: (
+	'sans-serif': $font-sans-serif,
+	'serif': $font-serif,
+	'monospace': $font-monospace,
+) !default;
+
+$additional-font-families: () !default;
+$font-families: map-merge($font-families, $additional-font-families);
+
+@each $name, $value in $font-families {
+	.#{$name} {
+		font-family: $value;
+	}
+}

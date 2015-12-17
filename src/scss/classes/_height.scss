@@ -1,0 +1,35 @@
+$heights: (
+	'-0': 0,
+	'-aut': auto,
+	'-100': 100%,
+) !default;
+
+$additional-heights: () !default;
+$heights: map-merge($heights, $additional-heights);
+
+@each $name, $value in $heights {
+	.minh#{$name} {
+		min-height: $value;
+	}
+	.maxh#{$name} {
+		max-height: $value;
+	}
+	.h#{$name} {
+		height: $value;
+	}
+}
+@each $bp-alias, $bp-value in $breakpoints {
+	@each $name, $value in $heights {
+		@media only screen and #{$bp-value} {
+			.minh#{$name}-#{$bp-alias} {
+				min-height: $value;
+			}
+			.maxh#{$name}-#{$bp-alias} {
+				max-height: $value;
+			}
+			.h#{$name}-#{$bp-alias} {
+				height: $value;
+			}
+		}
+	}
+}

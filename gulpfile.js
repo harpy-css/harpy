@@ -1,107 +1,74 @@
-var gulp = require('gulp'),
-    sass = require('gulp-sass'),
-    autoprefixer = require('gulp-autoprefixer'),
-    minifycss = require('gulp-minify-css'),
-    rename = require('gulp-rename'),
-    uglify = require('gulp-uglify'),
-    gutil = require('gulp-util'),
-    plumber = require('gulp-plumber'),
-    size = require('gulp-size'),
-    gzip = require('gulp-gzip'),
-    notify = require("gulp-notify"),
-    uncss = require('gulp-uncss'),
-    sourcemaps = require('gulp-sourcemaps'),
-    include = require('gulp-include');
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
+var minifycss = require('gulp-minify-css');
+var rename = require('gulp-rename');
+var uglify = require('gulp-uglify');
+var gutil = require('gulp-util');
+var plumber = require('gulp-plumber');
+var size = require('gulp-size');
+var gzip = require('gulp-gzip');
+var notify = require("gulp-notify");
+var uncss = require('gulp-uncss');
+var sourcemaps = require('gulp-sourcemaps');
+var include = require('gulp-include');
+var hb = require('gulp-hb');
+var css = require('css');
+var fs = require('fs');
+var through = require('through2');
+var browserSync = require('browser-sync').create();
 
-// Server
-gulp.task('express', function() {
-	var express = require('express');
-	var app = express();
-	app.use(require('connect-livereload')({port: 4002}));
-	app.use(express.static(__dirname));
-	app.listen(4000);
+// Static Server + watching scss/html files
+gulp.task('serve', function() {
+	browserSync.init({
+		server: "./dist"
+	});
+	gulp.watch("dist/**/*.{html,js,css}").on('change', browserSync.reload);
 });
-
-// Livereload
-var tinylr;
-gulp.task('livereload', function() {
-	tinylr = require('tiny-lr')();
-	tinylr.listen(4002);
-});
-
-function notifyLiveReload(event) {
-  var fileName = require('path').relative(__dirname, event.path);
-
-  tinylr.changed({
-    body: {
-      files: [fileName]
-    }
-  });
-}
 
 // JS
-gulp.task('compress', function() {
-	return gulp.src('js/main.js')
-    .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
-    .pipe(sourcemaps.init())
-    .pipe(include())
-    .pipe(uglify({
-        preserveComments: 'some'
-    }))
-    .pipe(sourcemaps.write('../maps'))
-    .pipe(gulp.dest('js/min/'))
+gulp.task('html', function() {
+	return gulp.src('src/**/*.html').pipe(gulp.dest('dist/'));
+});
+
+// JS
+gulp.task('js', function() {
+	return gulp.src('src/js/main.js')
+		.pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
+		.pipe(sourcemaps.init())
+		.pipe(include())
+		.pipe(uglify({
+				preserveComments: 'some'
+		}))
+		.pipe(sourcemaps.write('../maps'))
+		.pipe(rename({suffix: '.min'}))
+		.pipe(gulp.dest('dist/js/'));
 });
 
 // SCSS
-gulp.task('styles', function() {
-	return gulp.src('scss/harpy.scss')
+gulp.task('css', function() {
+	return gulp.src('src/scss/harpy.scss')
 	// error handling
 	.pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
 	.pipe(sass({ style: 'expanded' }))
 	.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
-	.pipe(gulp.dest('css'))
+	.pipe(gulp.dest('dist/css'))
 	.pipe(rename({suffix: '.min'}))
 	.pipe(minifycss())
-	.pipe(gulp.dest('css'))
-	
+	.pipe(gulp.dest('dist/css'))
+
 	.pipe(notify("SCSS minified"));
 });
 
 // Watch
 gulp.task('watch', function() {
-	gulp.watch('scss/**/*.scss', ['styles']);
-	gulp.watch('js/*.js', ['compress']);
-	gulp.watch('*.html', notifyLiveReload);
-	gulp.watch('css/*.css', notifyLiveReload);
-});
-
-// Watch
-gulp.task('noserver', function() {
-	gulp.watch('scss/**/*.scss', ['styles']);
-	gulp.watch('js/*.js', ['compress']);
-});
-
-gulp.task('production', function() {
-	console.log('Production');
-	return gulp.src('scss/harpy.scss')
-	.pipe(sass({ style: 'expanded' }))
-	.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
-	.pipe(gulp.dest('css'))
-	.pipe(uncss({
-        html: ['index.html']
-    }))
-	.pipe(gulp.dest('css'))
-	.pipe(size({gzip: false, showFiles: true}))
-	.pipe(size({gzip: true, showFiles: true}))
-
-	.pipe(gzip())
-	.pipe(gulp.dest('css'))
-
-	.pipe(notify("CSS is production ready"));
+	gulp.watch('src/scss/**/*.scss', ['css']);
+	gulp.watch('src/js/**/*.js', ['js']);
+	gulp.watch('src/**/*.html', ['html']);
 });
 
 // Defaults
-gulp.task('no-server', ['noserver'], function() {});
+gulp.task('no-server', ['css', 'js', 'watch'], function() {});
 
 // Defaults
-gulp.task('default', ['styles', 'express', 'livereload', 'watch'], function() {});
+gulp.task('default', ['serve', 'css', 'js', 'html', 'watch'], function() {});

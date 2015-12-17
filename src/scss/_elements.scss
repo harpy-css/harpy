@@ -1,0 +1,52 @@
+/* --------------------------------------------------------------
+		2. BASE
+-------------------------------------------------------------- */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  @extend .tdu, .teal, .hover-teal;
+}
+
+pre {
+  @extend .bg-black-10, .pas, .fss;
+}
+
+p {
+  @extend .mb-lh-copy, .mtn;
+  // &:last-child {
+  //   @extend .mbn;
+  // }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @extend .mt-lh-copy, .bold;
+  // &:first-child {
+  //   @extend .mtn;
+  // }
+}
+@for $i from 1 through 6 {
+  h#{$i} {
+    @extend .fs-h#{$i};
+  }
+}
+
+h1 {
+  @extend .lh-solid, .mbxs;
+}
+h2, h3, h4, h5, h6 {
+  @extend .lh-heading, .mbxxs;
+}
+h4, h5, h6 {
+  @extend .ttu;
+}
+
+ul, ol {
+	@extend .plm, .mb-lh-copy, .mtn;
+	li > & {
+		@extend .mbn;
+	}
+}

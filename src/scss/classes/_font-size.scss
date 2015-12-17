@@ -1,0 +1,44 @@
+$font-size-exponent: 1.25 !default;
+$font-size-base: 1rem !default;
+$font-sizes: (
+	'0': 0,
+	'-i': inherit,
+	'xxs': $font-size-base * power($font-size-exponent, -3),
+	'xs': $font-size-base * power($font-size-exponent, -2),
+	's': $font-size-base * power($font-size-exponent, -1),
+	'm': $font-size-base * power($font-size-exponent, 0),
+	'l': $font-size-base * power($font-size-exponent, 1),
+	'xl': $font-size-base * power($font-size-exponent, 2),
+	'xxl': $font-size-base * power($font-size-exponent, 3),
+	'xxxl': $font-size-base * power($font-size-exponent, 4),
+) !default;
+
+$font-sizes-headings: true !default;
+@if($font-sizes-headings) {
+	$font-sizes: map-merge($font-sizes, (
+		'-h1': $font-size-base * power($font-size-exponent, 2),
+		'-h2': $font-size-base * power($font-size-exponent, 1),
+		'-h3': $font-size-base * power($font-size-exponent, 0),
+		'-h4': $font-size-base * power($font-size-exponent, -1),
+		'-h5': $font-size-base * power($font-size-exponent, -1),
+		'-h6': $font-size-base * power($font-size-exponent, -1),
+	));
+}
+
+$additional-font-sizes: () !default;
+$font-sizes: map-merge($font-sizes, $additional-font-sizes);
+
+@each $name, $value in $font-sizes {
+	.fs#{$name} {
+		font-size: $value;
+	}
+}
+@each $bp-alias, $bp-value in $breakpoints {
+	@each $name, $value in $font-sizes {
+		@media only screen and #{$bp-value} {
+			.fs#{$name}-#{$bp-alias} {
+				font-size: $value;
+			}
+		}
+	}
+}

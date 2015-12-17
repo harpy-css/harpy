@@ -1,0 +1,158 @@
+$margin-horizontal-alias: 'h';
+$margin-vertical-alias: 'v';
+
+$margin-exponent: 2 !default;
+$margin-base: $font-size-base * 1.5 !default;
+$margins: (
+	'n': 0,
+	'1': 1px,
+	'-aut': auto,
+	'xxs': $margin-base * power($margin-exponent, -3),
+	'xs': $margin-base * power($margin-exponent, -2),
+	's': $margin-base * power($margin-exponent, -1),
+	'm': $margin-base * power($margin-exponent, 0),
+	'l': $margin-base * power($margin-exponent, 1),
+	'xl': $margin-base * power($margin-exponent, 2),
+	'xxl': $margin-base * power($margin-exponent, 3),
+) !default;
+
+$enable-semi-margins: true !default;
+@if($enable-semi-margins) {
+	$margin-exponent-sqrt: sqrt($margin-exponent);
+	$margins: map-merge($margins, (
+		'sxxs': $margin-base * power($margin-exponent-sqrt, -5),
+		'sxs': $margin-base * power($margin-exponent-sqrt, -3),
+		'ss': $margin-base * power($margin-exponent-sqrt, -1),
+		'sl': $margin-base * power($margin-exponent-sqrt, 1),
+		'sxl': $margin-base * power($margin-exponent-sqrt, 3),
+		'sxxl': $margin-base * power($margin-exponent-sqrt, 5),
+	));
+}
+
+$additional-margins: () !default;
+$margins: map-merge($margins, $additional-margins);
+
+$enable-line-height-margins: true !default;
+@if($enable-line-height-margins) {
+	@each $lh-alias, $lh-value in $line-heights {
+		$margins: map-merge($margins, (
+			'-lh#{$lh-alias}': $lh-value * $font-size-base,
+			'-lh#{$lh-alias}-half': $lh-value * $font-size-base * .5,
+			'-lh#{$lh-alias}-double': $lh-value * $font-size-base * 2,
+		));
+	}
+}
+
+@each $name, $value in $margins {
+	.ma#{$name} {
+		/*hrpy:{"class": "ma#{$name}", "section": "margin", "value": "#{$value}"}*/
+		margin: $value;
+	}
+	.mt#{$name} {
+		margin-top: $value;
+	}
+	.mr#{$name} {
+		margin-right: $value;
+	}
+	.mb#{$name} {
+		margin-bottom: $value;
+	}
+	.ml#{$name} {
+		margin-left: $value;
+	}
+	.m#{$margin-vertical-alias}#{$name} {
+		margin-top: $value;
+		margin-bottom: $value;
+	}
+	.m#{$margin-horizontal-alias}#{$name} {
+		margin-right: $value;
+		margin-left: $value;
+	}
+}
+@each $name, $value in $margins {
+	@if type-of($value) == number and $value > 0 {
+		.ma#{$name}-neg {
+			margin: -$value;
+		}
+		.mt#{$name}-neg {
+			margin-top: -$value;
+		}
+		.mr#{$name}-neg {
+			margin-right: -$value;
+		}
+		.mb#{$name}-neg {
+			margin-bottom: -$value;
+		}
+		.ml#{$name}-neg {
+			margin-left: -$value;
+		}
+		.mv#{$name}-neg {
+			margin-top: -$value;
+			margin-bottom: -$value;
+		}
+		.mh#{$name}-neg {
+			margin-right: -$value;
+			margin-left: -$value;
+		}
+	}
+}
+@each $bp-alias, $bp-value in $breakpoints {
+	@each $name, $value in $margins {
+		@media only screen and #{$bp-value} {
+			.ma#{$name}-#{$bp-alias} {
+				margin: $value;
+			}
+			.mt#{$name}-#{$bp-alias} {
+				margin-top: $value;
+			}
+			.mr#{$name}-#{$bp-alias} {
+				margin-right: $value;
+			}
+			.mb#{$name}-#{$bp-alias} {
+				margin-bottom: $value;
+			}
+			.ml#{$name}-#{$bp-alias} {
+				margin-left: $value;
+			}
+			.m#{$margin-vertical-alias}#{$name}-#{$bp-alias} {
+				margin-top: $value;
+				margin-bottom: $value;
+			}
+			.m#{$margin-horizontal-alias}#{$name}-#{$bp-alias} {
+				margin-right: $value;
+				margin-left: $value;
+			}
+		}
+	}
+}
+@each $bp-alias, $bp-value in $breakpoints {
+	@each $name, $value in $margins {
+		@if type-of($value) == number and $value > 0 {
+			@media only screen and #{$bp-value} {
+				.ma#{$name}-neg-#{$bp-alias} {
+					margin: -$value;
+				}
+				.mt#{$name}-neg-#{$bp-alias} {
+					margin-top: -$value;
+				}
+				.mr#{$name}-neg-#{$bp-alias} {
+					margin-right: -$value;
+				}
+				.mb#{$name}-neg-#{$bp-alias} {
+					margin-bottom: -$value;
+				}
+				.ml#{$name}-neg-#{$bp-alias} {
+					margin-left: -$value;
+				}
+				.mv#{$name}-neg-#{$bp-alias} {
+					margin-top: -$value;
+					margin-bottom: -$value;
+				}
+				.mh#{$name}-neg-#{$bp-alias} {
+					margin-right: -$value;
+					margin-left: -$value;
+				}
+			}
+		}
+	}
+}

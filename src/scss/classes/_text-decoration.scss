@@ -1,0 +1,23 @@
+.tdn {
+	text-decoration: none;
+}
+.tdu {
+	text-decoration: underline;
+}
+.tdi {
+	text-decoration: inherit;
+}
+@each $state in $states {
+	.#{$state}-tdn:#{$state},
+	.#{$state}-tdn.#{$state} {
+		text-decoration: none;
+	}
+	.#{$state}-tdu:#{$state},
+	.#{$state}-tdu.#{$state} {
+		text-decoration: underline;
+	}
+	.#{$state}-tdi:#{$state},
+	.#{$state}-tdi.#{$state} {
+		text-decoration: inherit;
+	}
+}

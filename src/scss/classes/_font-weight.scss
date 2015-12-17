@@ -1,0 +1,23 @@
+$font-weights: (
+	'thin': 100,
+	'light': 300,
+	'book': 400,
+	'semibold': 500,
+	'bold': 600,
+	'heavy': 700,
+	'ultrabold': 900,
+) !default;
+
+@each $name, $value in $font-weights {
+	.#{$name} {
+		font-weight: $value;
+	}
+}
+@each $state in $states {
+	@each $name, $value in $font-weights {
+		.#{$state}-#{$name}:#{$state},
+		.#{$state}-#{$name}.#{$state} {
+			font-weight: $value;
+		}
+	}
+}

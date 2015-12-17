@@ -1,0 +1,86 @@
+$padding-horizontal-alias: 'h';
+$padding-vertical-alias: 'v';
+
+$padding-exponent: 2 !default;
+$padding-base: $font-size-base * 1.5 !default;
+$paddings: (
+	'n': 0,
+	'1': 1px,
+	'xxs': $padding-base * power($padding-exponent, -3),
+	'xs': $padding-base * power($padding-exponent, -2),
+	's': $padding-base * power($padding-exponent, -1),
+	'm': $padding-base * power($padding-exponent, 0),
+	'l': $padding-base * power($padding-exponent, 1),
+	'xl': $padding-base * power($padding-exponent, 2),
+	'xxl': $padding-base * power($padding-exponent, 3),
+) !default;
+
+$enable-semi-paddings: true !default;
+@if($enable-semi-paddings) {
+	$padding-exponent-sqrt: sqrt($padding-exponent);
+	$paddings: map-merge($paddings, (
+		'sxxs': $padding-base * power($padding-exponent-sqrt, -5),
+		'sxs': $padding-base * power($padding-exponent-sqrt, -3),
+		'ss': $padding-base * power($padding-exponent-sqrt, -1),
+		'sl': $padding-base * power($padding-exponent-sqrt, 1),
+		'sxl': $padding-base * power($padding-exponent-sqrt, 3),
+		'sxxl': $padding-base * power($padding-exponent-sqrt, 5),
+	));
+}
+
+$additional-paddings: () !default;
+$paddings: map-merge($paddings, $additional-paddings);
+
+@each $name, $value in $paddings {
+	.pa#{$name} {
+		/*hrpy:{"class": "pa#{$name}", "section": "padding", "value": "#{$value}"}*/
+		padding: $value;
+	}
+	.pt#{$name} {
+		padding-top: $value;
+	}
+	.pr#{$name} {
+		padding-right: $value;
+	}
+	.pb#{$name} {
+		padding-bottom: $value;
+	}
+	.pl#{$name} {
+		padding-left: $value;
+	}
+	.p#{$padding-vertical-alias}#{$name} {
+		padding-top: $value;
+		padding-bottom: $value;
+	}
+	.p#{$padding-horizontal-alias}#{$name} {
+		padding-right: $value;
+		padding-left: $value;
+	}
+	@each $bp-alias, $bp-value in $breakpoints {
+		@media only screen and #{$bp-value} {
+			.pa#{$name}-#{$bp-alias} {
+				padding: $value;
+			}
+			.pt#{$name}-#{$bp-alias} {
+				padding-top: $value;
+			}
+			.pr#{$name}-#{$bp-alias} {
+				padding-right: $value;
+			}
+			.pb#{$name}-#{$bp-alias} {
+				padding-bottom: $value;
+			}
+			.pl#{$name}-#{$bp-alias} {
+				padding-left: $value;
+			}
+			.p#{$padding-vertical-alias}#{$name}-#{$bp-alias} {
+				padding-top: $value;
+				padding-bottom: $value;
+			}
+			.p#{$padding-horizontal-alias}#{$name}-#{$bp-alias} {
+				padding-right: $value;
+				padding-left: $value;
+			}
+		}
+	}
+}

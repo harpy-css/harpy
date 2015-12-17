@@ -1,0 +1,132 @@
+$flex-align-values: (
+	'-start': flex-start,
+	'-end': flex-end,
+	'-center': center,
+	'-around': space-around,
+	'-between': space-between,
+) !default;
+
+.flex {
+	display: flex;
+}
+
+/*
+	flex-direction
+*/
+.flex-column {
+	flex-direction: column;
+}
+
+/*
+	flex-wrap
+*/
+.flex-wrap {
+	flex-wrap: wrap
+}
+
+/*
+	order
+*/
+.flex-first {
+	order: -1
+}
+.flex-last  {
+	order: 99999
+}
+
+/*
+	shorthands
+*/
+.flex-auto {
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 0;
+}
+.flex-grow {
+	flex-grow: 1;
+	flex-shrink: 0;
+}
+.flex-shrink {
+	flex-grow: 0;
+	flex-shrink: 1;
+}
+.flex-none {
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+.flex-fluid {
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 0;
+}
+
+.flex-grow-max {
+	flex-grow: 9999;
+	flex-shrink: 0;
+}
+.flex-fluid-max {
+	flex-grow: 9999;
+	flex-shrink: 1;
+	flex-basis: 0;
+}
+.flex-grow-2 {
+	flex-grow: 2;
+	flex-shrink: 0;
+}
+.flex-fluid-2 {
+	flex-grow: 2;
+	flex-shrink: 1;
+	flex-basis: 0;
+}
+
+/*
+	align-items
+	vertical alignment of flex items in their respective rows, and horizontal for columns
+*/
+@each $alias, $value in $flex-align-values {
+	@if($value != 'stretch') {
+		.flex-ai#{$alias} {
+			align-items: $value;
+		}
+	}
+}
+
+/*
+	justify-content
+	horizontal alignment of flex items in their respective rows, and vertical for columns
+*/
+@each $alias, $value in $flex-align-values {
+	@if($value != 'flex-start') {
+		.flex-jc#{$alias} {
+			justify-content: $value;
+		}
+	}
+}
+
+/*
+	align-self
+	like align-items but for single item, i.e. vertical alignment of a single flex item in its row, and horizontal for columns
+*/
+@each $alias, $value in $flex-align-values {
+	.flex-as-aut {
+		align-self: auto;
+	}
+	@if($value != 'stretch') {
+		.flex-as#{$alias} {
+			align-self: $value;
+		}
+	}
+}
+
+/*
+	align-content
+	vertical alignment of rows, and horizontal for columns
+	default value: stretch
+*/
+@each $alias, $value in $flex-align-values {
+	@if($value != 'stretch') {
+		.flex-ac#{$alias} {
+			align-content: $value;
+		}
+	}
+}

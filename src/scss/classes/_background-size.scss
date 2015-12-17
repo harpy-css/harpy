@@ -1,0 +1,8 @@
+$background-size-alias: 'bg' !default;
+
+.#{$background-size-alias}-cv {
+	background-size: cover;
+}
+.#{$background-size-alias}-cn {
+	background-size: contain;
+}

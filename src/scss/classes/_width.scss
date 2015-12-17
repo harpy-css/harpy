@@ -1,0 +1,43 @@
+$widths: (
+	'-0': 0,
+	'-aut': auto,
+	'-50': 50%,
+	'-100': 100%,
+) !default;
+
+$grid-columns: 12 !default;
+@for $i from 1 through $grid-columns {
+	$widths: map-merge($widths, (
+		'-col#{$i}': ($i / $grid-columns) * 100%,
+	));
+}
+
+$additional-widths: () !default;
+$widths: map-merge($widths, $additional-widths);
+
+@each $name, $value in $widths {
+	.minw#{$name} {
+		min-width: $value;
+	}
+	.maxw#{$name} {
+		max-width: $value;
+	}
+	.w#{$name} {
+		width: $value;
+	}
+}
+@each $bp-alias, $bp-value in $breakpoints {
+	@each $name, $value in $widths {
+		@media only screen and #{$bp-value} {
+			.minw#{$name}-#{$bp-alias} {
+				min-width: $value;
+			}
+			.maxw#{$name}-#{$bp-alias} {
+				max-width: $value;
+			}
+			.w#{$name}-#{$bp-alias} {
+				width: $value;
+			}
+		}
+	}
+}

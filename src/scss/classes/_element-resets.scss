@@ -1,0 +1,7 @@
+.a-reset {
+	@extend .inherit, .hover-inherit, .tdi;
+}
+.ul-reset, .ol-reset {
+	@extend .pln, .mbn;
+	list-style: none;
+}

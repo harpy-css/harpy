@@ -1,0 +1,24 @@
+$display-values: (
+	'n': none,
+	'i': inline,
+	'b': block,
+	'ib': inline-block,
+	't': table,
+	'tr': table-row,
+	'tc': table-cell,
+) !default;
+
+@each $name, $value in $display-values {
+	.d#{$name} {
+		display: $value;
+	}
+}
+@each $bp-alias, $bp-value in $breakpoints {
+	@each $name, $value in $display-values {
+		@media only screen and #{$bp-value} {
+			.d#{$name}-#{$bp-alias} {
+				display: $value;
+			}
+		}
+	}
+}
