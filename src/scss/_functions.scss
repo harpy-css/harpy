@@ -30,3 +30,48 @@
 @function darken2($color, $amount) {
 	@return mix(scale-color($color, $lightness: -$amount), adjust-color($color, $lightness: -$amount), 50%);
 }
+
+@function size-name($value) {
+	@if($value > 0) {
+		$result: 'l';
+		@for $value from 1 to $value {
+			$result: 'x#{$result}';
+		}
+		@return $result;
+	}
+	@elseif($value < 0) {
+		$result: 's';
+		@for $value from 1 to -$value {
+			$result: 'x#{$result}';
+		}
+		@return $result;
+	}
+	@else {
+		@return 'm';
+	}
+}
+
+@function exponential-size($value, $factor, $base: 2) {
+	@return $factor * power($base, $value);
+}
+
+@function exponential-sizes($factor, $base: 2, $max: 2, $min: -$max, $semi: false, $prefix: '') {
+	$result: ();
+	@for $value from $min through $max {
+		$result: map-merge($result, ('#{$prefix}#{size-name($value)}': exponential-size($value, $factor, $base)));
+	}
+	@if($semi) {
+		$sqrt: sqrt($base);
+		@for $value from $min through -1 {
+			$result: map-merge($result, ('#{$prefix}s#{size-name($value)}': exponential-size($value * 2 + 1, $factor, $sqrt)));
+		}
+		@for $value from 1 through $max {
+			$result: map-merge($result, ('#{$prefix}s#{size-name($value)}': exponential-size($value * 2 - 1, $factor, $sqrt)));
+		}
+	}
+	@return $result;
+}
+
+@function add-exponential-sizes($map, $factor, $base: 2, $min: -2, $max: 2, $semi: false, $prefix: '') {
+	@return map-merge($map, exponential-sizes($factor, $base, $min, $max, $semi, $prefix));
+}
