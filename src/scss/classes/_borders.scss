@@ -1,14 +1,14 @@
-$border-width-exponent: 1.5 !default;
-$border-width-base: .2rem !default;
+$border-width-base: 1.5 !default;
+$border-width-factor: .2rem !default;
 $border-widths: (
 	'n': 0,
-	'': $border-width-base * power($border-width-exponent, -2),
-	'xs': $border-width-base * power($border-width-exponent, -2),
-	's': $border-width-base * power($border-width-exponent, -1),
-	'm': $border-width-base * power($border-width-exponent, 0),
-	'l': $border-width-base * power($border-width-exponent, 1),
-	'xl': $border-width-base * power($border-width-exponent, 2),
-	'xxl': $border-width-base * power($border-width-exponent, 3),
+	'': $border-width-factor * power($border-width-base, -2),
+	'xs': $border-width-factor * power($border-width-base, -2),
+	's': $border-width-factor * power($border-width-base, -1),
+	'm': $border-width-factor * power($border-width-base, 0),
+	'l': $border-width-factor * power($border-width-base, 1),
+	'xl': $border-width-factor * power($border-width-base, 2),
+	'xxl': $border-width-factor * power($border-width-base, 3),
 ) !default;
 
 $border-styles: (

@@ -1,30 +1,30 @@
 $padding-horizontal-alias: 'h';
 $padding-vertical-alias: 'v';
 
-$padding-exponent: 2 !default;
-$padding-base: $font-size-base * 1.5 !default;
+$padding-base: 2 !default;
+$padding-factor: $font-size-factor * 1.5 !default;
 $paddings: (
 	'n': 0,
 	'1': 1px,
-	'xxs': $padding-base * power($padding-exponent, -3),
-	'xs': $padding-base * power($padding-exponent, -2),
-	's': $padding-base * power($padding-exponent, -1),
-	'm': $padding-base * power($padding-exponent, 0),
-	'l': $padding-base * power($padding-exponent, 1),
-	'xl': $padding-base * power($padding-exponent, 2),
-	'xxl': $padding-base * power($padding-exponent, 3),
+	'xxs': $padding-factor * power($padding-base, -3),
+	'xs': $padding-factor * power($padding-base, -2),
+	's': $padding-factor * power($padding-base, -1),
+	'm': $padding-factor * power($padding-base, 0),
+	'l': $padding-factor * power($padding-base, 1),
+	'xl': $padding-factor * power($padding-base, 2),
+	'xxl': $padding-factor * power($padding-base, 3),
 ) !default;
 
 $enable-semi-paddings: true !default;
 @if($enable-semi-paddings) {
-	$padding-exponent-sqrt: sqrt($padding-exponent);
+	$padding-base-sqrt: sqrt($padding-base);
 	$paddings: map-merge($paddings, (
-		'sxxs': $padding-base * power($padding-exponent-sqrt, -5),
-		'sxs': $padding-base * power($padding-exponent-sqrt, -3),
-		'ss': $padding-base * power($padding-exponent-sqrt, -1),
-		'sl': $padding-base * power($padding-exponent-sqrt, 1),
-		'sxl': $padding-base * power($padding-exponent-sqrt, 3),
-		'sxxl': $padding-base * power($padding-exponent-sqrt, 5),
+		'sxxs': $padding-factor * power($padding-base-sqrt, -5),
+		'sxs': $padding-factor * power($padding-base-sqrt, -3),
+		'ss': $padding-factor * power($padding-base-sqrt, -1),
+		'sl': $padding-factor * power($padding-base-sqrt, 1),
+		'sxl': $padding-factor * power($padding-base-sqrt, 3),
+		'sxxl': $padding-factor * power($padding-base-sqrt, 5),
 	));
 }
 

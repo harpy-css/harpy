@@ -1,27 +1,27 @@
-$font-size-exponent: 1.25 !default;
-$font-size-base: 1rem !default;
+$font-size-base: 1.25 !default;
+$font-size-factor: 1rem !default;
 $font-sizes: (
 	'0': 0,
 	'-i': inherit,
-	'xxs': $font-size-base * power($font-size-exponent, -3),
-	'xs': $font-size-base * power($font-size-exponent, -2),
-	's': $font-size-base * power($font-size-exponent, -1),
-	'm': $font-size-base * power($font-size-exponent, 0),
-	'l': $font-size-base * power($font-size-exponent, 1),
-	'xl': $font-size-base * power($font-size-exponent, 2),
-	'xxl': $font-size-base * power($font-size-exponent, 3),
-	'xxxl': $font-size-base * power($font-size-exponent, 4),
+	'xxs': $font-size-factor * power($font-size-base, -3),
+	'xs': $font-size-factor * power($font-size-base, -2),
+	's': $font-size-factor * power($font-size-base, -1),
+	'm': $font-size-factor * power($font-size-base, 0),
+	'l': $font-size-factor * power($font-size-base, 1),
+	'xl': $font-size-factor * power($font-size-base, 2),
+	'xxl': $font-size-factor * power($font-size-base, 3),
+	'xxxl': $font-size-factor * power($font-size-base, 4),
 ) !default;
 
 $font-sizes-headings: true !default;
 @if($font-sizes-headings) {
 	$font-sizes: map-merge($font-sizes, (
-		'-h1': $font-size-base * power($font-size-exponent, 2),
-		'-h2': $font-size-base * power($font-size-exponent, 1),
-		'-h3': $font-size-base * power($font-size-exponent, 0),
-		'-h4': $font-size-base * power($font-size-exponent, -1),
-		'-h5': $font-size-base * power($font-size-exponent, -1),
-		'-h6': $font-size-base * power($font-size-exponent, -1),
+		'-h1': $font-size-factor * power($font-size-base, 2),
+		'-h2': $font-size-factor * power($font-size-base, 1),
+		'-h3': $font-size-factor * power($font-size-base, 0),
+		'-h4': $font-size-factor * power($font-size-base, -1),
+		'-h5': $font-size-factor * power($font-size-base, -1),
+		'-h6': $font-size-factor * power($font-size-base, -1),
 	));
 }
 

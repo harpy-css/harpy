@@ -9,6 +9,6 @@ $line-heights: (
 		line-height: $value;
 	}
 	.lh#{$name}-abs {
-		line-height: $value * $font-size-base;
+		line-height: $value * $font-size-factor;
 	}
 }

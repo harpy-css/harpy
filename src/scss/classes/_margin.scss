@@ -1,31 +1,31 @@
 $margin-horizontal-alias: 'h';
 $margin-vertical-alias: 'v';
 
-$margin-exponent: 2 !default;
-$margin-base: $font-size-base * 1.5 !default;
+$margin-base: 2 !default;
+$margin-factor: $font-size-factor * 1.5 !default;
 $margins: (
 	'n': 0,
 	'1': 1px,
 	'-aut': auto,
-	'xxs': $margin-base * power($margin-exponent, -3),
-	'xs': $margin-base * power($margin-exponent, -2),
-	's': $margin-base * power($margin-exponent, -1),
-	'm': $margin-base * power($margin-exponent, 0),
-	'l': $margin-base * power($margin-exponent, 1),
-	'xl': $margin-base * power($margin-exponent, 2),
-	'xxl': $margin-base * power($margin-exponent, 3),
+	'xxs': $margin-factor * power($margin-base, -3),
+	'xs': $margin-factor * power($margin-base, -2),
+	's': $margin-factor * power($margin-base, -1),
+	'm': $margin-factor * power($margin-base, 0),
+	'l': $margin-factor * power($margin-base, 1),
+	'xl': $margin-factor * power($margin-base, 2),
+	'xxl': $margin-factor * power($margin-base, 3),
 ) !default;
 
 $enable-semi-margins: true !default;
 @if($enable-semi-margins) {
-	$margin-exponent-sqrt: sqrt($margin-exponent);
+	$margin-base-sqrt: sqrt($margin-base);
 	$margins: map-merge($margins, (
-		'sxxs': $margin-base * power($margin-exponent-sqrt, -5),
-		'sxs': $margin-base * power($margin-exponent-sqrt, -3),
-		'ss': $margin-base * power($margin-exponent-sqrt, -1),
-		'sl': $margin-base * power($margin-exponent-sqrt, 1),
-		'sxl': $margin-base * power($margin-exponent-sqrt, 3),
-		'sxxl': $margin-base * power($margin-exponent-sqrt, 5),
+		'sxxs': $margin-factor * power($margin-base-sqrt, -5),
+		'sxs': $margin-factor * power($margin-base-sqrt, -3),
+		'ss': $margin-factor * power($margin-base-sqrt, -1),
+		'sl': $margin-factor * power($margin-base-sqrt, 1),
+		'sxl': $margin-factor * power($margin-base-sqrt, 3),
+		'sxxl': $margin-factor * power($margin-base-sqrt, 5),
 	));
 }
 
@@ -36,9 +36,9 @@ $enable-line-height-margins: true !default;
 @if($enable-line-height-margins) {
 	@each $lh-alias, $lh-value in $line-heights {
 		$margins: map-merge($margins, (
-			'-lh#{$lh-alias}': $lh-value * $font-size-base,
-			'-lh#{$lh-alias}-half': $lh-value * $font-size-base * .5,
-			'-lh#{$lh-alias}-double': $lh-value * $font-size-base * 2,
+			'-lh#{$lh-alias}': $lh-value * $font-size-factor,
+			'-lh#{$lh-alias}-half': $lh-value * $font-size-factor * .5,
+			'-lh#{$lh-alias}-double': $lh-value * $font-size-factor * 2,
 		));
 	}
 }

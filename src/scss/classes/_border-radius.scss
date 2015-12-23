@@ -1,10 +1,10 @@
-$border-radius-exponent: 2 !default;
-$border-radius-base: .5rem !default;
+$border-radius-base: 2 !default;
+$border-radius-factor: .5rem !default;
 $border-radii: (
 	'n': 0,
-	's': $border-radius-base * power($border-radius-exponent, -1),
-	'm': $border-radius-base * power($border-radius-exponent, 0),
-	'l': $border-radius-base * power($border-radius-exponent, 1),
+	's': $border-radius-factor * power($border-radius-base, -1),
+	'm': $border-radius-factor * power($border-radius-base, 0),
+	'l': $border-radius-factor * power($border-radius-base, 1),
 	'-100': 100%,
 ) !default;
 
