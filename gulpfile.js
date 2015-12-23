@@ -4,7 +4,6 @@ var autoprefixer = require('gulp-autoprefixer');
 var minifycss = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
-var gutil = require('gulp-util');
 var plumber = require('gulp-plumber');
 var size = require('gulp-size');
 var gzip = require('gulp-gzip');
