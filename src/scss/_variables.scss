@@ -62,11 +62,30 @@ $breakpoints: (
 	'nl': '(max-width: 800px)',
 );
 
-$additional-colors: (
+
+// COLORS
+
+$brown: #7a5218;
+
+$colors: (
+	'transparent': transparent,
+	'white': white,
+	'black': black,
+	'black-5': rgba(black, .05),
+	'black-10': rgba(black, .10),
+	'black-15': rgba(black, .15),
+	'black-20': rgba(black, .20),
+	'black-30': rgba(black, .30),
+	'black-50': rgba(black, .50),
+	'black-70': rgba(black, .70),
+	'black-80': rgba(black, .80),
+	'black-85': rgba(black, .85),
+	'black-90': rgba(black, .90),
+	'black-95': rgba(black, .95),
 	'silver': #ddd,
-	'brown': #7a5218,
+	'brown': $brown,
+	'brown-light': lighten2($brown, 10%),
+	'brown-lighter': lighten2($brown, 20%),
+	'brown-dark': darken2($brown, 10%),
+	'brown-darker': darken2($brown, 20%),
 );
-
-$lightened-colors: map-keys($additional-colors);
-
-$darkened-colors: map-keys($additional-colors);
