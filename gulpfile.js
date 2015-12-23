@@ -39,14 +39,14 @@ gulp.task('js', function() {
 		.pipe(uglify({
 				preserveComments: 'some'
 		}))
-		.pipe(sourcemaps.write('../maps'))
 		.pipe(rename({suffix: '.min'}))
+		.pipe(sourcemaps.write('../maps'))
 		.pipe(gulp.dest('dist/js/'));
 });
 
 // SCSS
 gulp.task('css', function() {
-	return gulp.src('src/scss/harpy.scss')
+	return gulp.src('src/scss/*.scss')
 	// error handling
 	.pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
 	.pipe(sass({ style: 'expanded' }))

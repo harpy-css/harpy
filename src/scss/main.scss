@@ -1,16 +1,6 @@
 /* --------------------------------------------------------------
 
-	HARPY v0.1
-
-	TABLE OF CONTENTS
-	------------------
-	0. ATOMS/IDENTITY
-	1. ATOMS/BASE
-	2. ATOMS/PARTIALS
-	3. MOLECULES/LAYOUT
-	4. MOLECULES/FORMS
-	5. ORGANISMS
-
+	Harpy CSS
 
 	The MIT License (MIT)
 
@@ -33,8 +23,6 @@
 	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 	SOFTWARE.
-
-	DISCLAIMER: THIS IS HEAVILY INFLUENCED BY BOOTSTRAP AND ATOMIC DESIGN.
 */
 
 @import 'normalize';
@@ -60,7 +48,6 @@
 @import 'classes/overflow';
 @import 'classes/padding';
 @import 'classes/positioning';
-@import 'classes/space';
 @import 'classes/text-align';
 @import 'classes/text-decoration';
 @import 'classes/text-transform';
