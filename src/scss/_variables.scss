@@ -7,52 +7,21 @@ $font-families: (
 	'lato': ('Lato', sans-serif),
 );
 
-$font-size-base: 1rem;
-$font-size-exponent: 1.3;
+$font-size-factor: 1rem;
+$font-size-base: 1.3;
 
 $additional-font-sizes: (
 	'-desktop': 18px,
 	'-mobile': 16px,
 );
 
-$box-size: 12rem;
-
-$additional-widths: (
+$widths: (
 	'-container': 1000px,
-	'-box-l': $box-size * 2,
-	'-box-sl': $box-size * 1.5,
-	'-box-m': $box-size * 1,
-	'-box-ss': $box-size * .75,
-	'-box-s': $box-size * .5,
-	'-box-sxs': $box-size * .375,
-	'-box-xs': $box-size * .25,
-	'-box-sxxs': $box-size * .1875,
-	'-box-xxs': $box-size * .125,
 );
+$widths: add-exponential-sizes($widths, 12rem, 2, $semi: true, $prefix: '-box-');
 
-$additional-heights: (
-	'-box-l': $box-size * 2,
-	'-box-sl': $box-size * 1.5,
-	'-box-m': $box-size * 1,
-	'-box-ss': $box-size * .75,
-	'-box-s': $box-size * .5,
-	'-box-sxs': $box-size * .375,
-	'-box-xs': $box-size * .25,
-	'-box-sxxs': $box-size * .1875,
-	'-box-xxs': $box-size * .125,
-);
-
-$additional-margins: (
-	'-box-l': $box-size * 2,
-	'-box-sl': $box-size * 1.5,
-	'-box-m': $box-size * 1,
-	'-box-ss': $box-size * .75,
-	'-box-s': $box-size * .5,
-	'-box-sxs': $box-size * .375,
-	'-box-xs': $box-size * .25,
-	'-box-sxxs': $box-size * .1875,
-	'-box-xxs': $box-size * .125,
-);
+$heights: ();
+$heights: add-exponential-sizes($heights, 12rem, 2, $semi: true, $prefix: '-box-');
 
 $breakpoints: (
 	's': '(max-width: 480px)',
