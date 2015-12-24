@@ -18,7 +18,7 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 
 		<!--css-->
-		<link rel="stylesheet" href="css/harpy.min.css">
+		<link rel="stylesheet" href="css/main.min.css">
 
 		<!--[if lt IE 9]>
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -29,23 +29,22 @@
 		<![endif]-->
 
 	</head>
-	<body class="minh-100 flex flex-column sans-serif lh-copy black-80">
+	<body class="minh-100 flex flex-column sans-serif lh-copy offblack">
 		<header class="flex-none" role="banner">
-			<div class="maxw-container mh-aut phm-l phss-nl">
-				<span class="brand">
-					<a href="/">Harpy</a>
-					<span class="mobile-menu__icon"></span>
+			<div class="maxw-container mh-aut phm-l phss-nl flex flex-ai-stretch">
+				<span class="flex-none prs">
+					<a href="/" class="db a-reset fsl pvxs">Harpy</a>
 				</span>
-				<nav class="nav" role="navigation">
-					<ul>
-						<li>
-							<a href="/">Home</a>
+				<nav class="flex-auto flex" role="navigation">
+					<ul class="ul-reset flex">
+						<li class="flex">
+							<a href="/" class="flex flex-ai-center pvxs phs inherit tdi hover-tdu is-active active-bg-brown active-white">Home</a>
 						</li>
-						<li>
-							<a href="/about">About</a>
+						<li class="flex">
+							<a href="/about" class="flex flex-ai-center pvxs phs inherit tdi hover-tdu active-bg-brown-dark active-white">About</a>
 						</li>
-						<li>
-							<a href="/contact">Contact</a>
+						<li class="flex">
+							<a href="/contact" class="flex flex-ai-center pvxs phs inherit tdi hover-tdu active-bg-brown-dark active-white">Contact</a>
 						</li>
 					</ul>
 				</nav>
@@ -53,15 +52,12 @@
 		</header>
 
 		<div class="flex-grow">
-			<div class="maxw-container mh-aut phm-l phss-nl">
-				<h2>Padding</h2>
-			</div>
 
-			<div class="jumbotron pyl-sm pys-xs bg-aqua" role="banner">
-				<div class="maxw-container mh-aut phm-l phss-nl">
-					<div class="col-sm-12 col-md-7 myl-sm mys-xs">
-						<h1 class="mts-xs mtl-md ptm pts-xs mbns c-navy h1l bold">Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit.</h1>
-						<h3 class="mbl pbl c-primary-dark strong">a female monster in the form of a bird with a human face</h3>
+			<div class="bg-brown white cf" role="banner">
+				<div class="maxw-container mh-aut phm-l phss-nl flex minh-box-l flex-ai-center">
+					<div class="">
+						<p class="fsxxxl fsxl-m fsl-s lh-solid bold mbs">Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit.</p>
+						<p class="mbn">a female monster in the form of a bird with a human face</p>
 					</div>
 				</div>
 			</div>
@@ -112,7 +108,6 @@
 					</div>
 				</div>
 
-
 				<div class="maxw-container mh-aut">
 					<div class="w-100 flex flex-jc-center tc bg-silver pam mvm monospace fsxl-l fsm-m dn-s ws-nowrap bbox">
 						<div class="">.</div>
@@ -157,51 +152,31 @@
 					</div>
 				</div>
 
-				<div class="row mbl">
-					<div class="col-xs-12 mbm mtl">
-						<div class="inputgrp">
-							<h3 class="mbl">Sign up for our newsletter</h3>
-							<label>E-mail
-								<input class="" type="text">
-							</label>
-							<label>Password
-								<input class="" type="password">
-							</label>
-							<button class="btn btn-primary">Get omboard</button>
-						</div>
-					</div>
-				</div>
-
-
-
-
 			</div>
 		</div>
 
-
-
-		<footer class="mtl" role="contentinfo">
-				<div class="container mtl">
-					<span class="brand">
-						<a href="/">Copyright</a>
-					</span>
-							<nav class="nav" role="navigation">
-									<ul class="">
-											<li>
-													<a href="/">Home</a>
-											</li>
-
-											<li>
-													<a href="/about">About</a>
-											</li>
-
-											<li>
-													<a href="/contact">Contact</a>
-											</li>
-									</ul>
-							</nav>
+		<footer class="mtl flex-none bg-brown white" role="contentinfo">
+			<div class="maxw-container mh-aut phm-l phss-nl">
+				<h3>Lorem ipsum</h3>
+				<div class="mhs-neg flex">
+					<div class="w-col6 mbm phs">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+					</div>
+					<nav class="w-col6 mbm phs tr" role="navigation">
+						<ul class="ul-reset">
+							<li>
+								<a class="inherit tdi hover-tdu" href="/">Home</a>
+							</li>
+							<li>
+								<a class="inherit tdi hover-tdu" href="/about">About</a>
+							</li>
+							<li>
+								<a class="inherit tdi hover-tdu" href="/contact">Contact</a>
+							</li>
+						</ul>
+					</nav>
 				</div>
-
+			</div>
 		</footer>
 
 		<!--js-->
