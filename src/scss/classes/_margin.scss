@@ -1,46 +1,16 @@
 $margin-horizontal-alias: 'h';
 $margin-vertical-alias: 'v';
 
-$margin-base: 2 !default;
-$margin-factor: $font-size-factor * 1.5 !default;
-$margins: (
-	'n': 0,
-	'1': 1px,
-	'-aut': auto,
-	'xxs': $margin-factor * power($margin-base, -3),
-	'xs': $margin-factor * power($margin-base, -2),
-	's': $margin-factor * power($margin-base, -1),
-	'm': $margin-factor * power($margin-base, 0),
-	'l': $margin-factor * power($margin-base, 1),
-	'xl': $margin-factor * power($margin-base, 2),
-	'xxl': $margin-factor * power($margin-base, 3),
-) !default;
+$margins: () !default;
 
-$enable-semi-margins: true !default;
-@if($enable-semi-margins) {
-	$margin-base-sqrt: sqrt($margin-base);
-	$margins: map-merge($margins, (
-		'sxxs': $margin-factor * power($margin-base-sqrt, -5),
-		'sxs': $margin-factor * power($margin-base-sqrt, -3),
-		'ss': $margin-factor * power($margin-base-sqrt, -1),
-		'sl': $margin-factor * power($margin-base-sqrt, 1),
-		'sxl': $margin-factor * power($margin-base-sqrt, 3),
-		'sxxl': $margin-factor * power($margin-base-sqrt, 5),
-	));
+$margin-auto-alias: '-aut' !default;
+@if($margin-auto-alias) {
+	$margins: map-merge(('#{$margin-auto-alias}': auto), $margins);
 }
 
-$additional-margins: () !default;
-$margins: map-merge($margins, $additional-margins);
-
-$enable-line-height-margins: true !default;
-@if($enable-line-height-margins) {
-	@each $lh-alias, $lh-value in $line-heights {
-		$margins: map-merge($margins, (
-			'-lh#{$lh-alias}': $lh-value * $font-size-factor,
-			'-lh#{$lh-alias}-half': $lh-value * $font-size-factor * .5,
-			'-lh#{$lh-alias}-double': $lh-value * $font-size-factor * 2,
-		));
-	}
+$margin-none-alias: 'n' !default;
+@if($margin-none-alias) {
+	$margins: map-merge(('#{$margin-none-alias}': 0), $margins);
 }
 
 @each $name, $value in $margins {

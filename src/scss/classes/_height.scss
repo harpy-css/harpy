@@ -1,11 +1,4 @@
-$heights: (
-	'-0': 0,
-	'-aut': auto,
-	'-100': 100%,
-) !default;
-
-$additional-heights: () !default;
-$heights: map-merge($heights, $additional-heights);
+$heights: () !default;
 
 @each $name, $value in $heights {
 	.minh#{$name} {

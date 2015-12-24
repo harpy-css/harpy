@@ -1,19 +1,4 @@
-$widths: (
-	'-0': 0,
-	'-aut': auto,
-	'-50': 50%,
-	'-100': 100%,
-) !default;
-
-$grid-columns: 12 !default;
-@for $i from 1 through $grid-columns {
-	$widths: map-merge($widths, (
-		'-col#{$i}': ($i / $grid-columns) * 100%,
-	));
-}
-
-$additional-widths: () !default;
-$widths: map-merge($widths, $additional-widths);
+$widths: () !default;
 
 @each $name, $value in $widths {
 	.minw#{$name} {

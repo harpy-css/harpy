@@ -1,3 +1,9 @@
+/*
+	VARIABLES
+	Here are all the variables that are used to create utility classes.
+*/
+
+// Import Lato font from Google Fonts
 @import url(https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic&subset=latin,latin-ext);
 
 $font-families: (
@@ -16,13 +22,34 @@ $additional-font-sizes: (
 );
 
 $widths: (
+	'-0': 0,
+	'-aut': auto,
+	'-100': 100%,
 	'-container': 1000px,
 );
-$widths: add-exponential-sizes($widths, 12rem, 2, $semi: true, $prefix: '-box-');
+$widths: add-exponential-sizes($widths, $factor: 12rem, $base: 2, $semi: true, $prefix: '-box-');
+$widths: add-columns($widths, $count: 12, $prefix: '-col', $add-of: false);
 
-$heights: ();
-$heights: add-exponential-sizes($heights, 12rem, 2, $semi: true, $prefix: '-box-');
+$heights: (
+	'-0': 0,
+	'-aut': auto,
+	'-100': 100%,
+);
+$heights: add-exponential-sizes($heights, $factor: 12rem, $base: 2, $semi: true, $prefix: '-box-');
 
+$margins: (
+	'1': 1px,
+);
+$margins: add-exponential-sizes($margins, $factor: 1.5rem, $base: 2, $semi: true, $max: 3);
+$margins: add-exponential-sizes($margins, $factor: 12rem, $base: 2, $semi: true, $prefix: '-box-');
+
+$paddings: ();
+$paddings: add-exponential-sizes($paddings, $factor: 1.5rem, $base: 2, $semi: true);
+$paddings: add-exponential-sizes($paddings, $factor: 12rem, $base: 2, $semi: true, $prefix: '-box-');
+
+/*
+Breakpoints derived from https://design.google.com/devices/
+*/
 $breakpoints: (
 	's': '(max-width: 480px)',
 	'ns': '(min-width: 481px)',
@@ -31,10 +58,14 @@ $breakpoints: (
 	'nl': '(max-width: 800px)',
 );
 
+$state-classes: (
+	'is-active': 'active',
+);
+
 
 // COLORS
 
-$brown: #7a5218;
+$brown: hsl(36, 67%, 29%);
 
 $colors: (
 	'transparent': transparent,
@@ -51,10 +82,12 @@ $colors: (
 	'black-85': rgba(black, .85),
 	'black-90': rgba(black, .90),
 	'black-95': rgba(black, .95),
-	'silver': #ddd,
 	'brown': $brown,
 	'brown-light': lighten2($brown, 10%),
 	'brown-lighter': lighten2($brown, 20%),
 	'brown-dark': darken2($brown, 10%),
 	'brown-darker': darken2($brown, 20%),
+	'green': hsl(81, 67%, 29%),
+	'silver': hsl(36, 20%, 90%),
+	'offblack': hsl(36, 20%, 20%),
 );

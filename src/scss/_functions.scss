@@ -1,3 +1,8 @@
+/*
+	FUNCTIONS
+	This file contains custom SASS functions
+*/
+
 @function power($x, $n) {
 	$ret: 1;
 	@if $n > 0 {
@@ -72,6 +77,26 @@
 	@return $result;
 }
 
-@function add-exponential-sizes($map, $factor, $base: 2, $min: -2, $max: 2, $semi: false, $prefix: '') {
+@function add-exponential-sizes($map, $factor, $base: 2, $max: 2, $min: -$max, $semi: false, $prefix: '') {
 	@return map-merge($map, exponential-sizes($factor, $base, $min, $max, $semi, $prefix));
+}
+
+@function columns($count: 12, $prefix: '', $add-of: true) {
+	$result: ();
+	@for $i from 1 to $count {
+		@if($add-of) {
+			$result: map-merge($result, (
+				'#{$prefix}#{$i}of#{$count}': ($i / $count) * 100%,
+			));
+		}
+		@else {
+			$result: map-merge($result, (
+				'#{$prefix}#{$i}': ($i / $count) * 100%,
+			));
+		}
+	}
+	@return $result;
+}
+@function add-columns($map, $count: 12, $prefix: '-col', $add-of: false) {
+	@return map-merge($map, columns($count, $prefix, $add-of));
 }

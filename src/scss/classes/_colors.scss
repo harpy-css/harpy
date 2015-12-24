@@ -38,32 +38,53 @@ $text-shadow-alias: 'ts-' !default;
 	}
 }
 
+/*
+Creates rules with selectors like `.active-bg-black:active`
+*/
 @each $state in $states {
 	@each $name, $value in $colors {
-		.#{$state}-#{$color-alias}#{$name}:#{$state},
-		.#{$state}-#{$color-alias}#{$name}.#{$state} {
+		.#{$state}-#{$color-alias}#{$name}:#{$state} {
 			/*hrpy:{"class": "#{$state}-#{$color-alias}#{$name}", "section": "text-color", "color": "#{$name}", "state": "#{$state}"}*/
-			color: $value;
+			@extend .#{$color-alias}#{$name};
 		}
-		.#{$state}-#{$background-color-alias}#{$name}:#{$state},
-		.#{$state}-#{$background-color-alias}#{$name}.#{$state} {
+		.#{$state}-#{$background-color-alias}#{$name}:#{$state} {
 			/*hrpy:{"class": "#{$state}-#{$background-color-alias}#{$name}", "section": "background-color", "color": "#{$name}", "state": "#{$state}"}*/
-			background-color: $value;
+			@extend .#{$background-color-alias}#{$name};
 		}
-		.#{$state}-#{$focus-outline-alias}#{$name}:#{$state},
-		.#{$state}-#{$focus-outline-alias}#{$name}.#{$state} {
+		.#{$state}-#{$focus-outline-alias}#{$name}:#{$state} {
 			/*hrpy:{"class": "#{$state}-#{$focus-outline-alias}#{$name}", "section": "focus-outline", "color": "#{$name}", "state": "#{$state}"}*/
-			box-shadow: 0 0 0 2px $value;
+			@extend .#{$focus-outline-alias}#{$name};
 		}
-		.#{$state}-#{$text-shadow-alias}#{$name}:#{$state},
-		.#{$state}-#{$text-shadow-alias}#{$name}.#{$state} {
+		.#{$state}-#{$text-shadow-alias}#{$name}:#{$state} {
 			/*hrpy:{"class": "#{$state}-#{$text-shadow-alias}#{$name}", "section": "text-shadow", "color": "#{$name}", "state": "#{$state}"}*/
-			text-shadow: 0 1px 1px $value;
+			@extend .#{$text-shadow-alias}#{$name};
 		}
-		.#{$state}-#{$border-color-alias}#{$name}:#{$state},
-		.#{$state}-#{$border-color-alias}#{$name}.#{$state} {
+		.#{$state}-#{$border-color-alias}#{$name}:#{$state} {
 			/*hrpy:{"class": "#{$state}-#{$border-color-alias}#{$name}", "section": "border-color", "color": "#{$name}", "state": "#{$state}"}*/
-			border-color: $value;
+			@extend .#{$border-color-alias}#{$name};
+		}
+	}
+}
+
+/*
+Creates rules with selectors like `.is-active.active-bg-black`
+*/
+@each $state-class, $state in $state-classes {
+	@each $name, $value in $colors {
+		.#{$state}-#{$color-alias}#{$name}.#{$state-class} {
+			@extend .#{$color-alias}#{$name};
+		}
+		.#{$state}-#{$background-color-alias}#{$name}.#{$state-class} {
+			@extend .#{$background-color-alias}#{$name};
+		}
+		.#{$state}-#{$focus-outline-alias}#{$name}.#{$state-class} {
+			@extend .#{$focus-outline-alias}#{$name};
+		}
+		.#{$state}-#{$text-shadow-alias}#{$name}.#{$state-class} {
+			@extend .#{$text-shadow-alias}#{$name};
+		}
+		.#{$state}-#{$border-color-alias}#{$name}.#{$state-class} {
+			@extend .#{$border-color-alias}#{$name};
 		}
 	}
 }
