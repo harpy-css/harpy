@@ -1,47 +1,48 @@
-/* --------------------------------------------------------------
-		2. BASE
--------------------------------------------------------------- */
+/*
+	ELEMENTS
+	Add rules with regular element selectors here if you need to style them. Keep this to a minimum for performance!
+*/
 
 img {
-  max-width: 100%;
-  height: auto;
+	max-width: 100%;
+	height: auto;
 }
 
 a {
-  @extend .tdu, .teal, .hover-teal;
+	@extend .tdu, .green, .hover-green;
 }
 
 pre {
-  @extend .bg-black-10, .pas, .fss;
+	@extend .bg-black-10, .pas, .fss;
 }
 
 p {
-  @extend .mb-lh-copy, .mtn;
-  // &:last-child {
-  //   @extend .mbn;
-  // }
+	@extend .mb-lh-copy, .mtn;
+	// &:last-child {
+	//	 @extend .mbn;
+	// }
 }
 
 h1, h2, h3, h4, h5, h6 {
-  @extend .mt-lh-copy, .bold;
-  // &:first-child {
-  //   @extend .mtn;
-  // }
+	@extend .mt-lh-copy, .bold;
+	// &:first-child {
+	//	 @extend .mtn;
+	// }
 }
 @for $i from 1 through 6 {
-  h#{$i} {
-    @extend .fs-h#{$i};
-  }
+	h#{$i} {
+		@extend .fs-h#{$i};
+	}
 }
 
 h1 {
-  @extend .lh-solid, .mbxs;
+	@extend .lh-solid, .mbxs;
 }
 h2, h3, h4, h5, h6 {
-  @extend .lh-heading, .mbxxs;
+	@extend .lh-heading, .mbxxs;
 }
 h4, h5, h6 {
-  @extend .ttu;
+	@extend .ttu;
 }
 
 ul, ol {

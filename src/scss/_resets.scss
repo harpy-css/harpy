@@ -1,3 +1,8 @@
+/*
+	RESETS
+	Resets are aliases that resets the default styling of regular HTML elements
+*/
+
 .a-reset {
 	@extend .inherit, .hover-inherit, .tdi;
 }

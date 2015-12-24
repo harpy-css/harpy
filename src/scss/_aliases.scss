@@ -1,3 +1,8 @@
+/*
+ALIASES
+Here you put shorthand classes, more complex selectors etc, either for convenience or because you can’t control the HTML
+*/
+
 .ph-container {
 	@extend .phm-ns, .phss-s;
 }
