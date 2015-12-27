@@ -78,7 +78,7 @@
 }
 
 @function add-exponential-sizes($map, $factor, $base: 2, $max: 2, $min: -$max, $semi: false, $prefix: '') {
-	@return map-merge($map, exponential-sizes($factor, $base, $min, $max, $semi, $prefix));
+	@return map-merge($map, exponential-sizes($factor, $base, $max, $min, $semi, $prefix));
 }
 
 @function columns($count: 12, $prefix: '', $add-of: true) {
