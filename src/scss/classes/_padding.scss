@@ -33,7 +33,6 @@ $paddings: map-merge($paddings, $additional-paddings);
 
 @each $name, $value in $paddings {
 	.pa#{$name} {
-		/*hrpy:{"class": "pa#{$name}", "section": "padding", "value": "#{$value}"}*/
 		padding: $value;
 	}
 	.pt#{$name} {

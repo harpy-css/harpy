@@ -5,16 +5,10 @@ var minifycss = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
 var plumber = require('gulp-plumber');
-var size = require('gulp-size');
-var gzip = require('gulp-gzip');
 var notify = require("gulp-notify");
-var uncss = require('gulp-uncss');
 var sourcemaps = require('gulp-sourcemaps');
 var include = require('gulp-include');
-var hb = require('gulp-hb');
 var css = require('css');
-var fs = require('fs');
-var through = require('through2');
 var browserSync = require('browser-sync').create();
 
 // Static Server + watching scss/html files
@@ -25,7 +19,7 @@ gulp.task('serve', function() {
 	gulp.watch("dist/**/*.{html,js,css}").on('change', browserSync.reload);
 });
 
-// JS
+// HTML
 gulp.task('html', function() {
 	return gulp.src('src/**/*.html').pipe(gulp.dest('dist/'));
 });

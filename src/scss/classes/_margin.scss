@@ -15,7 +15,6 @@ $margin-none-alias: 'n' !default;
 
 @each $name, $value in $margins {
 	.ma#{$name} {
-		/*hrpy:{"class": "ma#{$name}", "section": "margin", "value": "#{$value}"}*/
 		margin: $value;
 	}
 	.mt#{$name} {

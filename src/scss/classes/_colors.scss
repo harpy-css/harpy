@@ -17,23 +17,18 @@ $text-shadow-alias: 'ts-' !default;
 
 @each $name, $value in $colors {
 	.#{$color-alias}#{$name} {
-		/*hrpy:{"section": "text-color", "color": "#{$name}"}*/
 		color: $value;
 	}
 	.#{$background-color-alias}#{$name} {
-		/*hrpy:{"section": "background-color", "color": "#{$name}"}*/
 		background-color: $value;
 	}
 	.#{$focus-outline-alias}#{$name} {
-		/*hrpy:{"section": "focus-outline", "color": "#{$name}"}*/
 		box-shadow: 0 0 0 2px $value;
 	}
 	.#{$text-shadow-alias}#{$name} {
-		/*hrpy:{"section": "text-shadow", "color": "#{$name}"}*/
 		text-shadow: 0 1px 1px $value;
 	}
 	.#{$border-color-alias}#{$name} {
-		/*hrpy:{"section": "border-color", "color": "#{$name}"}*/
 		border-color: $value;
 	}
 }
@@ -44,23 +39,18 @@ Creates rules with selectors like `.active-bg-black:active`
 @each $state in $states {
 	@each $name, $value in $colors {
 		.#{$state}-#{$color-alias}#{$name}:#{$state} {
-			/*hrpy:{"class": "#{$state}-#{$color-alias}#{$name}", "section": "text-color", "color": "#{$name}", "state": "#{$state}"}*/
 			@extend .#{$color-alias}#{$name};
 		}
 		.#{$state}-#{$background-color-alias}#{$name}:#{$state} {
-			/*hrpy:{"class": "#{$state}-#{$background-color-alias}#{$name}", "section": "background-color", "color": "#{$name}", "state": "#{$state}"}*/
 			@extend .#{$background-color-alias}#{$name};
 		}
 		.#{$state}-#{$focus-outline-alias}#{$name}:#{$state} {
-			/*hrpy:{"class": "#{$state}-#{$focus-outline-alias}#{$name}", "section": "focus-outline", "color": "#{$name}", "state": "#{$state}"}*/
 			@extend .#{$focus-outline-alias}#{$name};
 		}
 		.#{$state}-#{$text-shadow-alias}#{$name}:#{$state} {
-			/*hrpy:{"class": "#{$state}-#{$text-shadow-alias}#{$name}", "section": "text-shadow", "color": "#{$name}", "state": "#{$state}"}*/
 			@extend .#{$text-shadow-alias}#{$name};
 		}
 		.#{$state}-#{$border-color-alias}#{$name}:#{$state} {
-			/*hrpy:{"class": "#{$state}-#{$border-color-alias}#{$name}", "section": "border-color", "color": "#{$name}", "state": "#{$state}"}*/
 			@extend .#{$border-color-alias}#{$name};
 		}
 	}
