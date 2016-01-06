@@ -44,7 +44,7 @@ gulp.task('css', function() {
 	// error handling
 	.pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
 	.pipe(sass({ style: 'expanded' }))
-	.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
+	.pipe(autoprefixer({browsers: ['last 2 versions','> 1% in SE']}))
 	.pipe(gulp.dest('dist/css'))
 	.pipe(rename({suffix: '.min'}))
 	.pipe(minifycss())

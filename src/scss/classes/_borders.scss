@@ -1,20 +1,21 @@
 $border-width-base: 1.5 !default;
 $border-width-factor: .2rem !default;
 $border-widths: (
-	'n': 0,
-	'': $border-width-factor * power($border-width-base, -2),
-	'xs': $border-width-factor * power($border-width-base, -2),
-	's': $border-width-factor * power($border-width-base, -1),
-	'm': $border-width-factor * power($border-width-base, 0),
-	'l': $border-width-factor * power($border-width-base, 1),
-	'xl': $border-width-factor * power($border-width-base, 2),
-	'xxl': $border-width-factor * power($border-width-base, 3),
+	'': 1px,
 ) !default;
 
 $border-styles: (
 	'': solid,
 	'd': dotted,
 ) !default;
+
+$border-none-alias: 'bn' !default;
+@if($border-none-alias) {
+	.#{$border-none-alias} {
+		border-width: 0;
+		border-style: solid;
+	}
+}
 
 @each $width-alias, $width in $border-widths {
 	@each $style-alias, $style in $border-styles {

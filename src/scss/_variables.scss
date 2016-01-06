@@ -6,6 +6,10 @@
 // Import Lato font from Google Fonts
 @import url(https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic&subset=latin,latin-ext);
 
+$border-widths: (
+	'': 1px,
+);
+
 $font-families: (
 	'sans-serif': ('Lato', sans-serif),
 	'serif': (serif),
@@ -40,12 +44,12 @@ $heights: add-exponential-sizes($heights, $factor: 12rem, $base: 2, $semi: true,
 $margins: (
 	'1': 1px,
 );
-$margins: add-exponential-sizes($margins, $factor: 1.5rem, $base: 2, $semi: true, $max: 3);
-$margins: add-exponential-sizes($margins, $factor: 12rem, $base: 2, $semi: true, $prefix: '-box-');
+$margins: add-exponential-sizes($margins, $factor: 1.5rem, $base: 2, $semi: true, $max: 2);
 
-$paddings: ();
-$paddings: add-exponential-sizes($paddings, $factor: 1.5rem, $base: 2, $semi: true);
-$paddings: add-exponential-sizes($paddings, $factor: 12rem, $base: 2, $semi: true, $prefix: '-box-');
+$paddings: (
+	'1': 1px,
+);
+$paddings: add-exponential-sizes($paddings, $factor: 1.5rem, $base: 2, $semi: true, $max: 2);
 
 /*
 Breakpoints derived from https://design.google.com/devices/
