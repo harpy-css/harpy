@@ -20,6 +20,7 @@
     "gulp": "^3",
     "gulp-autoprefixer": "0.0.7",
     "gulp-concat": "^2.5.2",
+    "gulp-css-info": "^0.2.0",
     "gulp-gzip": "^1.0.0",
     "gulp-hb": "^2.6.5",
     "gulp-imagemin": "^2.2.1",

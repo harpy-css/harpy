@@ -10,6 +10,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var include = require('gulp-include');
 var css = require('css');
 var browserSync = require('browser-sync').create();
+var cssInfo = require('gulp-css-info');
 
 // Static Server + watching scss/html files
 gulp.task('serve', function() {
@@ -51,6 +52,21 @@ gulp.task('css', function() {
 	.pipe(gulp.dest('dist/css'))
 
 	.pipe(notify("SCSS minified"));
+});
+
+// CSS info
+gulp.task('css-info', function() {
+	return gulp.src(['dist/**/*.css','!**/*.min.css'])
+		.pipe(cssInfo.html())
+		.pipe(gulp.dest('dist/css-info'));
+});
+gulp.task('css-info-json', function() {
+	return gulp.src(['dist/**/*.css','!**/*.min.css'])
+		.pipe(cssInfo({indent: 2}))
+		.pipe(gulp.dest('dist/css-info'));
+});
+gulp.task('css-info/watch', function() {
+	gulp.watch('dist/**/*.css', ['css-info']);
 });
 
 // Watch
