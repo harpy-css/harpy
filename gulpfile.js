@@ -56,16 +56,16 @@ gulp.task('css', function() {
 
 // CSS info
 gulp.task('css-info', function() {
-	return gulp.src(['dist/**/*.css','!**/*.min.css'])
+	return gulp.src(['dist/**/*.css'])
 		.pipe(cssInfo.html())
 		.pipe(gulp.dest('dist/css-info'));
 });
 gulp.task('css-info-json', function() {
-	return gulp.src(['dist/**/*.css','!**/*.min.css'])
+	return gulp.src(['dist/**/*.css'])
 		.pipe(cssInfo({indent: 2}))
 		.pipe(gulp.dest('dist/css-info'));
 });
-gulp.task('css-info/watch', function() {
+gulp.task('css-info/watch', ['css-info'], function() {
 	gulp.watch('dist/**/*.css', ['css-info']);
 });
 
